@@ -1,4 +1,4 @@
-# LiteracyApp (model)
+# LiteracyApp
 Code shared amongst the Web application and Android application.
 
 Web application: http://literacyapp.org
