@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.literacyapp</groupId>
+    <artifactId>literacyapp-model</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>literacyapp-model</name>
+  
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    <scm>
+        <connection>scm:git:https://github.com/XPRIZE/GLEXP-Team-Educativo.git</connection>
+        <developerConnection>scm:git:https://github.com/XPRIZE/GLEXP-Team-Educativo.git</developerConnection>
+        <url>https://github.com/XPRIZE/GLEXP-Team-Educativo/tree/master/literacyapp-model</url>
+    </scm>
+    
+    <distributionManagement>
+        <repository>
+            <id>archiva.internal</id>
+            <name>Internal Release Repository</name>
+            <url>http://archiva.educativo.eu:8081/repository/internal/</url>
+        </repository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+    </dependencies>
+</project>
