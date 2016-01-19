@@ -11,10 +11,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
+    <issueManagement>
+        <system>Waffle.io</system>
+        <url>https://waffle.io/literacyapp-org/literacyapp-model</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Travis CI</system>
+        <url>https://travis-ci.org/literacyapp-org/literacyapp-model</url>
+    </ciManagement>
     <scm>
-        <connection>scm:git:https://github.com/XPRIZE/GLEXP-Team-Educativo.git</connection>
-        <developerConnection>scm:git:https://github.com/XPRIZE/GLEXP-Team-Educativo.git</developerConnection>
-        <url>https://github.com/XPRIZE/GLEXP-Team-Educativo/tree/master/literacyapp-model</url>
+        <connection>scm:git:https://github.com/literacyapp-org/literacyapp-model.git</connection>
+        <developerConnection>scm:git:https://github.com/literacyapp-org/literacyapp-model.git</developerConnection>
+        <url>https://github.com/literacyapp-org/literacyapp-model</url>
     </scm>
     
     <distributionManagement>
