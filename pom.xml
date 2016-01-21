@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.literacyapp</groupId>
     <artifactId>literacyapp-model</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>literacyapp-model</name>
   
@@ -23,7 +23,8 @@
         <connection>scm:git:git@github.com:literacyapp-org/literacyapp-model.git</connection>
         <developerConnection>scm:git:git@github.com:literacyapp-org/literacyapp-model.git</developerConnection>
         <url>https://github.com/literacyapp-org/literacyapp-model</url>
-    </scm>
+      <tag>literacyapp-model-1.0.0</tag>
+  </scm>
     
     <distributionManagement>
         <repository>
