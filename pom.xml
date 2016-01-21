@@ -23,7 +23,6 @@
         <connection>scm:git:https://github.com/literacyapp-org/literacyapp-model.git</connection>
         <developerConnection>scm:git:https://github.com/literacyapp-org/literacyapp-model.git</developerConnection>
         <url>https://github.com/literacyapp-org/literacyapp-model</url>
-        <tag>HEAD</tag>
     </scm>
     
     <distributionManagement>
