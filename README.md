@@ -10,7 +10,7 @@ Android application: ~~https://play.google.com/store/apps/details?id=org.literac
 [![Build Status](https://travis-ci.org/literacyapp-org/literacyapp-model.svg)](https://travis-ci.org/literacyapp-org/literacyapp-model)
 
 ## Issue management
-[![Stories in Ready](https://badge.waffle.io/literacyapp-org/literacyapp-model.png?label=ready&title=Ready)](https://waffle.io/literacyapp-org/literacyapp-model)
+[Trello](https://trello.com/b/les4HgKG/team-development)
 
 ## Chat
-[![Join the chat at https://gitter.im/literacyapp-org/chat](https://badges.gitter.im/literacyapp-org/literacyapp-web.svg)](https://gitter.im/literacyapp-org/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[Slack](literacyapp.slack.com/messages/team-development)
