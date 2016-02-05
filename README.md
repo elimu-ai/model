@@ -14,3 +14,6 @@ Android application: ~~https://play.google.com/store/apps/details?id=org.literac
 
 ## Chat
 [Slack](https://literacyapp.slack.com/messages/team-development)
+
+## Mailing list
+Sign up at http://eepurl.com/bGihkr
