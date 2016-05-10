@@ -11,9 +11,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
+    <prerequisites>
+        <maven>3.2.2</maven>
+    </prerequisites>
+    
     <issueManagement>
-        <system>Waffle.io</system>
-        <url>https://waffle.io/literacyapp-org/literacyapp-model</url>
+        <system>Trello</system>
+        <url>https://trello.com/b/les4HgKG/team-development</url>
     </issueManagement>
     <ciManagement>
         <system>Travis CI</system>
@@ -23,8 +27,8 @@
         <connection>scm:git:git@github.com:literacyapp-org/literacyapp-model.git</connection>
         <developerConnection>scm:git:git@github.com:literacyapp-org/literacyapp-model.git</developerConnection>
         <url>https://github.com/literacyapp-org/literacyapp-model</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
     
     <distributionManagement>
         <repository>
@@ -33,22 +37,12 @@
             <url>http://archiva.educativo.eu:8081/repository/internal/</url>
         </repository>
     </distributionManagement>
-    
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.4.2</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-gitexe</artifactId>
-                        <version>1.8.1</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-        </plugins>
-    </build>
+    <repositories>
+        <repository>
+            <id>archiva.internal</id>
+            <url>http://archiva.educativo.eu:8081/repository/internal/</url>
+        </repository>
+    </repositories>
     
     <dependencies>
         <dependency>
