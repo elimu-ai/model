@@ -9,6 +9,8 @@ public class Image {
     private String title;
     
     private ImageType imageType;
+    
+    private int[] dominantColor; // RGB array
 
     public Long getId() {
         return id;
@@ -32,5 +34,13 @@ public class Image {
 
     public void setImageType(ImageType imageType) {
         this.imageType = imageType;
+    }
+
+    public int[] getDominantColor() {
+        return dominantColor;
+    }
+
+    public void setDominantColor(int[] dominantColor) {
+        this.dominantColor = dominantColor;
     }
 }
