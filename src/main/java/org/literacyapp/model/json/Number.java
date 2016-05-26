@@ -9,6 +9,12 @@ public class Number {
     private Language language;
     
     private Integer value;
+    
+    private String symbol;
+    
+    private Word word;
+    
+    private int[] dominantColor; // RGB array
 
     public Long getId() {
         return id;
@@ -32,5 +38,29 @@ public class Number {
 
     public void setValue(Integer value) {
         this.value = value;
+    }
+    
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+    
+    public Word getWord() {
+        return word;
+    }
+
+    public void setWord(Word word) {
+        this.word = word;
+    }
+
+    public int[] getDominantColor() {
+        return dominantColor;
+    }
+
+    public void setDominantColor(int[] dominantColor) {
+        this.dominantColor = dominantColor;
     }
 }
