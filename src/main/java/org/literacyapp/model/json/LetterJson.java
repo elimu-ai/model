@@ -2,7 +2,7 @@ package org.literacyapp.model.json;
 
 import org.literacyapp.model.enums.Language;
 
-public class Letter {
+public class LetterJson {
     
     private Long id;
     

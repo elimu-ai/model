@@ -2,7 +2,7 @@ package org.literacyapp.model.json;
 
 import org.literacyapp.model.enums.Language;
 
-public class Number {
+public class NumberJson {
     
     private Long id;
     
@@ -12,7 +12,7 @@ public class Number {
     
     private String symbol;
     
-    private Word word;
+    private WordJson word;
     
     private int[] dominantColor; // RGB array
 
@@ -48,11 +48,11 @@ public class Number {
         this.symbol = symbol;
     }
     
-    public Word getWord() {
+    public WordJson getWord() {
         return word;
     }
 
-    public void setWord(Word word) {
+    public void setWord(WordJson word) {
         this.word = word;
     }
 

@@ -2,7 +2,7 @@ package org.literacyapp.model.json;
 
 import org.literacyapp.model.enums.Language;
 
-public class Audio {
+public class AudioJson {
     
     private Long id;
     
