@@ -1,14 +1,14 @@
 package org.literacyapp.model.json;
 
 import org.greenrobot.greendao.annotation.Entity;
-import org.literacyapp.model.enums.Language;
+import org.literacyapp.model.enums.Locale;
 
 @Entity
 public class NumberJson {
     
     private Long id;
     
-    private Language language;
+    private Locale language;
     
     private Integer value;
     
@@ -26,11 +26,11 @@ public class NumberJson {
         this.id = id;
     }
 
-    public Language getLanguage() {
+    public Locale getLanguage() {
         return language;
     }
 
-    public void setLanguage(Language language) {
+    public void setLanguage(Locale language) {
         this.language = language;
     }
 
