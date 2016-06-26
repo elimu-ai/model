@@ -1,12 +1,12 @@
 package org.literacyapp.model.json;
 
-import org.literacyapp.model.enums.Language;
+import org.literacyapp.model.enums.Locale;
 
 public class AudioJson {
     
     private Long id;
     
-    private Language language;
+    private Locale language;
     
     private String title;
 
@@ -18,11 +18,11 @@ public class AudioJson {
         this.id = id;
     }
 
-    public Language getLanguage() {
+    public Locale getLanguage() {
         return language;
     }
 
-    public void setLanguage(Language language) {
+    public void setLanguage(Locale language) {
         this.language = language;
     }
 
