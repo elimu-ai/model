@@ -1,7 +1,9 @@
 package org.literacyapp.model.json;
 
+import org.greenrobot.greendao.annotation.Entity;
 import org.literacyapp.model.enums.Language;
 
+@Entity
 public class NumberJson {
     
     private Long id;
