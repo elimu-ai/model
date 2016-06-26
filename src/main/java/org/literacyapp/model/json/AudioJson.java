@@ -6,7 +6,7 @@ public class AudioJson {
     
     private Long id;
     
-    private Locale language;
+    private Locale locale;
     
     private String title;
 
@@ -18,12 +18,12 @@ public class AudioJson {
         this.id = id;
     }
 
-    public Locale getLanguage() {
-        return language;
+    public Locale getLocale() {
+        return locale;
     }
 
-    public void setLanguage(Locale language) {
-        this.language = language;
+    public void setLocale(Locale locale) {
+        this.locale = locale;
     }
 
     public String getTitle() {
