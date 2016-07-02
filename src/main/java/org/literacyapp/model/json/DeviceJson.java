@@ -69,7 +69,7 @@ public class DeviceJson {
         this.locale = locale;
     }
 
-    public Boolean getRooted() {
+    public Boolean isRooted() {
         return rooted;
     }
 
