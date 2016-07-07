@@ -7,6 +7,7 @@ public enum Locale {
     
     AR("ar"),
     EN("en"),
+//    EN_US("en", "US"),
     ES("es"),
     SW("sw");
     
