@@ -1,4 +1,4 @@
-package org.literacyapp.model.enums.admin.application;
+package org.literacyapp.model.enums.admin;
 
 public enum ApplicationStatus {
 
