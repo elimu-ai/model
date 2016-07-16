@@ -1,11 +1,11 @@
-package org.literacyapp.model.json.admin.application;
+package org.literacyapp.model.json.admin;
 
 import java.util.Set;
 import org.greenrobot.greendao.annotation.Entity;
 import org.literacyapp.model.enums.LiteracySkill;
 import org.literacyapp.model.enums.Locale;
 import org.literacyapp.model.enums.NumeracySkill;
-import org.literacyapp.model.enums.admin.application.ApplicationStatus;
+import org.literacyapp.model.enums.admin.ApplicationStatus;
 
 @Entity
 public class ApplicationJson {
