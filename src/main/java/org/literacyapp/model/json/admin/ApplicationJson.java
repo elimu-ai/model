@@ -1,5 +1,6 @@
 package org.literacyapp.model.json.admin;
 
+import java.util.List;
 import java.util.Set;
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
@@ -26,6 +27,8 @@ public class ApplicationJson {
     private Set<NumeracySkill> numeracySkills;
     
     private ApplicationStatus applicationStatus;
+    
+    private List<ApplicationVersionJson> applicationVersionList;
 
     public Long getId() {
         return id;
@@ -73,5 +76,13 @@ public class ApplicationJson {
 
     public void setApplicationStatus(ApplicationStatus applicationStatus) {
         this.applicationStatus = applicationStatus;
+    }
+
+    public List<ApplicationVersionJson> getApplicationVersionList() {
+        return applicationVersionList;
+    }
+
+    public void setApplicationVersionList(List<ApplicationVersionJson> applicationVersionList) {
+        this.applicationVersionList = applicationVersionList;
     }
 }
