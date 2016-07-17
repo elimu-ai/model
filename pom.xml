@@ -69,7 +69,7 @@
         <dependency>
             <groupId>org.greenrobot</groupId>
             <artifactId>greendao</artifactId>
-            <version>3.0.0-beta</version>
+            <version>3.0.1</version>
         </dependency>
     </dependencies>
 </project>
