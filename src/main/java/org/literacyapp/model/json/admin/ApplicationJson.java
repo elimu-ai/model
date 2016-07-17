@@ -28,7 +28,7 @@ public class ApplicationJson {
     
     private ApplicationStatus applicationStatus;
     
-    private List<ApplicationVersionJson> applicationVersionList;
+    private List<ApplicationVersionJson> applicationVersionJsonList;
 
     public Long getId() {
         return id;
@@ -78,11 +78,11 @@ public class ApplicationJson {
         this.applicationStatus = applicationStatus;
     }
 
-    public List<ApplicationVersionJson> getApplicationVersionList() {
-        return applicationVersionList;
+    public List<ApplicationVersionJson> getApplicationVersionJsonList() {
+        return applicationVersionJsonList;
     }
 
-    public void setApplicationVersionList(List<ApplicationVersionJson> applicationVersionList) {
-        this.applicationVersionList = applicationVersionList;
+    public void setApplicationVersionJsonList(List<ApplicationVersionJson> applicationVersionJsonList) {
+        this.applicationVersionJsonList = applicationVersionJsonList;
     }
 }

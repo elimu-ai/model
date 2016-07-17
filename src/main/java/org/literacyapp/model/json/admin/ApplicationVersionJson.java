@@ -27,8 +27,8 @@ public class ApplicationVersionJson {
     @NotNull
     private Integer versionCode;
     
-    @NotNull
-    private Calendar timeUploaded;
+//    @NotNull
+//    private Calendar timeUploaded;
 
     public Long getId() {
         return id;
@@ -78,11 +78,11 @@ public class ApplicationVersionJson {
         this.versionCode = versionCode;
     }
 
-    public Calendar getTimeUploaded() {
-        return timeUploaded;
-    }
-
-    public void setTimeUploaded(Calendar timeUploaded) {
-        this.timeUploaded = timeUploaded;
-    }
+//    public Calendar getTimeUploaded() {
+//        return timeUploaded;
+//    }
+//
+//    public void setTimeUploaded(Calendar timeUploaded) {
+//        this.timeUploaded = timeUploaded;
+//    }
 }
