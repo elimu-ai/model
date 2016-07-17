@@ -1,4 +1,4 @@
-package org.literacyapp.model.json;
+package org.literacyapp.model.json.content;
 
 import org.literacyapp.model.enums.ImageType;
 

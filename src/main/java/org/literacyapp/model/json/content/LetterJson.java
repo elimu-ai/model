@@ -1,8 +1,8 @@
-package org.literacyapp.model.json;
+package org.literacyapp.model.json.content;
 
 import org.literacyapp.model.enums.Locale;
 
-public class WordJson {
+public class LetterJson {
     
     private Long id;
     

@@ -1,14 +1,14 @@
-package org.literacyapp.model.json;
+package org.literacyapp.model.json.content;
 
 import org.literacyapp.model.enums.Locale;
 
-public class LetterJson {
+public class AudioJson {
     
     private Long id;
     
     private Locale locale;
     
-    private String text;
+    private String title;
 
     public Long getId() {
         return id;
@@ -26,11 +26,11 @@ public class LetterJson {
         this.locale = locale;
     }
 
-    public String getText() {
-        return text;
+    public String getTitle() {
+        return title;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
