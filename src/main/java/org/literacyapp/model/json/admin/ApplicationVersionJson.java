@@ -1,31 +1,34 @@
 package org.literacyapp.model.json.admin;
 
-import java.util.Set;
+import java.util.Calendar;
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.NotNull;
-import org.literacyapp.model.enums.LiteracySkill;
-import org.literacyapp.model.enums.Locale;
-import org.literacyapp.model.enums.NumeracySkill;
-import org.literacyapp.model.enums.admin.ApplicationStatus;
+import org.greenrobot.greendao.annotation.ToOne;
 
 @Entity
-public class ApplicationJson {
+public class ApplicationVersionJson {
     
     @Id
     private Long id;
     
-    @NotNull
-    private Locale locale;
+    @ToOne
+    private ApplicationJson applicationJson;
     
     @NotNull
-    private String packageName;
+    private Integer fileSizeInKb;
     
-    private Set<LiteracySkill> literacySkills;
+    @NotNull
+    private String fileUrl;
     
-    private Set<NumeracySkill> numeracySkills;
+    @NotNull
+    private String contentType;
     
-    private ApplicationStatus applicationStatus;
+    @NotNull
+    private Integer versionCode;
+    
+    @NotNull
+    private Calendar timeUploaded;
 
     public Long getId() {
         return id;
@@ -35,43 +38,51 @@ public class ApplicationJson {
         this.id = id;
     }
 
-    public Locale getLocale() {
-        return locale;
+    public ApplicationJson getApplicationJson() {
+        return applicationJson;
     }
 
-    public void setLocale(Locale locale) {
-        this.locale = locale;
+    public void setApplicationJson(ApplicationJson applicationJson) {
+        this.applicationJson = applicationJson;
     }
 
-    public String getPackageName() {
-        return packageName;
+    public Integer getFileSizeInKb() {
+        return fileSizeInKb;
     }
 
-    public void setPackageName(String packageName) {
-        this.packageName = packageName;
+    public void setFileSizeInKb(Integer fileSizeInKb) {
+        this.fileSizeInKb = fileSizeInKb;
     }
 
-    public Set<LiteracySkill> getLiteracySkills() {
-        return literacySkills;
+    public String getFileUrl() {
+        return fileUrl;
     }
 
-    public void setLiteracySkills(Set<LiteracySkill> literacySkills) {
-        this.literacySkills = literacySkills;
+    public void setFileUrl(String fileUrl) {
+        this.fileUrl = fileUrl;
     }
 
-    public Set<NumeracySkill> getNumeracySkills() {
-        return numeracySkills;
+    public String getContentType() {
+        return contentType;
     }
 
-    public void setNumeracySkills(Set<NumeracySkill> numeracySkills) {
-        this.numeracySkills = numeracySkills;
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
     }
 
-    public ApplicationStatus getApplicationStatus() {
-        return applicationStatus;
+    public Integer getVersionCode() {
+        return versionCode;
     }
 
-    public void setApplicationStatus(ApplicationStatus applicationStatus) {
-        this.applicationStatus = applicationStatus;
+    public void setVersionCode(Integer versionCode) {
+        this.versionCode = versionCode;
+    }
+
+    public Calendar getTimeUploaded() {
+        return timeUploaded;
+    }
+
+    public void setTimeUploaded(Calendar timeUploaded) {
+        this.timeUploaded = timeUploaded;
     }
 }
