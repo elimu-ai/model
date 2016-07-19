@@ -1,5 +1,7 @@
 package org.literacyapp.model.json.content;
 
+import java.awt.Color;
+import java.util.Set;
 import org.literacyapp.model.enums.Locale;
 
 public class NumberJson {
@@ -14,7 +16,7 @@ public class NumberJson {
     
     private WordJson word;
     
-    private int[] dominantColor; // RGB array
+    private Set<Color> colors;
 
     public Long getId() {
         return id;
@@ -56,11 +58,11 @@ public class NumberJson {
         this.word = word;
     }
 
-    public int[] getDominantColor() {
-        return dominantColor;
+    public Set<Color> getColors() {
+        return colors;
     }
 
-    public void setDominantColor(int[] dominantColor) {
-        this.dominantColor = dominantColor;
+    public void setColors(Set<Color> colors) {
+        this.colors = colors;
     }
 }

@@ -1,4 +1,4 @@
-package org.literacyapp.model.enums;
+package org.literacyapp.model.enums.content;
 
 public enum DifficultyLevel {
     

@@ -1,4 +1,4 @@
-package org.literacyapp.model.enums;
+package org.literacyapp.model.enums.content;
 
 /**
  * Based on the Global Learning XPRIZE guidelines, section 3.3.2.
