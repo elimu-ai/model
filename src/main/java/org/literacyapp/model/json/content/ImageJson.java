@@ -10,7 +10,7 @@ public class ImageJson {
     
     private ImageType imageType;
     
-    private int[] dominantColor; // RGB array
+    private String dominantColor; // Web color
 
     public Long getId() {
         return id;
@@ -36,11 +36,11 @@ public class ImageJson {
         this.imageType = imageType;
     }
 
-    public int[] getDominantColor() {
+    public String getDominantColor() {
         return dominantColor;
     }
 
-    public void setDominantColor(int[] dominantColor) {
+    public void setDominantColor(String dominantColor) {
         this.dominantColor = dominantColor;
     }
 }
