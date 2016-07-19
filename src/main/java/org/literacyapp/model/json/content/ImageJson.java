@@ -1,6 +1,6 @@
 package org.literacyapp.model.json.content;
 
-import org.literacyapp.model.enums.ImageType;
+import org.literacyapp.model.enums.content.ImageType;
 
 public class ImageJson {
     

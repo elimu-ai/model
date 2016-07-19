@@ -27,6 +27,8 @@ public class ApplicationVersionJson {
     @NotNull
     private Integer versionCode;
     
+    private String startCommand;
+    
 //    @NotNull
 //    private Calendar timeUploaded;
 
@@ -76,6 +78,14 @@ public class ApplicationVersionJson {
 
     public void setVersionCode(Integer versionCode) {
         this.versionCode = versionCode;
+    }
+    
+    public String getStartCommand() {
+        return startCommand;
+    }
+
+    public void setStartCommand(String startCommand) {
+        this.startCommand = startCommand;
     }
 
 //    public Calendar getTimeUploaded() {
