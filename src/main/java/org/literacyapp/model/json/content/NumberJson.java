@@ -1,6 +1,5 @@
 package org.literacyapp.model.json.content;
 
-import java.awt.Color;
 import java.util.Set;
 import org.literacyapp.model.enums.Locale;
 
@@ -15,8 +14,6 @@ public class NumberJson {
     private String symbol;
     
     private WordJson word;
-    
-    private Set<Color> colors;
 
     public Long getId() {
         return id;
@@ -56,13 +53,5 @@ public class NumberJson {
 
     public void setWord(WordJson word) {
         this.word = word;
-    }
-
-    public Set<Color> getColors() {
-        return colors;
-    }
-
-    public void setColors(Set<Color> colors) {
-        this.colors = colors;
     }
 }
