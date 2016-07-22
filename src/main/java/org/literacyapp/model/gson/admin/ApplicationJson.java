@@ -1,4 +1,4 @@
-package org.literacyapp.model.json.admin;
+package org.literacyapp.model.gson.admin;
 
 import java.util.List;
 import java.util.Set;

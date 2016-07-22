@@ -1,4 +1,4 @@
-package org.literacyapp.model.json;
+package org.literacyapp.model.gson;
 
 import java.util.Calendar;
 import java.util.Set;

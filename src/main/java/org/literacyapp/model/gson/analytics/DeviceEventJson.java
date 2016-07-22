@@ -1,7 +1,7 @@
-package org.literacyapp.model.json.analytics;
+package org.literacyapp.model.gson.analytics;
 
 import java.util.Calendar;
-import org.literacyapp.model.json.DeviceJson;
+import org.literacyapp.model.gson.DeviceJson;
 
 public class DeviceEventJson {
 

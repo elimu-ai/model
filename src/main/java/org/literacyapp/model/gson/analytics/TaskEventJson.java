@@ -1,8 +1,8 @@
-package org.literacyapp.model.json.analytics;
+package org.literacyapp.model.gson.analytics;
 
 import org.literacyapp.model.enums.content.TaskType;
-import org.literacyapp.model.json.StudentJson;
-import org.literacyapp.model.json.admin.ApplicationJson;
+import org.literacyapp.model.gson.StudentJson;
+import org.literacyapp.model.gson.admin.ApplicationJson;
 
 public class TaskEventJson {
 

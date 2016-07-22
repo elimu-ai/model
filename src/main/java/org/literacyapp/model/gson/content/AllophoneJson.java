@@ -1,4 +1,4 @@
-package org.literacyapp.model.json.content;
+package org.literacyapp.model.gson.content;
 
 import org.literacyapp.model.enums.content.allophone.ConsonantPlace;
 import org.literacyapp.model.enums.content.allophone.ConsonantType;
