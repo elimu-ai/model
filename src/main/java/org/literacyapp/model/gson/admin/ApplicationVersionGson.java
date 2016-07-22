@@ -2,11 +2,11 @@ package org.literacyapp.model.gson.admin;
 
 import java.util.Calendar;
 
-public class ApplicationVersionJson {
+public class ApplicationVersionGson {
     
     private Long id;
     
-    private ApplicationJson applicationJson;
+    private ApplicationGson applicationJson;
     
     private Integer fileSizeInKb;
     
@@ -29,11 +29,11 @@ public class ApplicationVersionJson {
         this.id = id;
     }
 
-    public ApplicationJson getApplicationJson() {
+    public ApplicationGson getApplicationJson() {
         return applicationJson;
     }
 
-    public void setApplicationJson(ApplicationJson applicationJson) {
+    public void setApplicationJson(ApplicationGson applicationJson) {
         this.applicationJson = applicationJson;
     }
 

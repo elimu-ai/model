@@ -3,7 +3,7 @@ package org.literacyapp.model.gson;
 import java.util.Calendar;
 import java.util.Set;
 
-public class DeviceJson {
+public class DeviceGson {
     
     private Long id;
     
@@ -19,7 +19,7 @@ public class DeviceJson {
     
     private Boolean rooted;
     
-    private Set<DeviceJson> devicesNearby;
+    private Set<DeviceGson> devicesNearby;
 
     public Long getId() {
         return id;
@@ -77,11 +77,11 @@ public class DeviceJson {
         this.rooted = rooted;
     }
 
-    public Set<DeviceJson> getDevicesNearby() {
+    public Set<DeviceGson> getDevicesNearby() {
         return devicesNearby;
     }
 
-    public void setDevicesNearby(Set<DeviceJson> devicesNearby) {
+    public void setDevicesNearby(Set<DeviceGson> devicesNearby) {
         this.devicesNearby = devicesNearby;
     }
 }

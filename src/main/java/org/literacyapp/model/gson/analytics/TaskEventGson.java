@@ -1,30 +1,30 @@
 package org.literacyapp.model.gson.analytics;
 
 import org.literacyapp.model.enums.content.TaskType;
-import org.literacyapp.model.gson.StudentJson;
-import org.literacyapp.model.gson.admin.ApplicationJson;
+import org.literacyapp.model.gson.StudentGson;
+import org.literacyapp.model.gson.admin.ApplicationGson;
 
-public class TaskEventJson {
+public class TaskEventGson {
 
-    private StudentJson student;
+    private StudentGson student;
     
-    private ApplicationJson application;
+    private ApplicationGson application;
     
     private TaskType taskType;
 
-    public StudentJson getStudent() {
+    public StudentGson getStudent() {
         return student;
     }
 
-    public void setStudent(StudentJson student) {
+    public void setStudent(StudentGson student) {
         this.student = student;
     }
 
-    public ApplicationJson getApplication() {
+    public ApplicationGson getApplication() {
         return application;
     }
 
-    public void setApplication(ApplicationJson application) {
+    public void setApplication(ApplicationGson application) {
         this.application = application;
     }
 

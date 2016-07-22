@@ -7,7 +7,7 @@ import org.literacyapp.model.enums.Locale;
 import org.literacyapp.model.enums.content.NumeracySkill;
 import org.literacyapp.model.enums.admin.ApplicationStatus;
 
-public class ApplicationJson {
+public class ApplicationGson {
     
     private Long id;
     
@@ -21,7 +21,7 @@ public class ApplicationJson {
     
     private ApplicationStatus applicationStatus;
     
-    private List<ApplicationVersionJson> applicationVersionJsonList;
+    private List<ApplicationVersionGson> applicationVersionJsonList;
 
     public Long getId() {
         return id;
@@ -71,11 +71,11 @@ public class ApplicationJson {
         this.applicationStatus = applicationStatus;
     }
 
-    public List<ApplicationVersionJson> getApplicationVersionJsonList() {
+    public List<ApplicationVersionGson> getApplicationVersionJsonList() {
         return applicationVersionJsonList;
     }
 
-    public void setApplicationVersionJsonList(List<ApplicationVersionJson> applicationVersionJsonList) {
+    public void setApplicationVersionJsonList(List<ApplicationVersionGson> applicationVersionJsonList) {
         this.applicationVersionJsonList = applicationVersionJsonList;
     }
 }

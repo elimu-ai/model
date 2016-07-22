@@ -1,19 +1,19 @@
 package org.literacyapp.model.gson.analytics;
 
 import java.util.Calendar;
-import org.literacyapp.model.gson.DeviceJson;
+import org.literacyapp.model.gson.DeviceGson;
 
-public class DeviceEventJson {
+public class DeviceEventGson {
 
-    private DeviceJson device;
+    private DeviceGson device;
     
     private Calendar calendar;
 
-    public DeviceJson getDevice() {
+    public DeviceGson getDevice() {
         return device;
     }
 
-    public void setDevice(DeviceJson device) {
+    public void setDevice(DeviceGson device) {
         this.device = device;
     }
 

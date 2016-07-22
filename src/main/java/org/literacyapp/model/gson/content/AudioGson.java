@@ -2,13 +2,13 @@ package org.literacyapp.model.gson.content;
 
 import org.literacyapp.model.enums.Locale;
 
-public class WordJson {
+public class AudioGson {
     
     private Long id;
     
     private Locale locale;
     
-    private String text;
+    private String title;
 
     public Long getId() {
         return id;
@@ -26,11 +26,11 @@ public class WordJson {
         this.locale = locale;
     }
 
-    public String getText() {
-        return text;
+    public String getTitle() {
+        return title;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

@@ -2,7 +2,7 @@ package org.literacyapp.model.gson.content;
 
 import org.literacyapp.model.enums.Locale;
 
-public class ContentJson {
+public class ContentGson {
     
     private Locale locale;
     

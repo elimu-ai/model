@@ -2,7 +2,7 @@ package org.literacyapp.model.gson.content;
 
 import org.literacyapp.model.enums.content.ImageType;
 
-public class ImageJson {
+public class ImageGson {
     
     private Long id;
     

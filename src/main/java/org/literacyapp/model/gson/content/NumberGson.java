@@ -3,7 +3,7 @@ package org.literacyapp.model.gson.content;
 import java.util.Set;
 import org.literacyapp.model.enums.Locale;
 
-public class NumberJson {
+public class NumberGson {
     
     private Long id;
     
@@ -13,7 +13,7 @@ public class NumberJson {
     
     private String symbol;
     
-    private WordJson word;
+    private WordGson word;
 
     public Long getId() {
         return id;
@@ -47,11 +47,11 @@ public class NumberJson {
         this.symbol = symbol;
     }
     
-    public WordJson getWord() {
+    public WordGson getWord() {
         return word;
     }
 
-    public void setWord(WordJson word) {
+    public void setWord(WordGson word) {
         this.word = word;
     }
 }
