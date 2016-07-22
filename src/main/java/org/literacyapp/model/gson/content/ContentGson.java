@@ -5,11 +5,21 @@ import org.literacyapp.model.enums.Locale;
 
 public class ContentGson {
     
+    private Long id;
+    
     private Locale locale;
     
     private Calendar timeLastUpdate;
     
     private Integer revisionNumber; // [1, 2, 3, ...]
+    
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Locale getLocale() {
         return locale;
