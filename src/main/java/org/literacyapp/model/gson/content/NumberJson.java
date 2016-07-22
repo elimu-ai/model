@@ -1,4 +1,4 @@
-package org.literacyapp.model.json.content;
+package org.literacyapp.model.gson.content;
 
 import java.util.Set;
 import org.literacyapp.model.enums.Locale;
