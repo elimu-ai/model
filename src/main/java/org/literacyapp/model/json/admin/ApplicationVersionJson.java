@@ -1,30 +1,19 @@
 package org.literacyapp.model.json.admin;
 
 import java.util.Calendar;
-import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.annotation.NotNull;
-import org.greenrobot.greendao.annotation.ToOne;
 
-@Entity
 public class ApplicationVersionJson {
     
-    @Id
     private Long id;
     
-    @ToOne
     private ApplicationJson applicationJson;
     
-    @NotNull
     private Integer fileSizeInKb;
     
-    @NotNull
     private String fileUrl;
     
-    @NotNull
     private String contentType;
     
-    @NotNull
     private Integer versionCode;
     
     private String startCommand;
