@@ -3,7 +3,7 @@ package org.literacyapp.model.gson.content;
 import java.util.Calendar;
 import org.literacyapp.model.enums.Locale;
 
-public class ContentGson {
+public abstract class ContentGson {
     
     private Long id;
     
