@@ -1,17 +1,12 @@
 package org.literacyapp.model.json.analytics;
 
 import java.util.Calendar;
-import org.greenrobot.greendao.annotation.NotNull;
-import org.greenrobot.greendao.annotation.ToOne;
 import org.literacyapp.model.json.DeviceJson;
 
 public class DeviceEventJson {
 
-    @NotNull
-    @ToOne
     private DeviceJson device;
     
-    @NotNull
     private Calendar calendar;
 
     public DeviceJson getDevice() {

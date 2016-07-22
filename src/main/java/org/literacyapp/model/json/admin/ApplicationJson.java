@@ -2,24 +2,17 @@ package org.literacyapp.model.json.admin;
 
 import java.util.List;
 import java.util.Set;
-import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.annotation.NotNull;
 import org.literacyapp.model.enums.content.LiteracySkill;
 import org.literacyapp.model.enums.Locale;
 import org.literacyapp.model.enums.content.NumeracySkill;
 import org.literacyapp.model.enums.admin.ApplicationStatus;
 
-@Entity
 public class ApplicationJson {
     
-    @Id
     private Long id;
     
-    @NotNull
     private Locale locale;
     
-    @NotNull
     private String packageName;
     
     private Set<LiteracySkill> literacySkills;

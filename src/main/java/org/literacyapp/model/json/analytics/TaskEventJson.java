@@ -1,23 +1,15 @@
 package org.literacyapp.model.json.analytics;
 
-import java.util.Calendar;
-import org.greenrobot.greendao.annotation.NotNull;
-import org.greenrobot.greendao.annotation.ToOne;
 import org.literacyapp.model.enums.content.TaskType;
-import org.literacyapp.model.json.DeviceJson;
 import org.literacyapp.model.json.StudentJson;
 import org.literacyapp.model.json.admin.ApplicationJson;
 
 public class TaskEventJson {
 
-    @ToOne
     private StudentJson student;
     
-    @NotNull
-    @ToOne
     private ApplicationJson application;
     
-    @NotNull
     private TaskType taskType;
 
     public StudentJson getStudent() {
