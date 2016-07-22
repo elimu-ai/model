@@ -1,15 +1,14 @@
-package org.literacyapp.model.gson;
+package org.literacyapp.model.gson.content;
 
-import java.util.Set;
 import org.literacyapp.model.enums.Locale;
 
-public class StudentJson {
-
+public class WordGson {
+    
     private Long id;
     
     private Locale locale;
     
-    private Set<DeviceJson> devices;
+    private String text;
 
     public Long getId() {
         return id;
@@ -27,11 +26,11 @@ public class StudentJson {
         this.locale = locale;
     }
 
-    public Set<DeviceJson> getDevices() {
-        return devices;
+    public String getText() {
+        return text;
     }
 
-    public void setDevices(Set<DeviceJson> devices) {
-        this.devices = devices;
+    public void setText(String text) {
+        this.text = text;
     }
 }

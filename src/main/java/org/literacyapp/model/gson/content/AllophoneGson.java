@@ -9,7 +9,7 @@ import org.literacyapp.model.enums.content.allophone.VowelFrontness;
 import org.literacyapp.model.enums.content.allophone.VowelHeight;
 import org.literacyapp.model.enums.content.allophone.VowelLength;
 
-public class AllophoneJson extends ContentJson {
+public class AllophoneGson extends ContentGson {
     
     private String valueIpa; // IPA - International Phonetic Alphabet
     
