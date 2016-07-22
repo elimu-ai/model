@@ -6,7 +6,7 @@ public class ApplicationVersionGson {
     
     private Long id;
     
-    private ApplicationGson applicationJson;
+    private ApplicationGson application;
     
     private Integer fileSizeInKb;
     
@@ -29,12 +29,12 @@ public class ApplicationVersionGson {
         this.id = id;
     }
 
-    public ApplicationGson getApplicationJson() {
-        return applicationJson;
+    public ApplicationGson getApplication() {
+        return application;
     }
 
-    public void setApplicationJson(ApplicationGson applicationJson) {
-        this.applicationJson = applicationJson;
+    public void setApplication(ApplicationGson application) {
+        this.application = application;
     }
 
     public Integer getFileSizeInKb() {
