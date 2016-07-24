@@ -1,4 +1,4 @@
-package org.literacyapp.model.gson.content;
+package org.literacyapp.model.gson.content.multimedia;
 
 import org.literacyapp.model.enums.content.ImageType;
 

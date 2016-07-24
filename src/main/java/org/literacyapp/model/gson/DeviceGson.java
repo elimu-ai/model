@@ -9,7 +9,11 @@ public class DeviceGson {
     
     private String deviceId;
     
+    private String deviceManufacturer;
+    
     private String deviceModel;
+    
+    private String deviceSerial;
     
     private Calendar timeRegistered;
     
@@ -36,6 +40,14 @@ public class DeviceGson {
     public void setDeviceId(String deviceId) {
         this.deviceId = deviceId;
     }
+    
+    public String getDeviceManufacturer() {
+        return deviceManufacturer;
+    }
+
+    public void setDeviceManufacturer(String deviceManufacturer) {
+        this.deviceManufacturer = deviceManufacturer;
+    }
 
     public String getDeviceModel() {
         return deviceModel;
@@ -43,6 +55,14 @@ public class DeviceGson {
 
     public void setDeviceModel(String deviceModel) {
         this.deviceModel = deviceModel;
+    }
+    
+    public String getDeviceSerial() {
+        return deviceSerial;
+    }
+
+    public void setDeviceSerial(String deviceSerial) {
+        this.deviceSerial = deviceSerial;
     }
 
     public Calendar getTimeRegistered() {
