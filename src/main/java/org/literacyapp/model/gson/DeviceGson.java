@@ -21,8 +21,6 @@ public class DeviceGson {
     
     private String locale;
     
-    private Boolean rooted;
-    
     private Set<DeviceGson> devicesNearby;
 
     public Long getId() {
@@ -87,14 +85,6 @@ public class DeviceGson {
 
     public void setLocale(String locale) {
         this.locale = locale;
-    }
-
-    public Boolean isRooted() {
-        return rooted;
-    }
-
-    public void setRooted(Boolean rooted) {
-        this.rooted = rooted;
     }
 
     public Set<DeviceGson> getDevicesNearby() {
