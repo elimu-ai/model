@@ -1,6 +1,6 @@
 package org.literacyapp.model.enums.content;
 
-public enum ImageType {
+public enum ImageFormat {
     
     GIF,
     JPG,

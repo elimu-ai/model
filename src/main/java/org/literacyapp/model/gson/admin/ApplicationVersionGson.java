@@ -18,8 +18,7 @@ public class ApplicationVersionGson {
     
     private String startCommand;
     
-//    @NotNull
-//    private Calendar timeUploaded;
+    private Calendar timeUploaded;
 
     public Long getId() {
         return id;
@@ -77,11 +76,11 @@ public class ApplicationVersionGson {
         this.startCommand = startCommand;
     }
 
-//    public Calendar getTimeUploaded() {
-//        return timeUploaded;
-//    }
-//
-//    public void setTimeUploaded(Calendar timeUploaded) {
-//        this.timeUploaded = timeUploaded;
-//    }
+    public Calendar getTimeUploaded() {
+        return timeUploaded;
+    }
+
+    public void setTimeUploaded(Calendar timeUploaded) {
+        this.timeUploaded = timeUploaded;
+    }
 }

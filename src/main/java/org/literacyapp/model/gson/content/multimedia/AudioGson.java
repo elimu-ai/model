@@ -1,36 +1,26 @@
 package org.literacyapp.model.gson.content.multimedia;
 
-import org.literacyapp.model.enums.Locale;
+import org.literacyapp.model.enums.content.AudioFormat;
 
-public class AudioGson {
+public class AudioGson extends MultimediaGson {
     
-    private Long id;
+    private String transcription;
     
-    private Locale locale;
-    
-    private String title;
+    private AudioFormat audioFormat;
 
-    public Long getId() {
-        return id;
+    public String getTranscription() {
+        return transcription;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setTranscription(String transcription) {
+        this.transcription = transcription;
     }
 
-    public Locale getLocale() {
-        return locale;
+    public AudioFormat getAudioFormat() {
+        return audioFormat;
     }
 
-    public void setLocale(Locale locale) {
-        this.locale = locale;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+    public void setAudioType(AudioFormat audioFormat) {
+        this.audioFormat = audioFormat;
     }
 }
