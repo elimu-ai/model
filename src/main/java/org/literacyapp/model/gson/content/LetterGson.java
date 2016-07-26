@@ -1,30 +1,8 @@
 package org.literacyapp.model.gson.content;
 
-import org.literacyapp.model.enums.Locale;
-
-public class LetterGson {
-    
-    private Long id;
-    
-    private Locale locale;
+public class LetterGson extends ContentGson {
     
     private String text;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Locale getLocale() {
-        return locale;
-    }
-
-    public void setLocale(Locale locale) {
-        this.locale = locale;
-    }
 
     public String getText() {
         return text;
