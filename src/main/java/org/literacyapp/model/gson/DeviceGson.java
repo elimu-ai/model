@@ -2,6 +2,7 @@ package org.literacyapp.model.gson;
 
 import java.util.Calendar;
 import java.util.Set;
+import org.literacyapp.model.enums.Locale;
 
 public class DeviceGson {
     
@@ -19,7 +20,7 @@ public class DeviceGson {
     
     private Integer osVersion;
     
-    private String locale;
+    private Locale locale;
     
     private Set<DeviceGson> devicesNearby;
 
@@ -79,11 +80,11 @@ public class DeviceGson {
         this.osVersion = osVersion;
     }
 
-    public String getLocale() {
+    public Locale getLocale() {
         return locale;
     }
 
-    public void setLocale(String locale) {
+    public void setLocale(Locale locale) {
         this.locale = locale;
     }
 
