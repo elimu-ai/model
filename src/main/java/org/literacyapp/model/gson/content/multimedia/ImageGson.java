@@ -1,24 +1,14 @@
 package org.literacyapp.model.gson.content.multimedia;
 
-import org.literacyapp.model.enums.content.ImageType;
+import org.literacyapp.model.enums.content.ImageFormat;
 
-public class ImageGson {
-    
-    private Long id;
+public class ImageGson extends MultimediaGson {
     
     private String title;
     
-    private ImageType imageType;
+    private ImageFormat imageFormat;
     
-    private String dominantColor; // Web color
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private String dominantColor; // Web color, e.g. "#FFF"
 
     public String getTitle() {
         return title;
@@ -28,12 +18,12 @@ public class ImageGson {
         this.title = title;
     }
 
-    public ImageType getImageType() {
-        return imageType;
+    public ImageFormat getImageFormat() {
+        return imageFormat;
     }
 
-    public void setImageType(ImageType imageType) {
-        this.imageType = imageType;
+    public void setImageFormat(ImageFormat imageFormat) {
+        this.imageFormat = imageFormat;
     }
 
     public String getDominantColor() {
