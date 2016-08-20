@@ -4,7 +4,7 @@ import org.literacyapp.model.enums.content.TaskType;
 import org.literacyapp.model.gson.StudentGson;
 import org.literacyapp.model.gson.admin.ApplicationGson;
 
-public class TaskEventGson {
+public class TaskEventGson extends DeviceEventGson {
 
     private StudentGson student;
     
