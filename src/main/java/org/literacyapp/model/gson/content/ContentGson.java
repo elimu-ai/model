@@ -2,6 +2,7 @@ package org.literacyapp.model.gson.content;
 
 import java.util.Calendar;
 import org.literacyapp.model.enums.Locale;
+import org.literacyapp.model.enums.content.ContentStatus;
 
 public abstract class ContentGson {
     
@@ -12,6 +13,8 @@ public abstract class ContentGson {
     private Calendar timeLastUpdate;
     
     private Integer revisionNumber; // [1, 2, 3, ...]
+    
+    private ContentStatus contentStatus;
     
     public Long getId() {
         return id;
@@ -43,5 +46,13 @@ public abstract class ContentGson {
 
     public void setRevisionNumber(Integer revisionNumber) {
         this.revisionNumber = revisionNumber;
+    }
+
+    public ContentStatus getContentStatus() {
+        return contentStatus;
+    }
+
+    public void setContentStatus(ContentStatus contentStatus) {
+        this.contentStatus = contentStatus;
     }
 }
