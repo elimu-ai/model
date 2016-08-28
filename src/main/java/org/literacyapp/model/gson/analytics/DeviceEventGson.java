@@ -7,7 +7,7 @@ public class DeviceEventGson {
 
     private DeviceGson device;
     
-    private Calendar calendar;
+    private Calendar time;
 
     public DeviceGson getDevice() {
         return device;
@@ -17,11 +17,11 @@ public class DeviceEventGson {
         this.device = device;
     }
 
-    public Calendar getCalendar() {
-        return calendar;
+    public Calendar getTime() {
+        return time;
     }
 
-    public void setCalendar(Calendar calendar) {
-        this.calendar = calendar;
+    public void setTime(Calendar time) {
+        this.time = time;
     }
 }
