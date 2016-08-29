@@ -6,7 +6,7 @@ import java.util.Set;
 
 public enum TaskType {
     
-    LETTER_LISTEN(new HashSet<>(Arrays.asList(LiteracySkill.GRAPHEME_KNOWLEDGE)), null),
+    LETTER_LISTEN(new HashSet<>(Arrays.asList(LiteracySkill.LETTER_IDENTIFICATION)), null),
     NUMBER_LISTEN(null, new HashSet<>(Arrays.asList(NumeracySkill.NUMBER_IDENTIFICATION))),
     TAG_ITEMS(null, new HashSet<>(Arrays.asList(NumeracySkill.ONE_TO_ONE_CORRESPONDENCE))),
     VIDEO(null, null);

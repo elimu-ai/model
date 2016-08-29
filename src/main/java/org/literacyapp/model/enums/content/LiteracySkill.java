@@ -7,13 +7,15 @@ package org.literacyapp.model.enums.content;
  */
 public enum LiteracySkill {
     
-    VOCABULARY,
-    SOUND_IDENTIFICATION,
-    GRAPHEME_KNOWLEDGE,
-    FAMILIAR_WORD_READING,
-    INVENTED_WORD_DECODING,
-    ORAL_PASSAGE_READING, // Speed and accuracy
-    READING_COMPREHENSION,
+    CONCEPTS_ABOUT_PRINT,
+    PHONEMIC_AWARENESS, // Sound identification
+    ORAL_VOCABULARY,
     LISTENING_COMPREHENSION,
-    SENTENCE_WRITING
+    LETTER_IDENTIFICATION, // Grapheme knowledge
+    SYLLABLE_NAMING,
+    NONWORD_READING, // Invented word decoding
+    FAMILIAR_WORD_READING,
+    ORAL_READING_FLUENCY, // Oral passage reading (speed and accuracy)
+    DICTATION, // Sentence writing
+    MAZE_CLOZE // Reading comprehension
 }
