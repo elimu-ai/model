@@ -14,8 +14,6 @@ public class DeviceGson {
     
     private String deviceSerial;
     
-    private Calendar timeRegistered;
-    
     private Integer osVersion;
     
     private Locale locale;
@@ -52,14 +50,6 @@ public class DeviceGson {
 
     public void setDeviceSerial(String deviceSerial) {
         this.deviceSerial = deviceSerial;
-    }
-
-    public Calendar getTimeRegistered() {
-        return timeRegistered;
-    }
-
-    public void setTimeRegistered(Calendar timeRegistered) {
-        this.timeRegistered = timeRegistered;
     }
 
     public Integer getOsVersion() {
