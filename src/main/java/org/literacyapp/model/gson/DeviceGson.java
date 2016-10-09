@@ -6,8 +6,6 @@ import org.literacyapp.model.enums.Locale;
 
 public class DeviceGson {
     
-    private Long id;
-    
     private String deviceId;
     
     private String deviceManufacturer;
@@ -16,21 +14,11 @@ public class DeviceGson {
     
     private String deviceSerial;
     
-    private Calendar timeRegistered;
-    
     private Integer osVersion;
     
     private Locale locale;
     
     private Set<DeviceGson> devicesNearby;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getDeviceId() {
         return deviceId;
@@ -62,14 +50,6 @@ public class DeviceGson {
 
     public void setDeviceSerial(String deviceSerial) {
         this.deviceSerial = deviceSerial;
-    }
-
-    public Calendar getTimeRegistered() {
-        return timeRegistered;
-    }
-
-    public void setTimeRegistered(Calendar timeRegistered) {
-        this.timeRegistered = timeRegistered;
     }
 
     public Integer getOsVersion() {
