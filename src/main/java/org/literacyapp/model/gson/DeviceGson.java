@@ -6,8 +6,6 @@ import org.literacyapp.model.enums.Locale;
 
 public class DeviceGson {
     
-    private Long id;
-    
     private String deviceId;
     
     private String deviceManufacturer;
@@ -23,14 +21,6 @@ public class DeviceGson {
     private Locale locale;
     
     private Set<DeviceGson> devicesNearby;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getDeviceId() {
         return deviceId;
