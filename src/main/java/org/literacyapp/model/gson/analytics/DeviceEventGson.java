@@ -3,7 +3,7 @@ package org.literacyapp.model.gson.analytics;
 import java.util.Calendar;
 import org.literacyapp.model.gson.DeviceGson;
 
-public class DeviceEventGson {
+public abstract class DeviceEventGson {
 
     private DeviceGson device;
     
