@@ -7,7 +7,7 @@ public class StudentGson {
 
     private Long id;
     
-    private Locale locale;
+    private String avatarFileUrl;
     
     private Set<DeviceGson> devices;
 
@@ -18,13 +18,13 @@ public class StudentGson {
     public void setId(Long id) {
         this.id = id;
     }
-
-    public Locale getLocale() {
-        return locale;
+    
+    public String getAvatarFileUrl() {
+        return avatarFileUrl;
     }
 
-    public void setLocale(Locale locale) {
-        this.locale = locale;
+    public void setAvatarFileUrl(String avatarFileUrl) {
+        this.avatarFileUrl = avatarFileUrl;
     }
 
     public Set<DeviceGson> getDevices() {
