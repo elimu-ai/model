@@ -3,7 +3,7 @@ package org.literacyapp.model.gson.analytics;
 import org.literacyapp.model.gson.StudentGson;
 import org.literacyapp.model.gson.admin.ApplicationGson;
 
-public class UsageEvent extends DeviceEventGson {
+public class UsageEventGson extends DeviceEventGson {
 
     private ApplicationGson application;
     
