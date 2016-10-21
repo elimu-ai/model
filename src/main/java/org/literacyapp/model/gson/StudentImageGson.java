@@ -1,9 +1,6 @@
 package org.literacyapp.model.gson;
 
 import java.util.Calendar;
-import java.util.List;
-import java.util.Set;
-import org.literacyapp.model.enums.Locale;
 
 public class StudentImageGson {
 
@@ -13,7 +10,7 @@ public class StudentImageGson {
     
     private String imageFileUrl;
     
-    private Calendar timeCreated;
+    private Calendar timeCollected;
     
     private StudentImageFeatureGson studentImageFeature;
 
@@ -41,12 +38,12 @@ public class StudentImageGson {
         this.imageFileUrl = imageFileUrl;
     }
 
-    public Calendar getTimeCreated() {
-        return timeCreated;
+    public Calendar getTimeCollected() {
+        return timeCollected;
     }
 
-    public void setTimeCreated(Calendar timeCreated) {
-        this.timeCreated = timeCreated;
+    public void setTimeCollected(Calendar timeCollected) {
+        this.timeCollected = timeCollected;
     }
 
     public StudentImageFeatureGson getStudentImageFeature() {

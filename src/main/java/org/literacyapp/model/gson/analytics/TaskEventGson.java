@@ -6,19 +6,11 @@ import org.literacyapp.model.gson.admin.ApplicationGson;
 
 public class TaskEventGson extends DeviceEventGson {
 
-    private StudentGson student;
-    
     private ApplicationGson application;
     
+    private StudentGson student;
+    
     private TaskType taskType;
-
-    public StudentGson getStudent() {
-        return student;
-    }
-
-    public void setStudent(StudentGson student) {
-        this.student = student;
-    }
 
     public ApplicationGson getApplication() {
         return application;
@@ -26,6 +18,14 @@ public class TaskEventGson extends DeviceEventGson {
 
     public void setApplication(ApplicationGson application) {
         this.application = application;
+    }
+    
+    public StudentGson getStudent() {
+        return student;
+    }
+
+    public void setStudent(StudentGson student) {
+        this.student = student;
     }
 
     public TaskType getTaskType() {
