@@ -1,9 +1,6 @@
 package org.literacyapp.model.gson;
 
 import java.util.Calendar;
-import java.util.List;
-import java.util.Set;
-import org.literacyapp.model.enums.Locale;
 
 public class StudentImageFeatureGson {
 
@@ -13,7 +10,7 @@ public class StudentImageFeatureGson {
     
     private Calendar timeCreated;
     
-    private List<Float> svmVector;
+    private String svmVector;
 
     public Long getId() {
         return id;
@@ -39,11 +36,11 @@ public class StudentImageFeatureGson {
         this.timeCreated = timeCreated;
     }
 
-    public List<Float> getSvmVector() {
+    public String getSvmVector() {
         return svmVector;
     }
 
-    public void setSvmVector(List<Float> svmVector) {
+    public void setSvmVector(String svmVector) {
         this.svmVector = svmVector;
     }
 }
