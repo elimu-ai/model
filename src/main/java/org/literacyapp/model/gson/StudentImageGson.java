@@ -1,9 +1,6 @@
 package org.literacyapp.model.gson;
 
 import java.util.Calendar;
-import java.util.List;
-import java.util.Set;
-import org.literacyapp.model.enums.Locale;
 
 public class StudentImageGson {
 

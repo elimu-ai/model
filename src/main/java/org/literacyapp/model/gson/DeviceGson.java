@@ -2,6 +2,8 @@ package org.literacyapp.model.gson;
 
 public class DeviceGson {
     
+    private Long id;
+    
     private String deviceId;
     
     public String getDeviceId() {
@@ -10,5 +12,13 @@ public class DeviceGson {
 
     public void setDeviceId(String deviceId) {
         this.deviceId = deviceId;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

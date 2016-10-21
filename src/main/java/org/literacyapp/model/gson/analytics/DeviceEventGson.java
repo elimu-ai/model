@@ -4,6 +4,8 @@ import java.util.Calendar;
 import org.literacyapp.model.gson.DeviceGson;
 
 public abstract class DeviceEventGson {
+    
+    private Long id;
 
     private DeviceGson device;
     
@@ -23,5 +25,13 @@ public abstract class DeviceEventGson {
 
     public void setTime(Calendar time) {
         this.time = time;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
