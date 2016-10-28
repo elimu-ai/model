@@ -1,7 +1,6 @@
 package org.literacyapp.model.gson;
 
 import java.util.Set;
-import org.literacyapp.model.enums.Locale;
 
 public class StudentGson {
 
