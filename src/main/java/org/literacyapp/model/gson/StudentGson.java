@@ -2,21 +2,11 @@ package org.literacyapp.model.gson;
 
 import java.util.Set;
 
-public class StudentGson {
-
-    private Long id;
+public class StudentGson extends BaseEntityGson {
     
     private String avatarFileUrl;
     
     private Set<DeviceGson> devices;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
     
     public String getAvatarFileUrl() {
         return avatarFileUrl;

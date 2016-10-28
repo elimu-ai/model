@@ -2,23 +2,13 @@ package org.literacyapp.model.gson;
 
 import java.util.Calendar;
 
-public class StudentImageFeatureGson {
-
-    private Long id;
+public class StudentImageFeatureGson extends BaseEntityGson {
     
     private StudentGson student;
     
     private Calendar timeCreated;
     
     private String svmVector;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
     
     public StudentGson getStudent() {
         return student;

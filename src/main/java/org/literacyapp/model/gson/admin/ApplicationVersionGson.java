@@ -1,10 +1,9 @@
 package org.literacyapp.model.gson.admin;
 
 import java.util.Calendar;
+import org.literacyapp.model.gson.BaseEntityGson;
 
-public class ApplicationVersionGson {
-    
-    private Long id;
+public class ApplicationVersionGson extends BaseEntityGson {
     
     private ApplicationGson application;
     
@@ -19,14 +18,6 @@ public class ApplicationVersionGson {
     private String startCommand;
     
     private Calendar timeUploaded;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public ApplicationGson getApplication() {
         return application;
