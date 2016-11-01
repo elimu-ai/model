@@ -2,9 +2,7 @@ package org.literacyapp.model.gson;
 
 import java.util.Calendar;
 
-public class StudentImageGson {
-
-    private Long id;
+public class StudentImageGson extends BaseEntityGson {
     
     private DeviceGson device;
     
@@ -13,14 +11,6 @@ public class StudentImageGson {
     private Calendar timeCollected;
     
     private StudentImageFeatureGson studentImageFeature;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public DeviceGson getDevice() {
         return device;

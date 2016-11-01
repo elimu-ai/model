@@ -3,10 +3,9 @@ package org.literacyapp.model.gson.content;
 import java.util.Calendar;
 import org.literacyapp.model.enums.Locale;
 import org.literacyapp.model.enums.content.ContentStatus;
+import org.literacyapp.model.gson.BaseEntityGson;
 
-public abstract class ContentGson {
-    
-    private Long id;
+public abstract class ContentGson extends BaseEntityGson {
     
     private Locale locale;
     
@@ -15,14 +14,6 @@ public abstract class ContentGson {
     private Integer revisionNumber; // [1, 2, 3, ...]
     
     private ContentStatus contentStatus;
-    
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Locale getLocale() {
         return locale;

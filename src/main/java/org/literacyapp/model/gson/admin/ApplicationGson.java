@@ -6,10 +6,9 @@ import org.literacyapp.model.enums.content.LiteracySkill;
 import org.literacyapp.model.enums.Locale;
 import org.literacyapp.model.enums.content.NumeracySkill;
 import org.literacyapp.model.enums.admin.ApplicationStatus;
+import org.literacyapp.model.gson.BaseEntityGson;
 
-public class ApplicationGson {
-    
-    private Long id;
+public class ApplicationGson extends BaseEntityGson {
     
     private Locale locale;
     
@@ -22,14 +21,6 @@ public class ApplicationGson {
     private ApplicationStatus applicationStatus;
     
     private List<ApplicationVersionGson> applicationVersions;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Locale getLocale() {
         return locale;
