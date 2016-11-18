@@ -2,15 +2,15 @@
 
 Code shared amongst the Web application and Android application.
 
-Web application: http://literacyapp.org
+Web application: https://github.com/literacyapp-org/literacyapp-web
 
-Android application: ~~https://play.google.com/store/apps/details?id=org.literacyapp~~ https://play.google.com/apps/testing/org.literacyapp
+Android application: https://github.com/literacyapp-org/literacyapp-android
 
 ## Continuous integration
 [![Build Status](https://travis-ci.org/literacyapp-org/literacyapp-model.svg)](https://travis-ci.org/literacyapp-org/literacyapp-model)
 
 ## Issue management
-[Trello](https://trello.com/b/les4HgKG/team-development) (send an e-mail to info@literacyapp.org to receive an invite)
+See https://github.com/literacyapp-org/literacyapp-model/projects
 
 ## Chat
 [Slack](https://literacyapp.slack.com/messages/team-development) (register at http://literacyapp.org/sign-on to receive an invite)
