@@ -1,26 +1,26 @@
 package org.literacyapp.model.gson;
 
-import java.util.Set;
+import java.util.List;
 
 public class StudentGson extends BaseEntityGson {
     
-    private String avatarFileUrl;
+    private StudentImageGson avatar;
     
-    private Set<DeviceGson> devices;
-    
-    public String getAvatarFileUrl() {
-        return avatarFileUrl;
-    }
+    private List<DeviceGson> devices;
 
-    public void setAvatarFileUrl(String avatarFileUrl) {
-        this.avatarFileUrl = avatarFileUrl;
-    }
-
-    public Set<DeviceGson> getDevices() {
+    public List<DeviceGson> getDevices() {
         return devices;
     }
 
-    public void setDevices(Set<DeviceGson> devices) {
+    public void setDevices(List<DeviceGson> devices) {
         this.devices = devices;
+    }
+
+    public StudentImageGson getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(StudentImageGson avatar) {
+        this.avatar = avatar;
     }
 }
