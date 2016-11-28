@@ -4,19 +4,9 @@ import java.util.Calendar;
 
 public class StudentImageFeatureGson extends BaseEntityGson {
     
-    private StudentGson student;
-    
     private Calendar timeCreated;
     
     private String svmVector;
-    
-    public StudentGson getStudent() {
-        return student;
-    }
-
-    public void setStudent(StudentGson student) {
-        this.student = student;
-    }
 
     public Calendar getTimeCreated() {
         return timeCreated;
