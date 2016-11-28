@@ -7,32 +7,30 @@ import org.literacyapp.model.gson.content.ContentGson;
 
 public abstract class MultimediaGson extends ContentGson {
     
-    private String fileUrl;
+    private String downloadUrl; // URL of file to be downloaded
     
-    private Integer fileSize; // kB
+    private Integer downloadSize; // kB
 
-    private String contentType;
-    
-    private String attributionUrl;
+    private String contentType; // MIME type
     
     private Set<LiteracySkill> literacySkills;
     
     private Set<NumeracySkill> numeracySkills;
-    
-    public String getFileUrl() {
-        return fileUrl;
+
+    public String getDownloadUrl() {
+        return downloadUrl;
     }
 
-    public void setFileUrl(String fileUrl) {
-        this.fileUrl = fileUrl;
+    public void setDownloadUrl(String downloadUrl) {
+        this.downloadUrl = downloadUrl;
     }
 
-    public Integer getFileSize() {
-        return fileSize;
+    public Integer getDownloadSize() {
+        return downloadSize;
     }
 
-    public void setFileSize(Integer fileSize) {
-        this.fileSize = fileSize;
+    public void setDownloadSize(Integer downloadSize) {
+        this.downloadSize = downloadSize;
     }
 
     public String getContentType() {
@@ -41,14 +39,6 @@ public abstract class MultimediaGson extends ContentGson {
 
     public void setContentType(String contentType) {
         this.contentType = contentType;
-    }
-
-    public String getAttributionUrl() {
-        return attributionUrl;
-    }
-
-    public void setAttributionUrl(String attributionUrl) {
-        this.attributionUrl = attributionUrl;
     }
 
     public Set<LiteracySkill> getLiteracySkills() {
