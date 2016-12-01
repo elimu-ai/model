@@ -7,6 +7,8 @@ public class VideoGson extends MultimediaGson {
     private String title;
     
     private VideoFormat videoFormat;
+    
+    private String thumbnailDownloadUrl;
 
     public String getTitle() {
         return title;
@@ -22,5 +24,13 @@ public class VideoGson extends MultimediaGson {
 
     public void setVideoFormat(VideoFormat videoFormat) {
         this.videoFormat = videoFormat;
+    }
+
+    public String getThumbnailDownloadUrl() {
+        return thumbnailDownloadUrl;
+    }
+
+    public void setThumbnailDownloadUrl(String thumbnailDownloadUrl) {
+        this.thumbnailDownloadUrl = thumbnailDownloadUrl;
     }
 }
