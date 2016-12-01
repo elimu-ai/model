@@ -1,6 +1,6 @@
 package org.literacyapp.model.gson.analytics;
 
-import java.util.Set;
+import java.util.List;
 import org.literacyapp.model.gson.StudentGson;
 import org.literacyapp.model.gson.StudentImageGson;
 import org.literacyapp.model.gson.admin.ApplicationGson;
@@ -11,7 +11,9 @@ public class StudentImageCollectionEventGson extends DeviceEventGson {
     
     private StudentGson student;
     
-    private Set<StudentImageGson> studentImages;
+    private List<StudentImageGson> studentImages;
+    
+    private boolean svmTrainingExecuted;
 
     public ApplicationGson getApplication() {
         return application;
@@ -29,11 +31,19 @@ public class StudentImageCollectionEventGson extends DeviceEventGson {
         this.student = student;
     }
 
-    public Set<StudentImageGson> getStudentImages() {
+    public List<StudentImageGson> getStudentImages() {
         return studentImages;
     }
 
-    public void setStudentImages(Set<StudentImageGson> studentImages) {
+    public void setStudentImages(List<StudentImageGson> studentImages) {
         this.studentImages = studentImages;
+    }
+
+    public boolean isSvmTrainingExecuted() {
+        return svmTrainingExecuted;
+    }
+
+    public void setSvmTrainingExecuted(boolean svmTrainingExecuted) {
+        this.svmTrainingExecuted = svmTrainingExecuted;
     }
 }
