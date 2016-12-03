@@ -5,8 +5,6 @@ import org.literacyapp.model.gson.analytics.StudentImageCollectionEventGson;
 
 public class StudentImageGson extends BaseEntityGson {
     
-    private DeviceGson device;
-    
     private Calendar timeCollected;
     
     private String imageFileUrl;
@@ -14,14 +12,6 @@ public class StudentImageGson extends BaseEntityGson {
     private StudentImageFeatureGson studentImageFeature;
     
     private StudentImageCollectionEventGson studentImageCollectionEvent;
-
-    public DeviceGson getDevice() {
-        return device;
-    }
-
-    public void setDevice(DeviceGson device) {
-        this.device = device;
-    }
 
     public Calendar getTimeCollected() {
         return timeCollected;
