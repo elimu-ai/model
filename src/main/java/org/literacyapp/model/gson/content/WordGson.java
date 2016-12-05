@@ -5,6 +5,8 @@ public class WordGson extends ContentGson {
     private String text;
     
     private String phonetics; // IPA
+    
+    private int usageCount;
 
     public String getText() {
         return text;
@@ -20,5 +22,13 @@ public class WordGson extends ContentGson {
 
     public void setPhonetics(String phonetics) {
         this.phonetics = phonetics;
+    }
+
+    public int getUsageCount() {
+        return usageCount;
+    }
+
+    public void setUsageCount(int usageCount) {
+        this.usageCount = usageCount;
     }
 }
