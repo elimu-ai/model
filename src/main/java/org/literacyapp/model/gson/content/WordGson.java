@@ -6,7 +6,7 @@ public class WordGson extends ContentGson {
     
     private String phonetics; // IPA
     
-    private int usageCount;
+    private int usageCount; // Based on StoryBook content
 
     public String getText() {
         return text;
