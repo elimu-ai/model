@@ -4,6 +4,8 @@ import java.util.List;
 
 public class StudentGson extends BaseEntityGson {
     
+    private String uniqueId; // "<deviceId>_<Long>"
+    
     private StudentImageGson avatar;
     
     private List<DeviceGson> devices;
@@ -22,5 +24,13 @@ public class StudentGson extends BaseEntityGson {
 
     public void setAvatar(StudentImageGson avatar) {
         this.avatar = avatar;
+    }
+
+    public String getUniqueId() {
+        return uniqueId;
+    }
+
+    public void setUniqueId(String uniqueId) {
+        this.uniqueId = uniqueId;
     }
 }
