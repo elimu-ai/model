@@ -1,18 +1,8 @@
 package org.literacyapp.model.gson;
 
-public class DeviceGson {
-    
-    private Long id;
+public class DeviceGson extends BaseEntityGson {
     
     private String deviceId;
-    
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
     
     public String getDeviceId() {
         return deviceId;

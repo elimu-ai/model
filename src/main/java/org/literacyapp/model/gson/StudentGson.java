@@ -6,18 +6,18 @@ public class StudentGson extends BaseEntityGson {
     
     private String uniqueId; // "<deviceId>_<Long>"
     
+    private List<DeviceGson> devices;
+    
     private StudentImageGson avatar;
     
-    private List<DeviceGson> devices;
-
-    public List<DeviceGson> getDevices() {
-        return devices;
+    public String getUniqueId() {
+        return uniqueId;
     }
 
-    public void setDevices(List<DeviceGson> devices) {
-        this.devices = devices;
+    public void setUniqueId(String uniqueId) {
+        this.uniqueId = uniqueId;
     }
-
+    
     public StudentImageGson getAvatar() {
         return avatar;
     }
@@ -26,11 +26,11 @@ public class StudentGson extends BaseEntityGson {
         this.avatar = avatar;
     }
 
-    public String getUniqueId() {
-        return uniqueId;
+    public List<DeviceGson> getDevices() {
+        return devices;
     }
 
-    public void setUniqueId(String uniqueId) {
-        this.uniqueId = uniqueId;
+    public void setDevices(List<DeviceGson> devices) {
+        this.devices = devices;
     }
 }
