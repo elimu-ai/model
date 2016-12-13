@@ -4,6 +4,9 @@ import org.literacyapp.model.enums.content.LiteracySkill;
 import org.literacyapp.model.enums.content.NumeracySkill;
 import org.literacyapp.model.gson.StudentGson;
 import org.literacyapp.model.gson.admin.ApplicationGson;
+import org.literacyapp.model.gson.content.LetterGson;
+import org.literacyapp.model.gson.content.NumberGson;
+import org.literacyapp.model.gson.content.WordGson;
 
 public class UsageEventGson extends DeviceEventGson {
 
@@ -14,6 +17,12 @@ public class UsageEventGson extends DeviceEventGson {
     private LiteracySkill literacySkill;
     
     private NumeracySkill numeracySkill;
+    
+    private LetterGson letter;
+
+    private NumberGson number;
+
+    private WordGson word;
 
     public ApplicationGson getApplication() {
         return application;
@@ -45,5 +54,29 @@ public class UsageEventGson extends DeviceEventGson {
 
     public void setNumeracySkill(NumeracySkill numeracySkill) {
         this.numeracySkill = numeracySkill;
+    }
+
+    public LetterGson getLetter() {
+        return letter;
+    }
+
+    public void setLetter(LetterGson letter) {
+        this.letter = letter;
+    }
+
+    public NumberGson getNumber() {
+        return number;
+    }
+
+    public void setNumber(NumberGson number) {
+        this.number = number;
+    }
+
+    public WordGson getWord() {
+        return word;
+    }
+
+    public void setWord(WordGson word) {
+        this.word = word;
     }
 }
