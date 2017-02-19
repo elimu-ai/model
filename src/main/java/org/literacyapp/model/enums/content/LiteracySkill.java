@@ -7,9 +7,9 @@ package org.literacyapp.model.enums.content;
  */
 public enum LiteracySkill {
     
+    ORAL_VOCABULARY,
     CONCEPTS_ABOUT_PRINT,
     PHONEMIC_AWARENESS, // Sound identification
-    ORAL_VOCABULARY,
     LISTENING_COMPREHENSION,
     LETTER_IDENTIFICATION, // Grapheme knowledge
     SYLLABLE_NAMING,
