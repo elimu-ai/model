@@ -8,7 +8,7 @@ public class ImageGson extends MultimediaGson {
     
     private ImageFormat imageFormat;
     
-    private String dominantColor; // Web color, e.g. "#FFF"
+    private String dominantColor; // Web color, e.g. "#FFF" or "rgb(250,173,188)"
 
     public String getTitle() {
         return title;
