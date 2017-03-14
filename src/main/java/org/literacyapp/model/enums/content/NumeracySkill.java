@@ -7,6 +7,8 @@ package org.literacyapp.model.enums.content;
  */
 public enum NumeracySkill {
     
+    SHAPE_IDENTIFICATION,
+    SHAPE_NAMING,
     ORAL_COUNTING,
     ONE_TO_ONE_CORRESPONDENCE,
     NUMBER_IDENTIFICATION,
@@ -15,7 +17,5 @@ public enum NumeracySkill {
     ADDITION,
     SUBTRACTION,
     MULTIPLICATION,
-    WORD_PROBLEMS,
-    SHAPE_IDENTIFICATION,
-    SHAPE_NAMING
+    WORD_PROBLEMS
 }
