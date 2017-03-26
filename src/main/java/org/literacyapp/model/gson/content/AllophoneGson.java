@@ -30,6 +30,8 @@ public class AllophoneGson extends ContentGson {
     private ConsonantPlace consonantPlace;
     
     private ConsonantVoicing consonantVoicing;
+    
+    private int usageCount; // Based on StoryBook content
 
     public String getValueIpa() {
         return valueIpa;
@@ -109,5 +111,13 @@ public class AllophoneGson extends ContentGson {
 
     public void setConsonantVoicing(ConsonantVoicing consonantVoicing) {
         this.consonantVoicing = consonantVoicing;
+    }
+
+    public int getUsageCount() {
+        return usageCount;
+    }
+
+    public void setUsageCount(int usageCount) {
+        this.usageCount = usageCount;
     }
 }
