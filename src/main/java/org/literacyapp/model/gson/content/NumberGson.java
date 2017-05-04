@@ -1,12 +1,17 @@
 package org.literacyapp.model.gson.content;
 
+import java.util.List;
+
 public class NumberGson extends ContentGson {
     
     private Integer value;
     
     private String symbol;
     
+    @Deprecated
     private WordGson word;
+    
+    private List<WordGson> words;
 
     public Integer getValue() {
         return value;
@@ -24,11 +29,21 @@ public class NumberGson extends ContentGson {
         this.symbol = symbol;
     }
     
+    @Deprecated
     public WordGson getWord() {
         return word;
     }
 
+    @Deprecated
     public void setWord(WordGson word) {
         this.word = word;
+    }
+
+    public List<WordGson> getWords() {
+        return words;
+    }
+
+    public void setWords(List<WordGson> words) {
+        this.words = words;
     }
 }
