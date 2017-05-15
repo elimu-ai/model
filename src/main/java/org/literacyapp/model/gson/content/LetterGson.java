@@ -4,6 +4,8 @@ public class LetterGson extends ContentGson {
     
     private String text;
     
+    private String braille;
+    
     private int usageCount; // Based on StoryBook content
 
     public String getText() {
@@ -20,5 +22,13 @@ public class LetterGson extends ContentGson {
 
     public void setUsageCount(int usageCount) {
         this.usageCount = usageCount;
+    }
+
+    public String getBraille() {
+        return braille;
+    }
+
+    public void setBraille(String braille) {
+        this.braille = braille;
     }
 }
