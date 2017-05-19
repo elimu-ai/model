@@ -6,7 +6,7 @@ public class LetterGson extends ContentGson {
     
     private String braille;
     
-    private int usageCount; // Based on StoryBook content
+    private int usageCount; // Based on StoryBook content (all difficulty levels)
 
     public String getText() {
         return text;
