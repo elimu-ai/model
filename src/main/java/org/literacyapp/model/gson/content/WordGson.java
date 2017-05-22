@@ -1,5 +1,7 @@
 package org.literacyapp.model.gson.content;
 
+import org.literacyapp.model.enums.content.WordType;
+
 public class WordGson extends ContentGson {
     
     private String text;
@@ -7,6 +9,8 @@ public class WordGson extends ContentGson {
     private String phonetics; // IPA
     
     private int usageCount; // Based on StoryBook content
+    
+    private WordType wordType;
 
     public String getText() {
         return text;
@@ -30,5 +34,13 @@ public class WordGson extends ContentGson {
 
     public void setUsageCount(int usageCount) {
         this.usageCount = usageCount;
+    }
+
+    public WordType getWordType() {
+        return wordType;
+    }
+
+    public void setWordType(WordType wordType) {
+        this.wordType = wordType;
     }
 }

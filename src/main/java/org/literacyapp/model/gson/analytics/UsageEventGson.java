@@ -8,6 +8,7 @@ import org.literacyapp.model.gson.content.LetterGson;
 import org.literacyapp.model.gson.content.NumberGson;
 import org.literacyapp.model.gson.content.WordGson;
 
+@Deprecated
 public class UsageEventGson extends DeviceEventGson {
 
     private ApplicationGson application;
