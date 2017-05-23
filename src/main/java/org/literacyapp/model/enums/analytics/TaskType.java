@@ -6,7 +6,7 @@ import java.util.Set;
 import org.literacyapp.model.enums.content.LiteracySkill;
 import org.literacyapp.model.enums.content.NumeracySkill;
 
-// TODO: rename to "LearningType"?
+// TODO: rename to "LearningType" or "ActivityType"?
 public enum TaskType {
     
     LETTER_LISTEN(new HashSet<>(Arrays.asList(LiteracySkill.LETTER_IDENTIFICATION)), null),
