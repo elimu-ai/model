@@ -1,18 +1,18 @@
 package org.literacyapp.model.gson.analytics;
 
-import org.literacyapp.model.gson.content.LetterGson;
+import org.literacyapp.model.gson.content.multimedia.VideoGson;
 
 public class VideoLearningEventGson extends LearningEventGson {
 
-    private Long videoId;
+    private VideoGson video;
     
     // TODO: activityType?
 
-    public Long getVideoId() {
-        return videoId;
+    public VideoGson getVideo() {
+        return video;
     }
 
-    public void setVideoId(Long videoId) {
-        this.videoId = videoId;
+    public void setVideo(VideoGson video) {
+        this.video = video;
     }
 }
