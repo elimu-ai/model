@@ -10,6 +10,8 @@ public class StoryBookGson extends ContentGson {
     private ImageGson coverImage;
     
     private GradeLevel gradeLevel;
+    
+    // TODO: add pages
 
     public String getTitle() {
         return title;
