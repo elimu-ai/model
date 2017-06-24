@@ -1,8 +1,12 @@
 package org.literacyapp.model.gson.content;
 
+import java.util.List;
+
 public class LetterGson extends ContentGson {
     
     private String text;
+    
+    private AllophoneGson allophone;
     
     private String braille;
     
@@ -14,6 +18,14 @@ public class LetterGson extends ContentGson {
 
     public void setText(String text) {
         this.text = text;
+    }
+    
+    public AllophoneGson getAllophone() {
+        return allophone;
+    }
+
+    public void setAllophone(AllophoneGson allophone) {
+        this.allophone = allophone;
     }
 
     public int getUsageCount() {
