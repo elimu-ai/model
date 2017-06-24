@@ -1,5 +1,6 @@
 package org.literacyapp.model.gson.content;
 
+import java.util.List;
 import org.literacyapp.model.enums.content.SpellingConsistency;
 import org.literacyapp.model.enums.content.WordType;
 
@@ -7,7 +8,10 @@ public class WordGson extends ContentGson {
     
     private String text;
     
+    @Deprecated
     private String phonetics; // IPA
+    
+    private List<AllophoneGson> allophones;
     
     private int usageCount; // Based on StoryBook content
     
@@ -29,6 +33,14 @@ public class WordGson extends ContentGson {
 
     public void setPhonetics(String phonetics) {
         this.phonetics = phonetics;
+    }
+    
+    public List<AllophoneGson> getAllophones() {
+        return allophones;
+    }
+
+    public void setAllophones(List<AllophoneGson> allophones) {
+        this.allophones = allophones;
     }
 
     public int getUsageCount() {
