@@ -6,7 +6,7 @@ public class LetterGson extends ContentGson {
     
     private String text;
     
-    private AllophoneGson allophone;
+    private List<AllophoneGson> allophones;
     
     private String braille;
     
@@ -20,12 +20,12 @@ public class LetterGson extends ContentGson {
         this.text = text;
     }
     
-    public AllophoneGson getAllophone() {
-        return allophone;
+    public List<AllophoneGson> getAllophones() {
+        return allophones;
     }
 
-    public void setAllophone(AllophoneGson allophone) {
-        this.allophone = allophone;
+    public void setAllophones(List<AllophoneGson> allophones) {
+        this.allophones = allophones;
     }
 
     public int getUsageCount() {
