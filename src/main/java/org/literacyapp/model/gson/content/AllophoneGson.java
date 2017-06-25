@@ -8,12 +8,17 @@ import org.literacyapp.model.enums.content.allophone.SoundType;
 import org.literacyapp.model.enums.content.allophone.VowelFrontness;
 import org.literacyapp.model.enums.content.allophone.VowelHeight;
 import org.literacyapp.model.enums.content.allophone.VowelLength;
+import org.literacyapp.model.gson.content.multimedia.AudioGson;
 
 public class AllophoneGson extends ContentGson {
     
     private String valueIpa; // IPA - International Phonetic Alphabet
     
     private String valueSampa; // X-SAMPA - Extended Speech Assessment Methods Phonetic Alphabet
+    
+    private AudioGson audio;
+    
+    private boolean diacritic;
     
     private SoundType soundType;
     
@@ -47,6 +52,22 @@ public class AllophoneGson extends ContentGson {
 
     public void setValueSampa(String valueSampa) {
         this.valueSampa = valueSampa;
+    }
+    
+    public AudioGson getAudio() {
+        return audio;
+    }
+
+    public void setAudio(AudioGson audio) {
+        this.audio = audio;
+    }
+    
+    public boolean isDiacritic() {
+        return diacritic;
+    }
+
+    public void setDiacritic(boolean diacritic) {
+        this.diacritic = diacritic;
     }
 
     public SoundType getSoundType() {
