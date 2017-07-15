@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.literacyapp</groupId>
-    <artifactId>literacyapp-model</artifactId>
+    <groupId>ai.elimu</groupId>
+    <artifactId>model</artifactId>
     <version>1.1.58-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>literacyapp-model</name>
+    <name>model</name>
   
     <properties>
         <java.version>1.7</java.version>
@@ -17,16 +17,16 @@
     
     <issueManagement>
         <system>Trello</system>
-        <url>https://trello.com/b/les4HgKG/team-development</url>
+        <url>https://trello.com/elimuai_public</url>
     </issueManagement>
     <ciManagement>
         <system>Travis CI</system>
-        <url>https://travis-ci.org/literacyapp-org/literacyapp-model</url>
+        <url>https://travis-ci.org/elimu-ai/model</url>
     </ciManagement>
     <scm>
-        <connection>scm:git:git@github.com:literacyapp-org/literacyapp-model.git</connection>
-        <developerConnection>scm:git:git@github.com:literacyapp-org/literacyapp-model.git</developerConnection>
-        <url>https://github.com/literacyapp-org/literacyapp-model</url>
+        <connection>scm:git:git@github.com:elimu-ai/model.git</connection>
+        <developerConnection>scm:git:git@github.com:elimu-ai/model.git</developerConnection>
+        <url>https://github.com/elimu-ai/model</url>
         <tag>HEAD</tag>
     </scm>
     
