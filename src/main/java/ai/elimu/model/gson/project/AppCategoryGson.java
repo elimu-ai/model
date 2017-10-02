@@ -7,7 +7,7 @@ public class AppCategoryGson extends BaseEntityGson {
     
     private String name;
     
-    private List<AppGroup> appGroups;
+    private List<AppGroupGson> appGroups;
 
     public String getName() {
         return name;
@@ -17,11 +17,11 @@ public class AppCategoryGson extends BaseEntityGson {
         this.name = name;
     }
 
-    public List<AppGroup> getAppGroups() {
+    public List<AppGroupGson> getAppGroups() {
         return appGroups;
     }
 
-    public void setAppGroups(List<AppGroup> appGroups) {
+    public void setAppGroups(List<AppGroupGson> appGroups) {
         this.appGroups = appGroups;
     }
 }

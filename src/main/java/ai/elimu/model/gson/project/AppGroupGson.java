@@ -4,7 +4,7 @@ import ai.elimu.model.gson.BaseEntityGson;
 import ai.elimu.model.gson.admin.ApplicationGson;
 import java.util.List;
 
-public class AppGroup extends BaseEntityGson {
+public class AppGroupGson extends BaseEntityGson {
     
     private List<ApplicationGson> applications;
 
