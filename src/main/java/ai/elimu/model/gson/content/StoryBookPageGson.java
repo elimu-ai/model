@@ -5,36 +5,21 @@ import ai.elimu.model.enums.GradeLevel;
 import ai.elimu.model.gson.BaseEntityGson;
 import ai.elimu.model.gson.content.multimedia.AudioGson;
 import ai.elimu.model.gson.content.multimedia.ImageGson;
+import lombok.Getter;
+import lombok.Setter;
 
 public class StoryBookPageGson extends BaseEntityGson {
-    
+
+    @Getter
+    @Setter
     private ImageGson image;
-    
+
+    @Getter
+    @Setter
     private List<WordGson> words;
-    
+
+    @Getter
+    @Setter
     private AudioGson audio;
 
-    public ImageGson getImage() {
-        return image;
-    }
-
-    public void setImage(ImageGson image) {
-        this.image = image;
-    }
-
-    public List<WordGson> getWords() {
-        return words;
-    }
-
-    public void setWords(List<WordGson> words) {
-        this.words = words;
-    }
-
-    public AudioGson getAudio() {
-        return audio;
-    }
-
-    public void setAudio(AudioGson audio) {
-        this.audio = audio;
-    }
 }

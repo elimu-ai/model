@@ -1,36 +1,21 @@
 package ai.elimu.model.gson.content.multimedia;
 
 import ai.elimu.model.enums.content.ImageFormat;
+import lombok.Getter;
+import lombok.Setter;
 
 public class ImageGson extends MultimediaGson {
-    
+
+    @Getter
+    @Setter
     private String title;
-    
+
+    @Getter
+    @Setter
     private ImageFormat imageFormat;
-    
+
+    @Getter
+    @Setter
     private String dominantColor; // Web color, e.g. "#FFF" or "rgb(250,173,188)"
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public ImageFormat getImageFormat() {
-        return imageFormat;
-    }
-
-    public void setImageFormat(ImageFormat imageFormat) {
-        this.imageFormat = imageFormat;
-    }
-
-    public String getDominantColor() {
-        return dominantColor;
-    }
-
-    public void setDominantColor(String dominantColor) {
-        this.dominantColor = dominantColor;
-    }
 }

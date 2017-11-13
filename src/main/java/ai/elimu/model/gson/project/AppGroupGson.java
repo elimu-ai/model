@@ -2,17 +2,15 @@ package ai.elimu.model.gson.project;
 
 import ai.elimu.model.gson.BaseEntityGson;
 import ai.elimu.model.gson.admin.ApplicationGson;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.List;
 
 public class AppGroupGson extends BaseEntityGson {
-    
+
+    @Getter
+    @Setter
     private List<ApplicationGson> applications;
 
-    public List<ApplicationGson> getApplications() {
-        return applications;
-    }
-
-    public void setApplications(List<ApplicationGson> applications) {
-        this.applications = applications;
-    }
 }

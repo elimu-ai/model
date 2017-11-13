@@ -1,49 +1,27 @@
 package ai.elimu.model.gson.content;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.List;
 
 public class NumberGson extends ContentGson {
-    
+
+    @Getter
+    @Setter
     private Integer value;
-    
+
+    @Getter
+    @Setter
     private String symbol;
     
     @Deprecated
+    @Getter
+    @Setter
     private WordGson word;
-    
+
+    @Getter
+    @Setter
     private List<WordGson> words;
 
-    public Integer getValue() {
-        return value;
-    }
-
-    public void setValue(Integer value) {
-        this.value = value;
-    }
-    
-    public String getSymbol() {
-        return symbol;
-    }
-
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
-    }
-    
-    @Deprecated
-    public WordGson getWord() {
-        return word;
-    }
-
-    @Deprecated
-    public void setWord(WordGson word) {
-        this.word = word;
-    }
-
-    public List<WordGson> getWords() {
-        return words;
-    }
-
-    public void setWords(List<WordGson> words) {
-        this.words = words;
-    }
 }

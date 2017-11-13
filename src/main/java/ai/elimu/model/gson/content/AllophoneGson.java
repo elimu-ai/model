@@ -9,136 +9,61 @@ import ai.elimu.model.enums.content.allophone.VowelFrontness;
 import ai.elimu.model.enums.content.allophone.VowelHeight;
 import ai.elimu.model.enums.content.allophone.VowelLength;
 import ai.elimu.model.gson.content.multimedia.AudioGson;
+import lombok.Getter;
+import lombok.Setter;
 
 public class AllophoneGson extends ContentGson {
-    
+
+    @Getter
+    @Setter
     private String valueIpa; // IPA - International Phonetic Alphabet
-    
+
+    @Getter
+    @Setter
     private String valueSampa; // X-SAMPA - Extended Speech Assessment Methods Phonetic Alphabet
-    
+
+    @Getter
+    @Setter
     private AudioGson audio;
-    
+
+    @Getter
+    @Setter
     private boolean diacritic;
-    
+
+    @Getter
+    @Setter
     private SoundType soundType;
-    
+
+    @Getter
+    @Setter
     private VowelLength vowelLength;
-  
+
+    @Getter
+    @Setter
     private VowelHeight vowelHeight;
 
+    @Getter
+    @Setter
     private VowelFrontness vowelFrontness;
-    
+
+    @Getter
+    @Setter
     private LipRounding lipRounding;
-    
+
+    @Getter
+    @Setter
     private ConsonantType consonantType;
-    
+
+    @Getter
+    @Setter
     private ConsonantPlace consonantPlace;
-    
+
+    @Getter
+    @Setter
     private ConsonantVoicing consonantVoicing;
-    
+
+    @Getter
+    @Setter
     private int usageCount; // Based on StoryBook content
 
-    public String getValueIpa() {
-        return valueIpa;
-    }
-
-    public void setValueIpa(String valueIpa) {
-        this.valueIpa = valueIpa;
-    }
-
-    public String getValueSampa() {
-        return valueSampa;
-    }
-
-    public void setValueSampa(String valueSampa) {
-        this.valueSampa = valueSampa;
-    }
-    
-    public AudioGson getAudio() {
-        return audio;
-    }
-
-    public void setAudio(AudioGson audio) {
-        this.audio = audio;
-    }
-    
-    public boolean isDiacritic() {
-        return diacritic;
-    }
-
-    public void setDiacritic(boolean diacritic) {
-        this.diacritic = diacritic;
-    }
-
-    public SoundType getSoundType() {
-        return soundType;
-    }
-
-    public void setSoundType(SoundType soundType) {
-        this.soundType = soundType;
-    }
-
-    public VowelLength getVowelLength() {
-        return vowelLength;
-    }
-
-    public void setVowelLength(VowelLength vowelLength) {
-        this.vowelLength = vowelLength;
-    }
-
-    public VowelHeight getVowelHeight() {
-        return vowelHeight;
-    }
-
-    public void setVowelHeight(VowelHeight vowelHeight) {
-        this.vowelHeight = vowelHeight;
-    }
-
-    public VowelFrontness getVowelFrontness() {
-        return vowelFrontness;
-    }
-
-    public void setVowelFrontness(VowelFrontness vowelFrontness) {
-        this.vowelFrontness = vowelFrontness;
-    }
-
-    public LipRounding getLipRounding() {
-        return lipRounding;
-    }
-
-    public void setLipRounding(LipRounding lipRounding) {
-        this.lipRounding = lipRounding;
-    }
-
-    public ConsonantType getConsonantType() {
-        return consonantType;
-    }
-
-    public void setConsonantType(ConsonantType consonantType) {
-        this.consonantType = consonantType;
-    }
-
-    public ConsonantPlace getConsonantPlace() {
-        return consonantPlace;
-    }
-
-    public void setConsonantPlace(ConsonantPlace consonantPlace) {
-        this.consonantPlace = consonantPlace;
-    }
-
-    public ConsonantVoicing getConsonantVoicing() {
-        return consonantVoicing;
-    }
-
-    public void setConsonantVoicing(ConsonantVoicing consonantVoicing) {
-        this.consonantVoicing = consonantVoicing;
-    }
-
-    public int getUsageCount() {
-        return usageCount;
-    }
-
-    public void setUsageCount(int usageCount) {
-        this.usageCount = usageCount;
-    }
 }

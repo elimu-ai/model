@@ -8,86 +8,41 @@ import ai.elimu.model.gson.content.ContentGson;
 import ai.elimu.model.gson.content.LetterGson;
 import ai.elimu.model.gson.content.NumberGson;
 import ai.elimu.model.gson.content.WordGson;
+import lombok.Getter;
+import lombok.Setter;
 
 public abstract class MultimediaGson extends ContentGson {
-    
+
+    @Getter
+    @Setter
     private String downloadUrl; // URL of file to be downloaded
-    
+
+    @Getter
+    @Setter
     private Integer downloadSize; // kB
 
+    @Getter
+    @Setter
     private String contentType; // MIME type
-    
+
+    @Getter
+    @Setter
     private Set<LiteracySkill> literacySkills;
-    
+
+    @Getter
+    @Setter
     private Set<NumeracySkill> numeracySkills;
-    
+
+    @Getter
+    @Setter
     private List<LetterGson> letters;
-    
+
+    @Getter
+    @Setter
     private List<NumberGson> numbers;
-    
+
+    @Getter
+    @Setter
     private List<WordGson> words;
 
-    public String getDownloadUrl() {
-        return downloadUrl;
-    }
-
-    public void setDownloadUrl(String downloadUrl) {
-        this.downloadUrl = downloadUrl;
-    }
-
-    public Integer getDownloadSize() {
-        return downloadSize;
-    }
-
-    public void setDownloadSize(Integer downloadSize) {
-        this.downloadSize = downloadSize;
-    }
-
-    public String getContentType() {
-        return contentType;
-    }
-
-    public void setContentType(String contentType) {
-        this.contentType = contentType;
-    }
-
-    public Set<LiteracySkill> getLiteracySkills() {
-        return literacySkills;
-    }
-
-    public void setLiteracySkills(Set<LiteracySkill> literacySkills) {
-        this.literacySkills = literacySkills;
-    }
-
-    public Set<NumeracySkill> getNumeracySkills() {
-        return numeracySkills;
-    }
-
-    public void setNumeracySkills(Set<NumeracySkill> numeracySkills) {
-        this.numeracySkills = numeracySkills;
-    }
-
-    public List<LetterGson> getLetters() {
-        return letters;
-    }
-
-    public void setLetters(List<LetterGson> letters) {
-        this.letters = letters;
-    }
-
-    public List<NumberGson> getNumbers() {
-        return numbers;
-    }
-
-    public void setNumbers(List<NumberGson> numbers) {
-        this.numbers = numbers;
-    }
-
-    public List<WordGson> getWords() {
-        return words;
-    }
-
-    public void setWords(List<WordGson> words) {
-        this.words = words;
-    }
 }

@@ -1,14 +1,12 @@
 package ai.elimu.model.gson;
 
-public class DeviceGson extends BaseEntityGson {
-    
-    private String deviceId;
-    
-    public String getDeviceId() {
-        return deviceId;
-    }
+import lombok.Getter;
+import lombok.Setter;
 
-    public void setDeviceId(String deviceId) {
-        this.deviceId = deviceId;
-    }
+public class DeviceGson extends BaseEntityGson {
+
+    @Getter
+    @Setter
+    private String deviceId;
+
 }

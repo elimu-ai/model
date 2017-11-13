@@ -1,26 +1,18 @@
 package ai.elimu.model.gson;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Calendar;
 
 public class StudentImageFeatureGson extends BaseEntityGson {
-    
+
+    @Getter
+    @Setter
     private Calendar timeCreated;
-    
+
+    @Getter
+    @Setter
     private String svmVector;
 
-    public Calendar getTimeCreated() {
-        return timeCreated;
-    }
-
-    public void setTimeCreated(Calendar timeCreated) {
-        this.timeCreated = timeCreated;
-    }
-
-    public String getSvmVector() {
-        return svmVector;
-    }
-
-    public void setSvmVector(String svmVector) {
-        this.svmVector = svmVector;
-    }
 }

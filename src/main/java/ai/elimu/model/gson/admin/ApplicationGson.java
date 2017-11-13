@@ -7,66 +7,33 @@ import ai.elimu.model.enums.Locale;
 import ai.elimu.model.enums.content.NumeracySkill;
 import ai.elimu.model.enums.admin.ApplicationStatus;
 import ai.elimu.model.gson.BaseEntityGson;
+import lombok.Getter;
+import lombok.Setter;
 
 public class ApplicationGson extends BaseEntityGson {
-    
+
+    @Getter
+    @Setter
     private Locale locale;
-    
+
+    @Getter
+    @Setter
     private String packageName;
-    
+
+    @Getter
+    @Setter
     private Set<LiteracySkill> literacySkills;
-    
+
+    @Getter
+    @Setter
     private Set<NumeracySkill> numeracySkills;
-    
+
+    @Getter
+    @Setter
     private ApplicationStatus applicationStatus;
-    
+
+    @Getter
+    @Setter
     private List<ApplicationVersionGson> applicationVersions;
 
-    public Locale getLocale() {
-        return locale;
-    }
-
-    public void setLocale(Locale locale) {
-        this.locale = locale;
-    }
-
-    public String getPackageName() {
-        return packageName;
-    }
-
-    public void setPackageName(String packageName) {
-        this.packageName = packageName;
-    }
-
-    public Set<LiteracySkill> getLiteracySkills() {
-        return literacySkills;
-    }
-
-    public void setLiteracySkills(Set<LiteracySkill> literacySkills) {
-        this.literacySkills = literacySkills;
-    }
-
-    public Set<NumeracySkill> getNumeracySkills() {
-        return numeracySkills;
-    }
-
-    public void setNumeracySkills(Set<NumeracySkill> numeracySkills) {
-        this.numeracySkills = numeracySkills;
-    }
-
-    public ApplicationStatus getApplicationStatus() {
-        return applicationStatus;
-    }
-
-    public void setApplicationStatus(ApplicationStatus applicationStatus) {
-        this.applicationStatus = applicationStatus;
-    }
-
-    public List<ApplicationVersionGson> getApplicationVersions() {
-        return applicationVersions;
-    }
-
-    public void setApplicationVersions(List<ApplicationVersionGson> applicationVersions) {
-        this.applicationVersions = applicationVersions;
-    }
 }

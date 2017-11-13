@@ -4,46 +4,25 @@ import java.util.Calendar;
 import ai.elimu.model.enums.Locale;
 import ai.elimu.model.enums.content.ContentStatus;
 import ai.elimu.model.gson.BaseEntityGson;
+import lombok.Getter;
+import lombok.Setter;
 
 public abstract class ContentGson extends BaseEntityGson {
-    
+
+    @Getter
+    @Setter
     private Locale locale;
-    
+
+    @Getter
+    @Setter
     private Calendar timeLastUpdate;
-    
+
+    @Getter
+    @Setter
     private Integer revisionNumber; // [1, 2, 3, ...]
-    
+
+    @Getter
+    @Setter
     private ContentStatus contentStatus;
 
-    public Locale getLocale() {
-        return locale;
-    }
-
-    public void setLocale(Locale locale) {
-        this.locale = locale;
-    }
-
-    public Calendar getTimeLastUpdate() {
-        return timeLastUpdate;
-    }
-
-    public void setTimeLastUpdate(Calendar timeLastUpdate) {
-        this.timeLastUpdate = timeLastUpdate;
-    }
-
-    public Integer getRevisionNumber() {
-        return revisionNumber;
-    }
-
-    public void setRevisionNumber(Integer revisionNumber) {
-        this.revisionNumber = revisionNumber;
-    }
-
-    public ContentStatus getContentStatus() {
-        return contentStatus;
-    }
-
-    public void setContentStatus(ContentStatus contentStatus) {
-        this.contentStatus = contentStatus;
-    }
 }

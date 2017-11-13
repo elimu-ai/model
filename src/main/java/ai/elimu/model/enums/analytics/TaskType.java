@@ -5,8 +5,10 @@ import java.util.HashSet;
 import java.util.Set;
 import ai.elimu.model.enums.content.LiteracySkill;
 import ai.elimu.model.enums.content.NumeracySkill;
+import lombok.AllArgsConstructor;
 
 // TODO: rename to "LearningType" or "ActivityType"?
+@AllArgsConstructor
 public enum TaskType {
     
     LETTER_LISTEN(new HashSet<>(Arrays.asList(LiteracySkill.LETTER_IDENTIFICATION)), null),
@@ -18,8 +20,4 @@ public enum TaskType {
     
     public Set<NumeracySkill> numeracySkills;
     
-    private TaskType(Set<LiteracySkill> literacySkills, Set<NumeracySkill> numeracySkills) {
-        this.literacySkills = literacySkills;
-        this.numeracySkills = numeracySkills;
-    }
 }

@@ -1,47 +1,27 @@
 package ai.elimu.model.gson;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Calendar;
 import java.util.List;
 
 public class StudentGson extends BaseEntityGson {
-    
+
+    @Getter
+    @Setter
     private String uniqueId; // "<deviceId>_<Long>"
-    
+
+    @Getter
+    @Setter
     private Calendar timeCreated; // Time created on Device
-    
+
+    @Getter
+    @Setter
     private List<DeviceGson> devices;
-    
+
+    @Getter
+    @Setter
     private StudentImageGson avatar;
-    
-    public String getUniqueId() {
-        return uniqueId;
-    }
 
-    public void setUniqueId(String uniqueId) {
-        this.uniqueId = uniqueId;
-    }
-    
-    public Calendar getTimeCreated() {
-        return timeCreated;
-    }
-
-    public void setTimeCreated(Calendar timeCreated) {
-        this.timeCreated = timeCreated;
-    }
-    
-    public StudentImageGson getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(StudentImageGson avatar) {
-        this.avatar = avatar;
-    }
-
-    public List<DeviceGson> getDevices() {
-        return devices;
-    }
-
-    public void setDevices(List<DeviceGson> devices) {
-        this.devices = devices;
-    }
 }

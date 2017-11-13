@@ -2,26 +2,17 @@ package ai.elimu.model.gson.analytics;
 
 import ai.elimu.model.gson.StudentGson;
 import ai.elimu.model.gson.admin.ApplicationGson;
+import lombok.Getter;
+import lombok.Setter;
 
 public class ApplicationOpenedEventGson extends DeviceEventGson {
 
+    @Getter
+    @Setter
     private ApplicationGson application;
-    
+
+    @Getter
+    @Setter
     private StudentGson student;
 
-    public ApplicationGson getApplication() {
-        return application;
-    }
-
-    public void setApplication(ApplicationGson application) {
-        this.application = application;
-    }
-
-    public StudentGson getStudent() {
-        return student;
-    }
-
-    public void setStudent(StudentGson student) {
-        this.student = student;
-    }
 }

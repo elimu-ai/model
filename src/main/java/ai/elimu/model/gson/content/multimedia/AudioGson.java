@@ -1,26 +1,17 @@
 package ai.elimu.model.gson.content.multimedia;
 
 import ai.elimu.model.enums.content.AudioFormat;
+import lombok.Getter;
+import lombok.Setter;
 
 public class AudioGson extends MultimediaGson {
-    
+
+    @Getter
+    @Setter
     private String transcription;
-    
+
+    @Getter
+    @Setter
     private AudioFormat audioFormat;
 
-    public String getTranscription() {
-        return transcription;
-    }
-
-    public void setTranscription(String transcription) {
-        this.transcription = transcription;
-    }
-
-    public AudioFormat getAudioFormat() {
-        return audioFormat;
-    }
-
-    public void setAudioType(AudioFormat audioFormat) {
-        this.audioFormat = audioFormat;
-    }
 }
