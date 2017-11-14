@@ -11,7 +11,10 @@ public class AudioGson extends MultimediaGson {
     private String transcription;
 
     @Getter
-    @Setter
     private AudioFormat audioFormat;
+
+    public void setAudioType(AudioFormat audioFormat) {
+        this.audioFormat = audioFormat;
+    }
 
 }
