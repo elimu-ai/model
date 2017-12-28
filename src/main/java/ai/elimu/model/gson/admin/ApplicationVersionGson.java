@@ -11,6 +11,8 @@ public class ApplicationVersionGson extends BaseEntityGson {
     
     private String fileUrl;
     
+    private String checksumMd5;
+    
     private String contentType;
     
     private Integer versionCode;
@@ -41,6 +43,14 @@ public class ApplicationVersionGson extends BaseEntityGson {
 
     public void setFileUrl(String fileUrl) {
         this.fileUrl = fileUrl;
+    }
+    
+    public String getChecksumMd5() {
+        return checksumMd5;
+    }
+
+    public void setChecksumMd5(String checksumMd5) {
+        this.checksumMd5 = checksumMd5;
     }
 
     public String getContentType() {

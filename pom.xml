@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ai.elimu</groupId>
     <artifactId>model</artifactId>
-    <version>1.1.62-SNAPSHOT</version>
+    <version>1.1.68-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>model</name>
   
@@ -32,15 +32,16 @@
     
     <distributionManagement>
         <repository>
-            <id>archiva.internal</id>
-            <name>Internal Release Repository</name>
-            <url>http://archiva.educativo.eu:8081/repository/internal/</url>
+            <id>bintray-elimu-ai-maven</id>
+            <name>elimu-ai-maven</name>
+            <url>https://api.bintray.com/maven/elimu-ai/maven/model/;publish=1</url>
         </repository>
     </distributionManagement>
     <repositories>
         <repository>
-            <id>archiva.internal</id>
-            <url>http://archiva.educativo.eu:8081/repository/internal/</url>
+            <id>bintray-elimu-ai-maven</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/elimu-ai/maven</url>
         </repository>
     </repositories>
     
