@@ -17,6 +17,8 @@ public class ApplicationVersionGson extends BaseEntityGson {
     
     private Integer versionCode;
     
+    private String versionName;
+    
     private String startCommand;
     
     private Calendar timeUploaded;
@@ -67,6 +69,14 @@ public class ApplicationVersionGson extends BaseEntityGson {
 
     public void setVersionCode(Integer versionCode) {
         this.versionCode = versionCode;
+    }
+    
+    public String getVersionName() {
+        return versionName;
+    }
+
+    public void setVersionName(String versionName) {
+        this.versionName = versionName;
     }
     
     public String getStartCommand() {
