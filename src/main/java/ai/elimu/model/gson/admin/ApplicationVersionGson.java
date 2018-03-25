@@ -19,6 +19,8 @@ public class ApplicationVersionGson extends BaseEntityGson {
     
     private String versionName;
     
+    private String label;
+    
     private Integer minSdkVersion;
     
     private String startCommand;
@@ -79,6 +81,14 @@ public class ApplicationVersionGson extends BaseEntityGson {
 
     public void setVersionName(String versionName) {
         this.versionName = versionName;
+    }
+    
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
     }
     
     public Integer getMinSdkVersion() {
