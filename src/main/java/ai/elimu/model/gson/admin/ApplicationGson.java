@@ -14,7 +14,7 @@ public class ApplicationGson extends BaseEntityGson {
     
     private String packageName;
     
-    private boolean isInfrastructural;
+    private boolean infrastructural;
     
     private Set<LiteracySkill> literacySkills;
     
@@ -40,12 +40,12 @@ public class ApplicationGson extends BaseEntityGson {
         this.packageName = packageName;
     }
     
-    public boolean getIsInfrastructural() {
-        return isInfrastructural;
+    public boolean isInfrastructural() {
+        return infrastructural;
     }
 
-    public void setIsInfrastructural(boolean isInfrastructural) {
-        this.isInfrastructural = isInfrastructural;
+    public void setInfrastructural(boolean infrastructural) {
+        this.infrastructural = infrastructural;
     }
 
     public Set<LiteracySkill> getLiteracySkills() {
