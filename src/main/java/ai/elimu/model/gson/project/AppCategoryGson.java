@@ -7,6 +7,8 @@ public class AppCategoryGson extends BaseEntityGson {
     
     private String name;
     
+    private String backgroundColor;
+    
     private List<AppGroupGson> appGroups;
 
     public String getName() {
@@ -15,6 +17,14 @@ public class AppCategoryGson extends BaseEntityGson {
 
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public String getBackgroundColor() {
+        return backgroundColor;
+    }
+
+    public void setBackgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
     }
 
     public List<AppGroupGson> getAppGroups() {

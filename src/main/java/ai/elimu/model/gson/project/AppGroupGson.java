@@ -6,7 +6,17 @@ import java.util.List;
 
 public class AppGroupGson extends BaseEntityGson {
     
+    private AppCategoryGson appCategory;
+    
     private List<ApplicationGson> applications;
+    
+    public AppCategoryGson getAppCategory() {
+        return appCategory;
+    }
+
+    public void setAppCategory(AppCategoryGson appCategory) {
+        this.appCategory = appCategory;
+    }
 
     public List<ApplicationGson> getApplications() {
         return applications;
