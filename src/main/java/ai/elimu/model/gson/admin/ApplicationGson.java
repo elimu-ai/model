@@ -23,6 +23,20 @@ public class ApplicationGson extends BaseEntityGson {
     private ApplicationStatus applicationStatus;
     
     private List<ApplicationVersionGson> applicationVersions;
+    
+    /**
+     * AppCategory name. This property is only set if the Application belongs to a Custom Project.
+     * 
+     * TODO: replace with usage of AppGroup
+     */
+    private String name;
+
+    /**
+     * AppCategory backgroundColor. This property is only set if the Application belongs to a Custom Project.
+     * 
+     * TODO: replace with usage of AppGroup
+     */
+    private String backgroundColor;
 
     public Locale getLocale() {
         return locale;
@@ -78,5 +92,21 @@ public class ApplicationGson extends BaseEntityGson {
 
     public void setApplicationVersions(List<ApplicationVersionGson> applicationVersions) {
         this.applicationVersions = applicationVersions;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBackgroundColor() {
+        return backgroundColor;
+    }
+
+    public void setBackgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
     }
 }
