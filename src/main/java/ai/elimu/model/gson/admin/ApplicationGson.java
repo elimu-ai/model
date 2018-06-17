@@ -7,6 +7,7 @@ import ai.elimu.model.enums.Locale;
 import ai.elimu.model.enums.content.NumeracySkill;
 import ai.elimu.model.enums.admin.ApplicationStatus;
 import ai.elimu.model.gson.BaseEntityGson;
+import ai.elimu.model.gson.project.AppGroupGson;
 
 public class ApplicationGson extends BaseEntityGson {
     
@@ -24,19 +25,7 @@ public class ApplicationGson extends BaseEntityGson {
     
     private List<ApplicationVersionGson> applicationVersions;
     
-    /**
-     * AppCategory name. This property is only set if the Application belongs to a Custom Project.
-     * 
-     * TODO: replace with usage of AppGroup
-     */
-    private String name;
-
-    /**
-     * AppCategory backgroundColor. This property is only set if the Application belongs to a Custom Project.
-     * 
-     * TODO: replace with usage of AppGroup
-     */
-    private String backgroundColor;
+    private AppGroupGson appGroup;
 
     public Locale getLocale() {
         return locale;
@@ -94,19 +83,11 @@ public class ApplicationGson extends BaseEntityGson {
         this.applicationVersions = applicationVersions;
     }
 
-    public String getName() {
-        return name;
+    public AppGroupGson getAppGroup() {
+        return appGroup;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getBackgroundColor() {
-        return backgroundColor;
-    }
-
-    public void setBackgroundColor(String backgroundColor) {
-        this.backgroundColor = backgroundColor;
+    public void setAppGroup(AppGroupGson appGroup) {
+        this.appGroup = appGroup;
     }
 }
