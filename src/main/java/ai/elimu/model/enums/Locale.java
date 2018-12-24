@@ -9,6 +9,7 @@ public enum Locale {
     EN("en"),
 //    EN_US("en", "US"),
     ES("es"),
+    HI("hi"),
     SW("sw");
     
     private String language;
