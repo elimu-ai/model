@@ -7,7 +7,6 @@ import ai.elimu.model.enums.Locale;
 import ai.elimu.model.enums.content.NumeracySkill;
 import ai.elimu.model.enums.admin.ApplicationStatus;
 import ai.elimu.model.gson.BaseEntityGson;
-import ai.elimu.model.gson.project.AppGroupGson;
 
 public class ApplicationGson extends BaseEntityGson {
     
@@ -24,8 +23,6 @@ public class ApplicationGson extends BaseEntityGson {
     private ApplicationStatus applicationStatus;
     
     private List<ApplicationVersionGson> applicationVersions;
-    
-    private AppGroupGson appGroup;
 
     public Locale getLocale() {
         return locale;
@@ -81,13 +78,5 @@ public class ApplicationGson extends BaseEntityGson {
 
     public void setApplicationVersions(List<ApplicationVersionGson> applicationVersions) {
         this.applicationVersions = applicationVersions;
-    }
-
-    public AppGroupGson getAppGroup() {
-        return appGroup;
-    }
-
-    public void setAppGroup(AppGroupGson appGroup) {
-        this.appGroup = appGroup;
     }
 }
