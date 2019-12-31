@@ -1,14 +1,11 @@
 package ai.elimu.model.gson.admin;
 
-import ai.elimu.model.enums.admin.ApplicationVersionStatus;
 import java.util.Calendar;
 import ai.elimu.model.gson.BaseEntityGson;
 
 public class ApplicationVersionGson extends BaseEntityGson {
     
     private ApplicationGson application;
-    
-    private ApplicationVersionStatus applicationVersionStatus;
     
     private Integer fileSizeInKb;
     
@@ -36,14 +33,6 @@ public class ApplicationVersionGson extends BaseEntityGson {
 
     public void setApplication(ApplicationGson application) {
         this.application = application;
-    }
-    
-    public ApplicationVersionStatus getApplicationVersionStatus() {
-        return applicationVersionStatus;
-    }
-
-    public void setApplicationVersionStatus(ApplicationVersionStatus applicationVersionStatus) {
-        this.applicationVersionStatus = applicationVersionStatus;
     }
 
     public Integer getFileSizeInKb() {
