@@ -1,7 +1,6 @@
 package ai.elimu.model.gson;
 
 import java.util.Calendar;
-import ai.elimu.model.gson.analytics.StudentImageCollectionEventGson;
 
 public class StudentImageGson extends BaseEntityGson {
     
@@ -10,8 +9,6 @@ public class StudentImageGson extends BaseEntityGson {
     private String imageFileUrl;
     
     private StudentImageFeatureGson studentImageFeature;
-    
-    private StudentImageCollectionEventGson studentImageCollectionEvent;
 
     public Calendar getTimeCollected() {
         return timeCollected;
@@ -35,13 +32,5 @@ public class StudentImageGson extends BaseEntityGson {
 
     public void setStudentImageFeature(StudentImageFeatureGson studentImageFeature) {
         this.studentImageFeature = studentImageFeature;
-    }
-    
-    public StudentImageCollectionEventGson getStudentImageCollectionEvent() {
-        return studentImageCollectionEvent;
-    }
-
-    public void setStudentImageCollectionEvent(StudentImageCollectionEventGson studentImageCollectionEvent) {
-        this.studentImageCollectionEvent = studentImageCollectionEvent;
     }
 }
