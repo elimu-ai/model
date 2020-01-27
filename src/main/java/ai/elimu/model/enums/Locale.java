@@ -5,9 +5,10 @@ package ai.elimu.model.enums;
  */
 public enum Locale {
     
-    EN("en"),
-    HI("hi"),
-    SW("sw");
+    EN("eng"),
+    FI("fil"),
+    HI("hin"),
+    SW("swa");
     
     /**
      * ISO 639-1 language code.
