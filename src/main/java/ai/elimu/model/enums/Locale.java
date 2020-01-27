@@ -11,7 +11,7 @@ public enum Locale {
     SW("swa");
     
     /**
-     * ISO 639-1 language code.
+     * ISO 639-2 language code.
      */
     private String language;
     
