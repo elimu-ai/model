@@ -23,8 +23,6 @@ public class ApplicationVersionGson extends BaseEntityGson {
     
     private Integer minSdkVersion;
     
-    private String startCommand;
-    
     private Calendar timeUploaded;
 
     public ApplicationGson getApplication() {
@@ -97,14 +95,6 @@ public class ApplicationVersionGson extends BaseEntityGson {
 
     public void setMinSdkVersion(Integer minSdkVersion) {
         this.minSdkVersion = minSdkVersion;
-    }
-    
-    public String getStartCommand() {
-        return startCommand;
-    }
-
-    public void setStartCommand(String startCommand) {
-        this.startCommand = startCommand;
     }
 
     public Calendar getTimeUploaded() {
