@@ -5,10 +5,11 @@ package ai.elimu.model.enums;
  */
 public enum Language {
     
-    ENG("eng"),
-    FIL("fil"),
-    HIN("hin"),
-    SWA("swa");
+    BEN("ben"), // বাংলা
+    ENG("eng"), // English
+    FIL("fil"), // Wikang Filipino
+    HIN("hin"), // हिन्दी
+    SWA("swa"); // Kiswahili
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
