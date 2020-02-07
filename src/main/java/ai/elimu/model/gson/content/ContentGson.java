@@ -1,13 +1,13 @@
 package ai.elimu.model.gson.content;
 
 import java.util.Calendar;
-import ai.elimu.model.enums.Locale;
+import ai.elimu.model.enums.Language;
 import ai.elimu.model.enums.content.ContentStatus;
 import ai.elimu.model.gson.BaseEntityGson;
 
 public abstract class ContentGson extends BaseEntityGson {
     
-    private Locale locale;
+    private Language language;
     
     private Calendar timeLastUpdate;
     
@@ -15,12 +15,12 @@ public abstract class ContentGson extends BaseEntityGson {
     
     private ContentStatus contentStatus;
 
-    public Locale getLocale() {
-        return locale;
+    public Language getLanguage() {
+        return language;
     }
 
-    public void setLocale(Locale locale) {
-        this.locale = locale;
+    public void setLanguage(Language language) {
+        this.language = language;
     }
 
     public Calendar getTimeLastUpdate() {

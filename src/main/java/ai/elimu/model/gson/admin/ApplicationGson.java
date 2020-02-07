@@ -3,14 +3,14 @@ package ai.elimu.model.gson.admin;
 import java.util.List;
 import java.util.Set;
 import ai.elimu.model.enums.content.LiteracySkill;
-import ai.elimu.model.enums.Locale;
+import ai.elimu.model.enums.Language;
 import ai.elimu.model.enums.content.NumeracySkill;
 import ai.elimu.model.enums.admin.ApplicationStatus;
 import ai.elimu.model.gson.BaseEntityGson;
 
 public class ApplicationGson extends BaseEntityGson {
     
-    private Locale locale;
+    private Language language;
     
     private String packageName;
     
@@ -24,12 +24,12 @@ public class ApplicationGson extends BaseEntityGson {
     
     private List<ApplicationVersionGson> applicationVersions;
 
-    public Locale getLocale() {
-        return locale;
+    public Language getLanguage() {
+        return language;
     }
 
-    public void setLocale(Locale locale) {
-        this.locale = locale;
+    public void setLanguage(Language language) {
+        this.language = language;
     }
 
     public String getPackageName() {
