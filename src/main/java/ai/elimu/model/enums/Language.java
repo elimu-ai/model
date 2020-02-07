@@ -5,10 +5,10 @@ package ai.elimu.model.enums;
  */
 public enum Language {
     
-    EN("eng"),
-    FI("fil"),
-    HI("hin"),
-    SW("swa");
+    ENG("eng"),
+    FIL("fil"),
+    HIN("hin"),
+    SWA("swa");
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
