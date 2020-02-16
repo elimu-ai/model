@@ -4,16 +4,16 @@ import java.util.List;
 import ai.elimu.model.enums.content.SpellingConsistency;
 import ai.elimu.model.enums.content.WordType;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class WordGson extends ContentGson {
     
     private String text;
     
-    @Deprecated
-    private String phonetics; // IPA
-    
     private List<AllophoneGson> allophones;
     
-    private int usageCount; // Based on StoryBook content
+    private int usageCount;
     
     private WordType wordType;
     
@@ -25,14 +25,6 @@ public class WordGson extends ContentGson {
 
     public void setText(String text) {
         this.text = text;
-    }
-
-    public String getPhonetics() {
-        return phonetics;
-    }
-
-    public void setPhonetics(String phonetics) {
-        this.phonetics = phonetics;
     }
     
     public List<AllophoneGson> getAllophones() {
