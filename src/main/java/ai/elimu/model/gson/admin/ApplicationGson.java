@@ -8,6 +8,9 @@ import ai.elimu.model.enums.content.NumeracySkill;
 import ai.elimu.model.enums.admin.ApplicationStatus;
 import ai.elimu.model.gson.BaseEntityGson;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class ApplicationGson extends BaseEntityGson {
     
     private Language language;

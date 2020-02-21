@@ -2,13 +2,16 @@ package ai.elimu.model.gson.content.multimedia;
 
 import ai.elimu.model.enums.content.ImageFormat;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class ImageGson extends MultimediaGson {
     
     private String title;
     
     private ImageFormat imageFormat;
     
-    private String dominantColor; // Web color, e.g. "#FFF" or "rgb(250,173,188)"
+    private String dominantColor;
 
     public String getTitle() {
         return title;

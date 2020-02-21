@@ -6,6 +6,9 @@ import ai.elimu.model.gson.BaseEntityGson;
 import ai.elimu.model.gson.content.multimedia.AudioGson;
 import ai.elimu.model.gson.content.multimedia.ImageGson;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class StoryBookPageGson extends BaseEntityGson {
     
     private ImageGson image;

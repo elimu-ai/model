@@ -9,13 +9,16 @@ import ai.elimu.model.gson.content.LetterGson;
 import ai.elimu.model.gson.content.NumberGson;
 import ai.elimu.model.gson.content.WordGson;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public abstract class MultimediaGson extends ContentGson {
     
-    private String downloadUrl; // URL of file to be downloaded
+    private String downloadUrl;
     
-    private Integer downloadSize; // kB
+    private Integer downloadSize;
 
-    private String contentType; // MIME type
+    private String contentType;
     
     private Set<LiteracySkill> literacySkills;
     

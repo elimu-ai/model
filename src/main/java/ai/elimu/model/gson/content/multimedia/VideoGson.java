@@ -2,6 +2,9 @@ package ai.elimu.model.gson.content.multimedia;
 
 import ai.elimu.model.enums.content.VideoFormat;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class VideoGson extends MultimediaGson {
 
     private String title;

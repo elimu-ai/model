@@ -10,11 +10,14 @@ import ai.elimu.model.enums.content.allophone.VowelHeight;
 import ai.elimu.model.enums.content.allophone.VowelLength;
 import ai.elimu.model.gson.content.multimedia.AudioGson;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class AllophoneGson extends ContentGson {
     
-    private String valueIpa; // IPA - International Phonetic Alphabet
+    private String valueIpa;
     
-    private String valueSampa; // X-SAMPA - Extended Speech Assessment Methods Phonetic Alphabet
+    private String valueSampa;
     
     private AudioGson audio;
     
@@ -36,7 +39,7 @@ public class AllophoneGson extends ContentGson {
     
     private ConsonantVoicing consonantVoicing;
     
-    private int usageCount; // Based on StoryBook content
+    private int usageCount;
 
     public String getValueIpa() {
         return valueIpa;
