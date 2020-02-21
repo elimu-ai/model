@@ -2,6 +2,7 @@ package ai.elimu.model.gson.content;
 
 import ai.elimu.model.enums.GradeLevel;
 import ai.elimu.model.gson.content.multimedia.ImageGson;
+import java.util.List;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
@@ -15,6 +16,8 @@ public class StoryBookGson extends ContentGson {
     private ImageGson coverImage;
     
     private GradeLevel gradeLevel;
+    
+    private List<StoryBookChapterGson> storyBookChapters;
 
     public String getTitle() {
         return title;
@@ -46,5 +49,13 @@ public class StoryBookGson extends ContentGson {
 
     public void setGradeLevel(GradeLevel gradeLevel) {
         this.gradeLevel = gradeLevel;
+    }
+
+    public List<StoryBookChapterGson> getStoryBookChapters() {
+        return storyBookChapters;
+    }
+
+    public void setStoryBookChapters(List<StoryBookChapterGson> storyBookChapters) {
+        this.storyBookChapters = storyBookChapters;
     }
 }
