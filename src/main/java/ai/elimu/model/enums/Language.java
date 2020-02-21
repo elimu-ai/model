@@ -7,7 +7,7 @@ public enum Language {
     
     BEN("ben"), // বাংলা
     ENG("eng"), // English
-    FIL("fil"), // Wikang Filipino
+    FIL("fil"), // Filipino
     HIN("hin"), // हिन्दी
     SWA("swa"); // Kiswahili
     
