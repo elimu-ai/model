@@ -9,7 +9,10 @@ import ai.elimu.model.enums.content.WordType;
  */
 public class WordGson extends ContentGson {
     
+    @Deprecated // TODO: replace with list of Letters
     private String text;
+    
+    private List<LetterGson> letters;
     
     private List<AllophoneGson> allophones;
     
@@ -19,12 +22,22 @@ public class WordGson extends ContentGson {
     
     private SpellingConsistency spellingConsistency;
 
+    @Deprecated
     public String getText() {
         return text;
     }
 
+    @Deprecated
     public void setText(String text) {
         this.text = text;
+    }
+    
+    public List<LetterGson> getLetters() {
+        return letters;
+    }
+
+    public void setLetters(List<LetterGson> letters) {
+        this.letters = letters;
     }
     
     public List<AllophoneGson> getAllophones() {

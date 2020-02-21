@@ -2,6 +2,9 @@ package ai.elimu.model.gson.content;
 
 import java.util.List;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class NumberGson extends ContentGson {
     
     private Integer value;

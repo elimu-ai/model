@@ -5,13 +5,16 @@ import ai.elimu.model.enums.Language;
 import ai.elimu.model.enums.content.ContentStatus;
 import ai.elimu.model.gson.BaseEntityGson;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public abstract class ContentGson extends BaseEntityGson {
     
     private Language language;
     
     private Calendar timeLastUpdate;
     
-    private Integer revisionNumber; // [1, 2, 3, ...]
+    private Integer revisionNumber;
     
     private ContentStatus contentStatus;
 

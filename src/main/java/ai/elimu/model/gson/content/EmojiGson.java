@@ -1,24 +1,19 @@
 package ai.elimu.model.gson.content;
 
+import java.util.List;
+
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class EmojiGson extends ContentGson {
     
-    private String glyph; // E.g. '🦋'
+    private String glyph;
     
-    /**
-     * The Unicode version when the glyph was first introduced.
-     * <p />
-     * Should be 9.0 or lower, in order to be compatible with Android SDK 7.0 (API level 24).
-     */
     private Double unicodeVersion;
     
-    /**
-     * The Unicode Emoji version when the glyph was first introduced.
-     * <p />
-     * Should be 3.0 or lower, in order to be compatible with Android SDK 7.0 (API level 24).
-     * <p />
-     * See https://unicode.org/Public/emoji/3.0/emoji-data.txt
-     */
     private Double unicodeEmojiVersion;
+    
+    private List<WordGson> words;
 
     public String getGlyph() {
         return glyph;
@@ -42,5 +37,13 @@ public class EmojiGson extends ContentGson {
 
     public void setUnicodeEmojiVersion(Double unicodeEmojiVersion) {
         this.unicodeEmojiVersion = unicodeEmojiVersion;
+    }
+
+    public List<WordGson> getWords() {
+        return words;
+    }
+
+    public void setWords(List<WordGson> words) {
+        this.words = words;
     }
 }
