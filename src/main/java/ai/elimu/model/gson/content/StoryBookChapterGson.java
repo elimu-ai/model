@@ -1,6 +1,7 @@
 package ai.elimu.model.gson.content;
 
 import ai.elimu.model.gson.BaseEntityGson;
+import ai.elimu.model.gson.content.multimedia.ImageGson;
 import java.util.List;
 
 /**
@@ -11,6 +12,8 @@ public class StoryBookChapterGson extends BaseEntityGson {
     private StoryBookGson storyBook;
     
     private Integer sortOrder;
+    
+    private ImageGson image;
     
     private List<StoryBookParagraphGson> storyBookParagraphs;
 
@@ -28,6 +31,14 @@ public class StoryBookChapterGson extends BaseEntityGson {
 
     public void setSortOrder(Integer sortOrder) {
         this.sortOrder = sortOrder;
+    }
+    
+    public ImageGson getImage() {
+        return image;
+    }
+
+    public void setImage(ImageGson image) {
+        this.image = image;
     }
 
     public List<StoryBookParagraphGson> getStoryBookParagraphs() {
