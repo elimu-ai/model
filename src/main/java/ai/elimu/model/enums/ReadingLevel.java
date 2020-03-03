@@ -1,7 +1,7 @@
 package ai.elimu.model.enums;
 
 /**
- * Based on {@link https://storyweaver.org.in/reading_levels}.
+ * Based on <a href="https://storyweaver.org.in/reading_levels">StoryWeaver's reading levels</a>.
  */
 public enum ReadingLevel {
     
