@@ -11,9 +11,6 @@ public class NumberGson extends ContentGson {
     
     private String symbol;
     
-    @Deprecated
-    private WordGson word;
-    
     private List<WordGson> words;
 
     public Integer getValue() {
@@ -30,16 +27,6 @@ public class NumberGson extends ContentGson {
 
     public void setSymbol(String symbol) {
         this.symbol = symbol;
-    }
-    
-    @Deprecated
-    public WordGson getWord() {
-        return word;
-    }
-
-    @Deprecated
-    public void setWord(WordGson word) {
-        this.word = word;
     }
 
     public List<WordGson> getWords() {
