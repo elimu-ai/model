@@ -13,6 +13,8 @@ public class StoryBookGson extends ContentGson {
     
     private String description;
     
+    private String attributionUrl;
+    
     private ImageGson coverImage;
     
     private GradeLevel gradeLevel;
@@ -33,6 +35,14 @@ public class StoryBookGson extends ContentGson {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+    
+    public String getAttributionUrl() {
+        return attributionUrl;
+    }
+
+    public void setAttributionUrl(String attributionUrl) {
+        this.attributionUrl = attributionUrl;
     }
     
     public ImageGson getCoverImage() {
