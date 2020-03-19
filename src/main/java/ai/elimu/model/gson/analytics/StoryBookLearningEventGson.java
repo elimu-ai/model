@@ -11,6 +11,8 @@ import java.util.Calendar;
  */
 public class StoryBookLearningEventGson extends BaseEntityGson {
     
+    private String androidId;
+    
     private ApplicationGson application;
     
     private Calendar time;
@@ -18,6 +20,14 @@ public class StoryBookLearningEventGson extends BaseEntityGson {
     private LearningEventType learningEventType;
     
     private StoryBookGson storyBook;
+    
+    public String getAndroidId() {
+        return androidId;
+    }
+
+    public void setAndroidId(String androidId) {
+        this.androidId = androidId;
+    }
 
     public ApplicationGson getApplication() {
         return application;
