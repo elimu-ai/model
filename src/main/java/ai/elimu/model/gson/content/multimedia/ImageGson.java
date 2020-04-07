@@ -9,6 +9,8 @@ public class ImageGson extends MultimediaGson {
     
     private String title;
     
+    private byte[] bytes;
+    
     private ImageFormat imageFormat;
     
     private String dominantColor;
@@ -19,6 +21,14 @@ public class ImageGson extends MultimediaGson {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+    
+    public byte[] getBytes() {
+        return bytes;
+    }
+
+    public void setBytes(byte[] bytes) {
+        this.bytes = bytes;
     }
 
     public ImageFormat getImageFormat() {
