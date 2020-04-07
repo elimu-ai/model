@@ -14,6 +14,8 @@ import ai.elimu.model.gson.content.WordGson;
  */
 public abstract class MultimediaGson extends ContentGson {
     
+    private byte[] bytes;
+    
     private String downloadUrl;
     
     private Integer downloadSize;
@@ -29,6 +31,14 @@ public abstract class MultimediaGson extends ContentGson {
     private List<NumberGson> numbers;
     
     private List<WordGson> words;
+    
+    public byte[] getBytes() {
+        return bytes;
+    }
+
+    public void setBytes(byte[] bytes) {
+        this.bytes = bytes;
+    }
 
     public String getDownloadUrl() {
         return downloadUrl;
