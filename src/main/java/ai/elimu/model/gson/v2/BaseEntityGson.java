@@ -1,0 +1,17 @@
+package ai.elimu.model.gson.v2;
+
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
+public abstract class BaseEntityGson {
+    
+    private Long id;
+    
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+}
