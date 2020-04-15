@@ -1,4 +1,4 @@
-package ai.elimu.model.gson.analytics;
+package ai.elimu.model.gson.v2.analytics;
 
 import java.util.Calendar;
 
