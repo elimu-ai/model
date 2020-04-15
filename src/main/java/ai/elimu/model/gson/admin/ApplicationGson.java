@@ -11,6 +11,7 @@ import ai.elimu.model.gson.BaseEntityGson;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
+@Deprecated
 public class ApplicationGson extends BaseEntityGson {
     
     private Language language;

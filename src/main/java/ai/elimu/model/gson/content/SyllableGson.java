@@ -5,6 +5,7 @@ import java.util.List;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
+@Deprecated
 public class SyllableGson extends ContentGson {
     
     private String text;

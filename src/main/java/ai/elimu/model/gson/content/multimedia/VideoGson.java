@@ -5,6 +5,7 @@ import ai.elimu.model.enums.content.VideoFormat;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
+@Deprecated
 public class VideoGson extends MultimediaGson {
 
     private String title;

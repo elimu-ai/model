@@ -5,6 +5,7 @@ import ai.elimu.model.enums.content.ImageFormat;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
+@Deprecated
 public class ImageGson extends MultimediaGson {
     
     private String title;

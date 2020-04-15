@@ -5,6 +5,7 @@ import ai.elimu.model.enums.content.AudioFormat;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
+@Deprecated
 public class AudioGson extends MultimediaGson {
     
     private String transcription;

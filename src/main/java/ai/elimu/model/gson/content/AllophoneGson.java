@@ -13,6 +13,7 @@ import ai.elimu.model.gson.content.multimedia.AudioGson;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
+@Deprecated
 public class AllophoneGson extends ContentGson {
     
     private String valueIpa;

@@ -5,6 +5,7 @@ import ai.elimu.model.enums.analytics.LearningEventType;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
+@Deprecated
 public class StoryBookLearningEventGson extends LearningEventGson {
     
     private Long storyBookId;
