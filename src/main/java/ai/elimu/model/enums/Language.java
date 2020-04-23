@@ -5,23 +5,37 @@ package ai.elimu.model.enums;
  */
 public enum Language {
     
-    BEN("ben"), // বাংলা
-    ENG("eng"), // English
-    FIL("fil"), // Filipino
-    HIN("hin"), // हिन्दी
-    SWA("swa"), // Kiswahili
-    URD("urd"); // اردو
+    BEN("ben", "Bengali", "বাংলা"),
+    ENG("eng", "English", "English"),
+    FIL("fil", "Filipino", "Pilipino"),
+    HIN("hin", "Hindi", "हिन्दी"),
+    SWA("swa", "Swahili", "Kiswahili"),
+    URD("urd", "Urdu", "اردو");
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
      */
     private final String isoCode;
     
-    private Language(String isoCode) {
+    private final String englishName;
+    
+    private final String nativeName;
+    
+    private Language(String isoCode, String englishName, String nativeName) {
         this.isoCode = isoCode;
+        this.englishName = englishName;
+        this.nativeName = nativeName;
     }
     
     public String getIsoCode() {
         return isoCode;
+    }
+
+    public String getEnglishName() {
+        return englishName;
+    }
+
+    public String getNativeName() {
+        return nativeName;
     }
 }
