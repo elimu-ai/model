@@ -9,7 +9,8 @@ public enum Language {
     ENG("eng"), // English
     FIL("fil"), // Filipino
     HIN("hin"), // हिन्दी
-    SWA("swa"); // Kiswahili
+    SWA("swa"), // Kiswahili
+    URD("urd"); // اردو
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
