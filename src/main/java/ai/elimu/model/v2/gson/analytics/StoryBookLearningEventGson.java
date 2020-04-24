@@ -1,4 +1,4 @@
-package ai.elimu.model.gson.v2.analytics;
+package ai.elimu.model.v2.gson.analytics;
 
 import ai.elimu.model.enums.analytics.LearningEventType;
 

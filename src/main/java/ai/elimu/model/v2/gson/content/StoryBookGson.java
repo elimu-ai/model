@@ -1,4 +1,4 @@
-package ai.elimu.model.gson.v2.content;
+package ai.elimu.model.v2.gson.content;
 
 import ai.elimu.model.enums.ReadingLevel;
 import java.util.List;

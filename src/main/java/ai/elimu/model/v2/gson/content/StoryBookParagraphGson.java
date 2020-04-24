@@ -1,6 +1,6 @@
-package ai.elimu.model.gson.v2.content;
+package ai.elimu.model.v2.gson.content;
 
-import ai.elimu.model.gson.v2.BaseEntityGson;
+import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.List;
 
 /**
