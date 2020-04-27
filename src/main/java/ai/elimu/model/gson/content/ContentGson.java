@@ -1,7 +1,6 @@
 package ai.elimu.model.gson.content;
 
 import java.util.Calendar;
-import ai.elimu.model.enums.Language;
 import ai.elimu.model.enums.content.ContentStatus;
 import ai.elimu.model.gson.BaseEntityGson;
 
@@ -11,21 +10,11 @@ import ai.elimu.model.gson.BaseEntityGson;
 @Deprecated
 public abstract class ContentGson extends BaseEntityGson {
     
-    private Language language;
-    
     private Calendar timeLastUpdate;
     
     private Integer revisionNumber;
     
     private ContentStatus contentStatus;
-
-    public Language getLanguage() {
-        return language;
-    }
-
-    public void setLanguage(Language language) {
-        this.language = language;
-    }
 
     public Calendar getTimeLastUpdate() {
         return timeLastUpdate;
