@@ -3,7 +3,6 @@ package ai.elimu.model.gson.admin;
 import java.util.List;
 import java.util.Set;
 import ai.elimu.model.enums.content.LiteracySkill;
-import ai.elimu.model.enums.Language;
 import ai.elimu.model.enums.content.NumeracySkill;
 import ai.elimu.model.enums.admin.ApplicationStatus;
 import ai.elimu.model.gson.BaseEntityGson;
@@ -13,8 +12,6 @@ import ai.elimu.model.gson.BaseEntityGson;
  */
 @Deprecated
 public class ApplicationGson extends BaseEntityGson {
-    
-    private Language language;
     
     private String packageName;
     
@@ -27,14 +24,6 @@ public class ApplicationGson extends BaseEntityGson {
     private ApplicationStatus applicationStatus;
     
     private List<ApplicationVersionGson> applicationVersions;
-
-    public Language getLanguage() {
-        return language;
-    }
-
-    public void setLanguage(Language language) {
-        this.language = language;
-    }
 
     public String getPackageName() {
         return packageName;
