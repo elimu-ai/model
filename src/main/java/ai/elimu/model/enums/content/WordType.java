@@ -2,7 +2,11 @@ package ai.elimu.model.enums.content;
 
 public enum WordType {
 
+    ADJECTIVE,
+    ADVERB,
     NOUN,
-    VERB,
-    ADJECTIVE
+    NUMBER,
+    PREPOSITION,
+    PRONOUN,
+    VERB
 }
