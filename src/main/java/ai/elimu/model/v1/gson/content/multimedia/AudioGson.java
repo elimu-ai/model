@@ -1,4 +1,4 @@
-package ai.elimu.model.gson.content.multimedia;
+package ai.elimu.model.v1.gson.content.multimedia;
 
 import ai.elimu.model.enums.content.AudioFormat;
 

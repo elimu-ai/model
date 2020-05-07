@@ -1,4 +1,4 @@
-package ai.elimu.model.gson.content;
+package ai.elimu.model.v1.gson.content;
 
 import ai.elimu.model.enums.content.allophone.ConsonantPlace;
 import ai.elimu.model.enums.content.allophone.ConsonantType;
@@ -8,7 +8,7 @@ import ai.elimu.model.enums.content.allophone.SoundType;
 import ai.elimu.model.enums.content.allophone.VowelFrontness;
 import ai.elimu.model.enums.content.allophone.VowelHeight;
 import ai.elimu.model.enums.content.allophone.VowelLength;
-import ai.elimu.model.gson.content.multimedia.AudioGson;
+import ai.elimu.model.v1.gson.content.multimedia.AudioGson;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model

@@ -1,8 +1,8 @@
-package ai.elimu.model.gson.content;
+package ai.elimu.model.v1.gson.content;
 
 import java.util.Calendar;
 import ai.elimu.model.enums.content.ContentStatus;
-import ai.elimu.model.gson.BaseEntityGson;
+import ai.elimu.model.v1.gson.BaseEntityGson;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model

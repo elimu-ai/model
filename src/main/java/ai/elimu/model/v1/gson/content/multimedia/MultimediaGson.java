@@ -1,13 +1,13 @@
-package ai.elimu.model.gson.content.multimedia;
+package ai.elimu.model.v1.gson.content.multimedia;
 
 import java.util.List;
 import java.util.Set;
 import ai.elimu.model.enums.content.LiteracySkill;
 import ai.elimu.model.enums.content.NumeracySkill;
-import ai.elimu.model.gson.content.ContentGson;
-import ai.elimu.model.gson.content.LetterGson;
-import ai.elimu.model.gson.content.NumberGson;
-import ai.elimu.model.gson.content.WordGson;
+import ai.elimu.model.v1.gson.content.ContentGson;
+import ai.elimu.model.v1.gson.content.LetterGson;
+import ai.elimu.model.v1.gson.content.NumberGson;
+import ai.elimu.model.v1.gson.content.WordGson;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model

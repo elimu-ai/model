@@ -1,4 +1,4 @@
-package ai.elimu.model.gson;
+package ai.elimu.model.v1.gson;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model

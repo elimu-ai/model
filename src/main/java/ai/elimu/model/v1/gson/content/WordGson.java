@@ -1,4 +1,4 @@
-package ai.elimu.model.gson.content;
+package ai.elimu.model.v1.gson.content;
 
 import java.util.List;
 import ai.elimu.model.enums.content.SpellingConsistency;

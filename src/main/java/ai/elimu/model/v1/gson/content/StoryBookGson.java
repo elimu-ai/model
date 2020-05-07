@@ -1,7 +1,7 @@
-package ai.elimu.model.gson.content;
+package ai.elimu.model.v1.gson.content;
 
 import ai.elimu.model.enums.ReadingLevel;
-import ai.elimu.model.gson.content.multimedia.ImageGson;
+import ai.elimu.model.v1.gson.content.multimedia.ImageGson;
 import java.util.List;
 
 /**
