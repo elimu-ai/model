@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ai.elimu</groupId>
     <artifactId>model</artifactId>
-    <version>2.0.10-SNAPSHOT</version>
+    <version>2.0.10</version>
     <packaging>jar</packaging>
     <name>model</name>
   
@@ -27,7 +27,7 @@
         <connection>scm:git:git@github.com:elimu-ai/model.git</connection>
         <developerConnection>scm:git:git@github.com:elimu-ai/model.git</developerConnection>
         <url>https://github.com/elimu-ai/model</url>
-        <tag>model-1.2.13</tag>
+        <tag>model-2.0.10</tag>
     </scm>
     
     <distributionManagement>
