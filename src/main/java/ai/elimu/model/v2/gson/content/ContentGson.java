@@ -8,6 +8,8 @@ import ai.elimu.model.v1.gson.BaseEntityGson;
 public abstract class ContentGson extends BaseEntityGson {
     
     private Integer revisionNumber;
+    
+    private int usageCount;
 
     public Integer getRevisionNumber() {
         return revisionNumber;
@@ -15,5 +17,13 @@ public abstract class ContentGson extends BaseEntityGson {
 
     public void setRevisionNumber(Integer revisionNumber) {
         this.revisionNumber = revisionNumber;
+    }
+
+    public int getUsageCount() {
+        return usageCount;
+    }
+
+    public void setUsageCount(int usageCount) {
+        this.usageCount = usageCount;
     }
 }
