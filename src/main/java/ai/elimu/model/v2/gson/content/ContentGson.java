@@ -9,7 +9,7 @@ public abstract class ContentGson extends BaseEntityGson {
     
     private Integer revisionNumber;
     
-    private int usageCount;
+    private Integer usageCount;
 
     public Integer getRevisionNumber() {
         return revisionNumber;
@@ -19,11 +19,11 @@ public abstract class ContentGson extends BaseEntityGson {
         this.revisionNumber = revisionNumber;
     }
 
-    public int getUsageCount() {
+    public Integer getUsageCount() {
         return usageCount;
     }
 
-    public void setUsageCount(int usageCount) {
+    public void setUsageCount(Integer usageCount) {
         this.usageCount = usageCount;
     }
 }
