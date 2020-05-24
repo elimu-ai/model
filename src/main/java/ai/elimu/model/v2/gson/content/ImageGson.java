@@ -1,6 +1,7 @@
 package ai.elimu.model.v2.gson.content;
 
 import ai.elimu.model.enums.content.ImageFormat;
+import java.util.Set;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
@@ -16,7 +17,9 @@ public class ImageGson extends ContentGson {
     private String downloadUrl;
     
     private Integer downloadSize;
-
+    
+    private Set<WordGson> words;
+    
     public String getTitle() {
         return title;
     }
@@ -55,5 +58,13 @@ public class ImageGson extends ContentGson {
 
     public void setDownloadSize(Integer downloadSize) {
         this.downloadSize = downloadSize;
+    }
+
+    public Set<WordGson> getWords() {
+        return words;
+    }
+
+    public void setWords(Set<WordGson> words) {
+        this.words = words;
     }
 }
