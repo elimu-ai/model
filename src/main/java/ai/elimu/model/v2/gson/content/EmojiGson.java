@@ -1,6 +1,6 @@
 package ai.elimu.model.v2.gson.content;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
@@ -13,7 +13,7 @@ public class EmojiGson extends ContentGson {
     
     private Double unicodeEmojiVersion;
     
-    private List<WordGson> words;
+    private Set<WordGson> words;
 
     public String getGlyph() {
         return glyph;
@@ -39,11 +39,11 @@ public class EmojiGson extends ContentGson {
         this.unicodeEmojiVersion = unicodeEmojiVersion;
     }
 
-    public List<WordGson> getWords() {
+    public Set<WordGson> getWords() {
         return words;
     }
 
-    public void setWords(List<WordGson> words) {
+    public void setWords(Set<WordGson> words) {
         this.words = words;
     }
 }
