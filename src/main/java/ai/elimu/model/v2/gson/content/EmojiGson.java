@@ -1,11 +1,10 @@
-package ai.elimu.model.v1.gson.content;
+package ai.elimu.model.v2.gson.content;
 
 import java.util.List;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
-@Deprecated
 public class EmojiGson extends ContentGson {
     
     private String glyph;
