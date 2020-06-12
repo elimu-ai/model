@@ -4,8 +4,12 @@ import ai.elimu.model.enums.admin.ApplicationStatus;
 import ai.elimu.model.enums.content.LiteracySkill;
 import ai.elimu.model.enums.content.NumeracySkill;
 import ai.elimu.model.v2.gson.BaseEntityGson;
+import java.util.List;
 import java.util.Set;
 
+/**
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ */
 public class ApplicationGson extends BaseEntityGson {
     
     private String packageName;
@@ -17,6 +21,8 @@ public class ApplicationGson extends BaseEntityGson {
     private Set<NumeracySkill> numeracySkills;
     
     private ApplicationStatus applicationStatus;
+    
+    private List<ApplicationVersionGson> applicationVersions;
 
     public String getPackageName() {
         return packageName;
@@ -56,5 +62,13 @@ public class ApplicationGson extends BaseEntityGson {
 
     public void setApplicationStatus(ApplicationStatus applicationStatus) {
         this.applicationStatus = applicationStatus;
+    }
+
+    public List<ApplicationVersionGson> getApplicationVersions() {
+        return applicationVersions;
+    }
+
+    public void setApplicationVersions(List<ApplicationVersionGson> applicationVersions) {
+        this.applicationVersions = applicationVersions;
     }
 }
