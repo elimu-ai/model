@@ -8,6 +8,9 @@ Code library shared amongst the Web application and Android applications.
 
 See https://github.com/elimu-ai/wiki/blob/master/SOFTWARE_ARCHITECTURE.md
 
+## Continuous Integration
+Travis CI: [![Build Status](https://travis-ci.com/elimu-ai/model.svg?branch=master)](https://travis-ci.com/elimu-ai/model)
+
 ---
 
 ## About the elimu.ai Community
