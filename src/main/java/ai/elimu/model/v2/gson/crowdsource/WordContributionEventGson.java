@@ -8,7 +8,7 @@ import java.util.Calendar;
  * /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
-public class WordContributionEvent extends BaseEntityGson {
+public class WordContributionEventGson extends BaseEntityGson {
     
     private WordGson word;
     
