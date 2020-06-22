@@ -9,9 +9,13 @@ public class AllophoneGson extends ContentGson {
     
     private String valueIpa;
     
-    private boolean diacritic;
+    private Boolean diacritic;
     
     private SoundType soundType;
+
+    public Boolean getDiacritic() {
+        return diacritic;
+    }
 
     public SoundType getSoundType() {
         return soundType;
@@ -21,11 +25,7 @@ public class AllophoneGson extends ContentGson {
         return valueIpa;
     }
 
-    public boolean isDiacritic() {
-        return diacritic;
-    }
-
-    public void setDiacritic(boolean diacritic) {
+    public void setDiacritic(Boolean diacritic) {
         this.diacritic = diacritic;
     }
 

@@ -12,7 +12,7 @@ public class LetterToAllophoneMappingGson extends BaseEntityGson {
     
     private List<AllophoneGson> allophones;
     
-    private int usageCount;
+    private Integer usageCount;
 
     public List<AllophoneGson> getAllophones() {
         return allophones;
@@ -22,7 +22,7 @@ public class LetterToAllophoneMappingGson extends BaseEntityGson {
         return letters;
     }
 
-    public int getUsageCount() {
+    public Integer getUsageCount() {
         return usageCount;
     }
 
@@ -34,7 +34,7 @@ public class LetterToAllophoneMappingGson extends BaseEntityGson {
         this.letters = letters;
     }
 
-    public void setUsageCount(int usageCount) {
+    public void setUsageCount(Integer usageCount) {
         this.usageCount = usageCount;
     }
 }

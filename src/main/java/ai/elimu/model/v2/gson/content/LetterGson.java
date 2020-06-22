@@ -7,17 +7,17 @@ public class LetterGson extends ContentGson {
     
     private String text;
     
-    private boolean diacritic;
+    private Boolean diacritic;
+
+    public Boolean getDiacritic() {
+        return diacritic;
+    }
 
     public String getText() {
         return text;
     }
 
-    public boolean isDiacritic() {
-        return diacritic;
-    }
-
-    public void setDiacritic(boolean diacritic) {
+    public void setDiacritic(Boolean diacritic) {
         this.diacritic = diacritic;
     }
 
