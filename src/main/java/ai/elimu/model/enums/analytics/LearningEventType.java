@@ -4,5 +4,6 @@ public enum LearningEventType {
     
     STORYBOOK_OPENED,
     STORYBOOK_COMPLETED,
-    WORD_PRESSED
+    WORD_PRESSED,
+    LETTER_PRESSED
 }
