@@ -1,11 +1,10 @@
 language: java
 
 jdk:
-  - openjdk8
+  - openjdk11
 
 script:
   mvn clean install
 
 notifications:
   email: false
-  slack: elimu-ai:5hNcmHPFkAETjJZjrkBlNTxr
