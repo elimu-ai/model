@@ -1,16 +1,16 @@
 package ai.elimu.model.v2.gson.content;
 
-import ai.elimu.model.enums.content.ImageFormat;
+import ai.elimu.model.enums.content.VideoFormat;
 import java.util.Set;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
-public class ImageGson extends ContentGson {
+public class VideoGson extends ContentGson {
     
     private String title;
     
-    private ImageFormat imageFormat;
+    private VideoFormat videoFormat;
     
     private String bytesUrl;
     
@@ -26,12 +26,12 @@ public class ImageGson extends ContentGson {
         this.title = title;
     }
 
-    public ImageFormat getImageFormat() {
-        return imageFormat;
+    public VideoFormat getVideoFormat() {
+        return videoFormat;
     }
 
-    public void setImageFormat(ImageFormat imageFormat) {
-        this.imageFormat = imageFormat;
+    public void setVideoFormat(VideoFormat videoFormat) {
+        this.videoFormat = videoFormat;
     }
 
     public String getBytesUrl() {
