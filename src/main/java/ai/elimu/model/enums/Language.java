@@ -14,7 +14,7 @@ public enum Language {
     XHO("xho", "Xhosa", "isiXhosa");
     HAU("hau", "Hausa", "HarshenHausa");
     AFR("afr", "Afrikaans", "Afrikaans");
-    ARA("ara", "Arabic", "al'Arabiyyet");
+    ARA("ara", "Arabic", "alArabiyyet");
     FRO("fro", "French", "Franceis");
     
     /**
