@@ -12,6 +12,7 @@ public enum Language {
     SWA("swa", "Swahili", "Kiswahili"),
     URD("urd", "Urdu", "اردو"),
     XHO("xho", "Xhosa", "isiXhosa");
+    HAU("hau", "Hausa", "HarshenHausa");
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
