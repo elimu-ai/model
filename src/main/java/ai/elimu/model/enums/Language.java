@@ -11,8 +11,8 @@ public enum Language {
     HIN("hin", "Hindi", "हिन्दी"),
     SWA("swa", "Swahili", "Kiswahili"),
     URD("urd", "Urdu", "اردو"),
-    XHO("xho", "Xhosa", "isiXhosa");
-    
+    XHO("xho", "Xhosa", "isiXhosa"),
+    HAU("hau", "Hausa", "Hausa");
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
      */
