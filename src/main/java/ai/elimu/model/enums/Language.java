@@ -13,9 +13,7 @@ public enum Language {
     URD("urd", "Urdu", "اردو"),
     XHO("xho", "Xhosa", "isiXhosa");
     HAU("hau", "Hausa", "HarshenHausa");
-    AFR("afr", "Afrikaans", "Afrikaans");
-    ARA("ara", "Arabic", "alArabiyyet");
-    FRO("fro", "French", "Franceis");
+
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
