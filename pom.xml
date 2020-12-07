@@ -32,16 +32,16 @@
     
     <distributionManagement>
         <repository>
-            <id>bintray-elimu-ai-maven</id>
-            <name>elimu-ai-maven</name>
-            <url>https://api.bintray.com/maven/elimu-ai/maven/model/;publish=1</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/elimu-ai/model</url>
         </repository>
     </distributionManagement>
     <repositories>
         <repository>
-            <id>bintray-elimu-ai-maven</id>
-            <name>bintray</name>
-            <url>https://dl.bintray.com/elimu-ai/maven</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/elimu-ai/model</url>
         </repository>
     </repositories>
     
