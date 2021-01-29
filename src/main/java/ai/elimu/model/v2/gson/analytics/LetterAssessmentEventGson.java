@@ -3,11 +3,11 @@ package ai.elimu.model.v2.gson.analytics;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
-public class WordAssessmentEventGson extends LearningEventGson {
+public class LetterAssessmentEventGson extends LearningEventGson {
     
-    private Long wordId;
+    private Long letterId;
     
-    private String wordText;
+    private String letterText;
     
     private Float masteryScore;
 
@@ -15,20 +15,20 @@ public class WordAssessmentEventGson extends LearningEventGson {
     
     // TODO: assessmentEventType
 
-    public Long getWordId() {
-        return wordId;
+    public Long getLetterId() {
+        return letterId;
     }
 
-    public void setWordId(Long wordId) {
-        this.wordId = wordId;
+    public void setLetterId(Long letterId) {
+        this.letterId = letterId;
     }
 
-    public String getWordText() {
-        return wordText;
+    public String getLetterText() {
+        return letterText;
     }
 
-    public void setWordText(String wordText) {
-        this.wordText = wordText;
+    public void setLetterText(String letterText) {
+        this.letterText = letterText;
     }
 
     public Float getMasteryScore() {
