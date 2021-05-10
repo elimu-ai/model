@@ -10,8 +10,6 @@ public class AudioGson extends MultimediaGson {
     
     private String transcription;
     
-    private Long durationMs;
-    
     private AudioFormat audioFormat;
 
     public String getTranscription() {
@@ -20,14 +18,6 @@ public class AudioGson extends MultimediaGson {
 
     public void setTranscription(String transcription) {
         this.transcription = transcription;
-    }
-    
-    public Long getDurationMs() {
-        return durationMs;
-    }
-    
-    public void setDurationMs(Long durationMs) {
-        this.durationMs = durationMs;
     }
 
     public AudioFormat getAudioFormat() {

@@ -16,6 +16,8 @@ public class AudioGson extends ContentGson {
     private String bytesUrl;
     
     private Integer bytesSize;
+    
+    private Long durationMs;
 
     public String getTitle() {
         return title;
@@ -55,5 +57,13 @@ public class AudioGson extends ContentGson {
 
     public void setBytesSize(Integer bytesSize) {
         this.bytesSize = bytesSize;
+    }
+    
+    public Long getDurationMs() {
+        return durationMs;
+    }
+    
+    public void setDurationMs(Long durationMs) {
+        this.durationMs = durationMs;
     }
 }
