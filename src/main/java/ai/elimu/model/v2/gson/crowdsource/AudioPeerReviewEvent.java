@@ -24,7 +24,7 @@ public class AudioPeerReviewEvent extends BaseEntityGson {
         this.audioContributionEvent = audioContributionEvent;
     }
 
-    public Boolean getApproved() {
+    public Boolean isApproved() {
         return approved;
     }
 
