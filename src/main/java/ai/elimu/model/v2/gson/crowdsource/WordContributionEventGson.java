@@ -5,7 +5,6 @@ import ai.elimu.model.v2.gson.content.WordGson;
 import java.util.Calendar;
 
 /**
- * /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
 public class WordContributionEventGson extends BaseEntityGson {
