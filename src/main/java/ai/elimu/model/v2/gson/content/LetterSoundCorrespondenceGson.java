@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
-public class LetterToAllophoneMappingGson extends BaseEntityGson {
+public class LetterSoundCorrespondenceGson extends BaseEntityGson {
     
     private List<LetterGson> letters;
     
