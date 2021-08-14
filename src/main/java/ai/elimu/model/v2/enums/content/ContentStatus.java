@@ -1,4 +1,4 @@
-package ai.elimu.model.enums.content;
+package ai.elimu.model.v2.enums.content;
 
 public enum ContentStatus {
 
