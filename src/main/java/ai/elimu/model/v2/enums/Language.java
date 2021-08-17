@@ -1,4 +1,4 @@
-package ai.elimu.model.enums;
+package ai.elimu.model.v2.enums;
 
 /**
  * This list represents the currently supported languages.

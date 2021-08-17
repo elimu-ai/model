@@ -1,6 +1,6 @@
 package ai.elimu.model.v2.gson.content;
 
-import ai.elimu.model.enums.content.VideoFormat;
+import ai.elimu.model.v2.enums.content.VideoFormat;
 import java.util.Set;
 
 /**

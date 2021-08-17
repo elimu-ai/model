@@ -1,4 +1,4 @@
-package ai.elimu.model.enums.analytics;
+package ai.elimu.model.v2.enums.analytics;
 
 public enum AssessmentEventType {
     

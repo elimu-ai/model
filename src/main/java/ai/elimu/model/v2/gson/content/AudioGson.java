@@ -1,6 +1,6 @@
 package ai.elimu.model.v2.gson.content;
 
-import ai.elimu.model.enums.content.AudioFormat;
+import ai.elimu.model.v2.enums.content.AudioFormat;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model

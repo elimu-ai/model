@@ -1,4 +1,4 @@
-package ai.elimu.model.enums.content;
+package ai.elimu.model.v2.enums.content;
 
 /**
  * Based on the Global Learning XPRIZE guidelines, section 3.3.2. And on "The 

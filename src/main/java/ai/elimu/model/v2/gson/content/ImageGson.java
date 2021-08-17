@@ -1,6 +1,6 @@
 package ai.elimu.model.v2.gson.content;
 
-import ai.elimu.model.enums.content.ImageFormat;
+import ai.elimu.model.v2.enums.content.ImageFormat;
 import java.util.Set;
 
 /**

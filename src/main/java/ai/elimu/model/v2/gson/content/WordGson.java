@@ -1,6 +1,6 @@
 package ai.elimu.model.v2.gson.content;
 
-import ai.elimu.model.enums.content.WordType;
+import ai.elimu.model.v2.enums.content.WordType;
 import java.util.List;
 
 /**

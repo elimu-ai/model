@@ -1,4 +1,4 @@
-package ai.elimu.model.enums;
+package ai.elimu.model.v2.enums;
 
 /**
  * Based on <a href="https://storyweaver.org.in/reading_levels">StoryWeaver's reading levels</a>.

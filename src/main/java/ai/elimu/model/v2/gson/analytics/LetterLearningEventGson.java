@@ -1,6 +1,6 @@
 package ai.elimu.model.v2.gson.analytics;
 
-import ai.elimu.model.enums.analytics.LearningEventType;
+import ai.elimu.model.v2.enums.analytics.LearningEventType;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
