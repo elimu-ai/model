@@ -27,7 +27,7 @@
         <connection>scm:git:git@github.com:elimu-ai/model.git</connection>
         <developerConnection>scm:git:git@github.com:elimu-ai/model.git</developerConnection>
         <url>https://github.com/elimu-ai/model</url>
-        <tag>model-2.0.29</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <distributionManagement>
