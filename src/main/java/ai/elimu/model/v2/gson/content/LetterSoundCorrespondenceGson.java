@@ -14,16 +14,16 @@ public class LetterSoundCorrespondenceGson extends ContentGson {
     public List<LetterGson> getLetters() {
         return letters;
     }
-
-    public void setAllophones(List<AllophoneGson> allophones) {
-        this.allophones = allophones;
+    
+    public void setLetters(List<LetterGson> letters) {
+        this.letters = letters;
     }
     
     public List<AllophoneGson> getAllophones() {
         return allophones;
     }
 
-    public void setLetters(List<LetterGson> letters) {
-        this.letters = letters;
+    public void setAllophones(List<AllophoneGson> allophones) {
+        this.allophones = allophones;
     }
 }
