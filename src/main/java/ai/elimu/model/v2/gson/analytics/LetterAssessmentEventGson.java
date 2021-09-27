@@ -12,8 +12,6 @@ public class LetterAssessmentEventGson extends AssessmentEventGson {
     private Float masteryScore;
 
     private Long timeSpentMs;
-    
-    // TODO: assessmentEventType
 
     public Long getLetterId() {
         return letterId;

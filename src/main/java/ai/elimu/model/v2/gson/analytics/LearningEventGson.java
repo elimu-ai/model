@@ -1,5 +1,6 @@
 package ai.elimu.model.v2.gson.analytics;
 
+import ai.elimu.model.v2.enums.analytics.LearningEventType;
 import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.Calendar;
 
@@ -13,6 +14,8 @@ public abstract class LearningEventGson extends BaseEntityGson {
     private String androidId;
     
     private String packageName;
+    
+    private LearningEventType learningEventType;
     
     public Calendar getTime() {
         return time;
@@ -36,5 +39,13 @@ public abstract class LearningEventGson extends BaseEntityGson {
 
     public void setPackageName(String packageName) {
         this.packageName = packageName;
+    }
+
+    public LearningEventType getLearningEventType() {
+        return learningEventType;
+    }
+
+    public void setLearningEventType(LearningEventType learningEventType) {
+        this.learningEventType = learningEventType;
     }
 }
