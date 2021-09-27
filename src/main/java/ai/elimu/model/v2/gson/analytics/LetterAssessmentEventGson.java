@@ -3,7 +3,7 @@ package ai.elimu.model.v2.gson.analytics;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
-public class LetterAssessmentEventGson extends LearningEventGson {
+public class LetterAssessmentEventGson extends AssessmentEventGson {
     
     private Long letterId;
     
