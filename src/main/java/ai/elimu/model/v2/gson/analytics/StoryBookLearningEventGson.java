@@ -7,11 +7,21 @@ public class StoryBookLearningEventGson extends LearningEventGson {
     
     private Long storyBookId;
     
+    private String storyBookTitle;
+    
     public Long getStoryBookId() {
         return storyBookId;
     }
 
     public void setStoryBookId(Long storyBookId) {
         this.storyBookId = storyBookId;
+    }
+
+    public String getStoryBookTitle() {
+        return storyBookTitle;
+    }
+
+    public void setStoryBookTitle(String storyBookTitle) {
+        this.storyBookTitle = storyBookTitle;
     }
 }
