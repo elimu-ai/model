@@ -1,4 +1,4 @@
-package ai.elimu.model.v2.enums.content.allophone;
+package ai.elimu.model.v2.enums.content.sound;
 
 public enum ConsonantVoicing {
 
