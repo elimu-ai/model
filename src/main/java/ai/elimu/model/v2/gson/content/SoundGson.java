@@ -5,7 +5,7 @@ import ai.elimu.model.v2.enums.content.sound.SoundType;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
  */
-public class AllophoneGson extends ContentGson {
+public class SoundGson extends ContentGson {
     
     private String valueIpa;
     

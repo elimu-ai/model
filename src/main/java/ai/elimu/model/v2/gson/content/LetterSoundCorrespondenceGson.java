@@ -9,7 +9,7 @@ public class LetterSoundCorrespondenceGson extends ContentGson {
     
     private List<LetterGson> letters;
     
-    private List<AllophoneGson> allophones;
+    private List<SoundGson> sounds;
 
     public List<LetterGson> getLetters() {
         return letters;
@@ -19,11 +19,11 @@ public class LetterSoundCorrespondenceGson extends ContentGson {
         this.letters = letters;
     }
     
-    public List<AllophoneGson> getAllophones() {
-        return allophones;
+    public List<SoundGson> getSounds() {
+        return sounds;
     }
 
-    public void setAllophones(List<AllophoneGson> allophones) {
-        this.allophones = allophones;
+    public void setSounds(List<SoundGson> sounds) {
+        this.sounds = sounds;
     }
 }
