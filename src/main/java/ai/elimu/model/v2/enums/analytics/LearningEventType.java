@@ -7,5 +7,6 @@ public enum LearningEventType {
     STORYBOOK_OPENED,
     STORYBOOK_COMPLETED,
     VIDEO_OPENED,
+    VIDEO_COMPLETED,
     WORD_PRESSED
 }
