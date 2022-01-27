@@ -7,7 +7,7 @@ public class NumberLearningEventGson extends LearningEventGson {
     
     private Long numberId;
     
-    private Integer value;
+    private Integer numberValue;
 
     public Long getNumberId() {
         return numberId;
@@ -17,11 +17,11 @@ public class NumberLearningEventGson extends LearningEventGson {
         this.numberId = numberId;
     }
 
-    public Integer getValue() {
-        return value;
+    public Integer getNumberValue() {
+        return numberValue;
     }
 
-    public void setValue(Integer value) {
-        this.value = value;
+    public void setValue(Integer numberValue) {
+        this.numberValue = numberValue;
     }
 }
