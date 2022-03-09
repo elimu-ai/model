@@ -1,8 +1,12 @@
-# model (library)
+# model (library) 📦
 
 Code library shared amongst the Web application and Android applications.
 
-See https://github.com/elimu-ai/wiki/blob/master/SOFTWARE_ARCHITECTURE.md
+## Software Architecture
+
+[
+  <img width="320" alt="Software Architecture" src="https://user-images.githubusercontent.com/15718174/83595568-fb6a1e00-a594-11ea-990a-10c0bd62ed11.png">
+](https://github.com/elimu-ai/wiki/blob/master/SOFTWARE_ARCHITECTURE.md)
 
 ---
 
