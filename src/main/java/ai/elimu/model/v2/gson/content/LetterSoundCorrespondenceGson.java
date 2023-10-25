@@ -3,7 +3,7 @@ package ai.elimu.model.v2.gson.content;
 import java.util.List;
 
 /**
- * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
 public class LetterSoundCorrespondenceGson extends ContentGson {
     

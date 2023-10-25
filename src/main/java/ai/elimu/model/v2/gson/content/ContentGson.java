@@ -3,7 +3,7 @@ package ai.elimu.model.v2.gson.content;
 import ai.elimu.model.v2.gson.BaseEntityGson;
 
 /**
- * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
 public abstract class ContentGson extends BaseEntityGson {
     
