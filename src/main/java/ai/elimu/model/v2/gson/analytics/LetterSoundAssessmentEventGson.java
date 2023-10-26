@@ -6,6 +6,10 @@ package ai.elimu.model.v2.gson.analytics;
 public class LetterSoundAssessmentEventGson extends AssessmentEventGson {
     
     private Long letterSoundId;
+
+    private String[] letterSoundLetterTexts;
+
+    private String[] letterSoundSoundValuesIpa;
     
     private Float masteryScore;
 
@@ -19,6 +23,22 @@ public class LetterSoundAssessmentEventGson extends AssessmentEventGson {
         this.letterSoundId = letterSoundId;
     }
 
+    public String[] getLetterSoundLetterTexts() {
+        return letterSoundLetterTexts;
+    }
+
+    public void setLetterSoundLetterTexts(String[] letterSoundLetterTexts) {
+        this.letterSoundLetterTexts = letterSoundLetterTexts;
+    }
+
+    public String[] getLetterSoundSoundValuesIpa() {
+        return letterSoundSoundValuesIpa;
+    }
+
+    public void setLetterSoundSoundValuesIpa(String[] letterSoundSoundValuesIpa) {
+        this.letterSoundSoundValuesIpa = letterSoundSoundValuesIpa;
+    }
+    
     public Float getMasteryScore() {
         return masteryScore;
     }
