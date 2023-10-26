@@ -8,10 +8,10 @@ import java.util.List;
  */
 public class WordGson extends ContentGson {
     
-    @Deprecated // TODO: replace with LetterSoundCorrespondences
+    @Deprecated // TODO: replace with LetterSounds
     private String text;
     
-    private List<LetterSoundCorrespondenceGson> letterSoundCorrespondences;
+    private List<LetterSoundGson> letterSounds;
     
     private WordType wordType;
 
@@ -33,11 +33,11 @@ public class WordGson extends ContentGson {
         this.wordType = wordType;
     }
 
-    public List<LetterSoundCorrespondenceGson> getLetterSoundCorrespondences() {
-        return letterSoundCorrespondences;
+    public List<LetterSoundGson> getLetterSounds() {
+        return letterSounds;
     }
 
-    public void setLetterSoundCorrespondences(List<LetterSoundCorrespondenceGson> letterSoundCorrespondences) {
-        this.letterSoundCorrespondences = letterSoundCorrespondences;
+    public void setLetterSounds(List<LetterSoundGson> letterSounds) {
+        this.letterSounds = letterSounds;
     }
 }

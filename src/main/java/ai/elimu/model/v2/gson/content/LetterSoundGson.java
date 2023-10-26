@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
-public class LetterSoundCorrespondenceGson extends ContentGson {
+public class LetterSoundGson extends ContentGson {
     
     private List<LetterGson> letters;
     

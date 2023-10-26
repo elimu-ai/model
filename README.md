@@ -8,6 +8,16 @@ Code library shared amongst the Web application and Android applications.
   <img width="320" alt="Software Architecture" src="https://user-images.githubusercontent.com/15718174/83595568-fb6a1e00-a594-11ea-990a-10c0bd62ed11.png">
 ](https://github.com/elimu-ai/wiki/blob/main/SOFTWARE_ARCHITECTURE.md)
 
+## Development 👩🏽‍💻
+
+```
+mvn clean
+mvn compile
+```
+
+## Release 📦
+
+See [.github/workflows/maven-publish.yml](.github/workflows/maven-publish.yml)
 
 ---
 
