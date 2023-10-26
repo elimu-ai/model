@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
 public class ApplicationGson extends BaseEntityGson {
     

@@ -5,7 +5,7 @@ import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.Calendar;
 
 /**
- * For documentation, see https://github.com/elimu-ai/webapp/tree/master/src/main/java/ai/elimu/model
+ * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
 public abstract class AssessmentEventGson extends BaseEntityGson {
     

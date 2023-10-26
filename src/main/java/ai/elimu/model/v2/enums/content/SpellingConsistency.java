@@ -1,7 +1,7 @@
 package ai.elimu.model.v2.enums.content;
 
 /**
- * Grapheme-to-phoneme correspondence
+ * Grapheme-to-phoneme (letter-sound) correspondence
  */
 public enum SpellingConsistency {
 
