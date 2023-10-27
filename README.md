@@ -21,6 +21,6 @@ See [.github/workflows/maven-publish.yml](.github/workflows/maven-publish.yml)
 
 ---
 
-elimu.ai - Open source learning software for out-of-school children ✨🚀
+elimu.ai - Free open source learning software for out-of-school children ✨🚀
 
 [Website 🌐](https://elimu.ai) &nbsp; [Wiki 📃](https://github.com/elimu-ai/wiki#readme) &nbsp; [Projects 👩🏽‍💻](https://github.com/orgs/elimu-ai/projects?query=is%3Aopen) &nbsp; [Milestones 🎯](https://github.com/elimu-ai/wiki/milestones) &nbsp; [Community 👋🏽](https://github.com/elimu-ai/wiki#open-source-community)
