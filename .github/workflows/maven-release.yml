@@ -18,3 +18,5 @@ jobs:
       - run: mvn release:clean
       - run: mvn release:prepare
       - run: mvn release:perform
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
