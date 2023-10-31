@@ -25,7 +25,7 @@
     </ciManagement>
     <scm>
         <connection>scm:git:https://github.com/elimu-ai/model.git</connection>
-        <developerConnection>scm:git:git@github.com:elimu-ai/model.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/elimu-ai/model.git</developerConnection>
         <url>https://github.com/elimu-ai/model</url>
         <tag>HEAD</tag>
     </scm>
