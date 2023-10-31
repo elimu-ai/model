@@ -14,3 +14,4 @@ jobs:
           java-version: 8
           cache: maven
       - run: mvn release:clean
+      - run: mvn release:prepare
