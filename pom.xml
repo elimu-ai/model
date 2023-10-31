@@ -24,7 +24,7 @@
         <url>https://travis-ci.org/elimu-ai/model</url>
     </ciManagement>
     <scm>
-        <connection>scm:git:git@github.com:elimu-ai/model.git</connection>
+        <connection>scm:git:https://github.com/elimu-ai/model.git</connection>
         <developerConnection>scm:git:git@github.com:elimu-ai/model.git</developerConnection>
         <url>https://github.com/elimu-ai/model</url>
         <tag>HEAD</tag>
