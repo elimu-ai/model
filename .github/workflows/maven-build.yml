@@ -10,7 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -19,4 +19,7 @@ jobs:
         distribution: 'temurin'
         java-version: 8
         cache: maven
-    - run: mvn -B package --file pom.xml
+    - run: mvn clean
+    - run: mvn compile
+    - run: mvn test
+    - run: mvn package
