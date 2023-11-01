@@ -16,12 +16,12 @@
     </prerequisites>
     
     <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/elimu-ai/model/projects</url>
+        <system>GitHub Projects</system>
+        <url>https://github.com/orgs/elimu-ai/projects?query=is%3Aopen</url>
     </issueManagement>
     <ciManagement>
-        <system>Travis CI</system>
-        <url>https://travis-ci.org/elimu-ai/model</url>
+        <system>GitHub Actions</system>
+        <url>https://github.com/elimu-ai/model/actions</url>
     </ciManagement>
     <scm>
         <connection>scm:git:https://github.com/elimu-ai/model.git</connection>
