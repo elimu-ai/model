@@ -1,6 +1,6 @@
 # model (library) 📦
 
-Code library shared amongst the Web application and Android applications.
+Code library shared amongst the Webapp and Android applications.
 
 ## Software Architecture
 
