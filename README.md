@@ -1,6 +1,6 @@
 # model (library) 📦
 
-Code library shared amongst the Webapp and Android applications.
+Code library shared amongst the [Webapp](https://github.com/elimu-ai/webapp) and Android applications.
 
 ## Software Architecture
 
