@@ -17,7 +17,12 @@ mvn compile
 
 ## Release 📦
 
-See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml)
+See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml) → 
+
+> [!NOTE]
+> To perform a release, go to https://github.com/elimu-ai/model/actions/workflows/maven-release.yml, and press "Run workflow."
+
+![Run workflow](https://github.com/elimu-ai/wiki/assets/1451036/5bbfe03f-724c-4582-bc3c-411b763316db)
 
 ---
 
