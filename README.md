@@ -17,7 +17,7 @@ mvn compile
 
 ## Release 📦
 
-See [.github/workflows/maven-release.yml](.github/workflows/maven-relevase.yml)
+See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml)
 
 ---
 
