@@ -28,7 +28,7 @@ See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml)
 
 [![](https://jitpack.io/v/elimu-ai/model.svg)](https://jitpack.io/#elimu-ai/model)
 
-For usage in other code repositories, see https://jitpack.io/#elimu-ai/model
+After each release, the resulting `.jar` file gets uploaded to https://jitpack.io/#elimu-ai/model
 
 ### Gradle
 
