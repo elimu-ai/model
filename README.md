@@ -2,7 +2,7 @@
 
 Code library shared amongst the [Webapp](https://github.com/elimu-ai/webapp) and Android applications.
 
-## Software Architecture
+## Software Architecture 📐
 
 [
   <img width="320" alt="Software Architecture" src="https://user-images.githubusercontent.com/15718174/83595568-fb6a1e00-a594-11ea-990a-10c0bd62ed11.png">
@@ -23,6 +23,49 @@ See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml)
 > To perform a release, go to https://github.com/elimu-ai/model/actions/workflows/maven-release.yml, and press "Run workflow."
 
 ![Run workflow](https://github.com/elimu-ai/wiki/assets/1451036/5bbfe03f-724c-4582-bc3c-411b763316db)
+
+## Usage
+
+[![](https://jitpack.io/v/elimu-ai/model.svg)](https://jitpack.io/#elimu-ai/model)
+
+For usage in other code repositories, see https://jitpack.io/#elimu-ai/model
+
+### Gradle
+
+`./build.gradle`:
+
+```gradle
+repositories {
+    maven { url "https://jitpack.io" }
+}
+```
+
+`./app/build.gradle`:
+
+```gradle
+dependencies {
+    implementation 'com.github.elimu-ai:model:<version>'
+}
+```
+
+### Maven
+
+`./pom.xml`:
+
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+```
+
+```xml
+<dependency>
+    <groupId>com.github.elimu-ai</groupId>
+    <artifactId>model</artifactId>
+    <version>Tag</version>
+</dependency>
+```
 
 ---
 
