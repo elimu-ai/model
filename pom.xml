@@ -11,10 +11,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
-    <prerequisites>
-        <maven>3.2.2</maven>
-    </prerequisites>
-    
     <issueManagement>
         <system>GitHub Projects</system>
         <url>https://github.com/orgs/elimu-ai/projects?query=is%3Aopen</url>
