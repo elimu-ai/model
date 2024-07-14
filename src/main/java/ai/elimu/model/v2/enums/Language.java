@@ -7,9 +7,9 @@ public enum Language {
     
     BEN("ben", "Bengali", "বাংলা"),
     ENG("eng", "English", "English"),
-    FIL("fil", "Filipino", "Pilipino"),
     HIN("hin", "Hindi", "हिन्दी"),
     SWA("swa", "Swahili", "Kiswahili"),
+    TGL("tgl", "Tagalog", "Tagalog"),
     URD("urd", "Urdu", "اردو"),
     XHO("xho", "Xhosa", "isiXhosa");
     
