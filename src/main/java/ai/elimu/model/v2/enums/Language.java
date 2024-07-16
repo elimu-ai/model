@@ -5,13 +5,9 @@ package ai.elimu.model.v2.enums;
  */
 public enum Language {
     
-    BEN("ben", "Bengali", "বাংলা"),
     ENG("eng", "English", "English"),
     HIN("hin", "Hindi", "हिन्दी"),
-    SWA("swa", "Swahili", "Kiswahili"),
-    TGL("tgl", "Tagalog", "Tagalog"),
-    URD("urd", "Urdu", "اردو"),
-    XHO("xho", "Xhosa", "isiXhosa");
+    TGL("tgl", "Tagalog", "Tagalog");
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
