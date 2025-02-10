@@ -7,7 +7,8 @@ public enum Language {
     
     ENG("eng", "English", "English"),
     HIN("hin", "Hindi", "हिन्दी"),
-    TGL("tgl", "Tagalog", "Tagalog");
+    TGL("tgl", "Tagalog", "Tagalog"),
+    THA("tha", "Thai", "ไทย");
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
