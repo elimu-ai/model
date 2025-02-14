@@ -2,39 +2,19 @@ package ai.elimu.model.v2.gson.content;
 
 import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.List;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class StoryBookChapterGson extends BaseEntityGson {
-    
-    private Integer sortOrder;
-    
-    private ImageGson image;
-    
-    private List<StoryBookParagraphGson> storyBookParagraphs;
 
-    public Integer getSortOrder() {
-        return sortOrder;
-    }
+  private Integer sortOrder;
 
-    public void setSortOrder(Integer sortOrder) {
-        this.sortOrder = sortOrder;
-    }
-    
-    public ImageGson getImage() {
-        return image;
-    }
+  private ImageGson image;
 
-    public void setImage(ImageGson image) {
-        this.image = image;
-    }
-
-    public List<StoryBookParagraphGson> getStoryBookParagraphs() {
-        return storyBookParagraphs;
-    }
-
-    public void setStoryBookParagraphs(List<StoryBookParagraphGson> storyBookParagraphs) {
-        this.storyBookParagraphs = storyBookParagraphs;
-    }
+  private List<StoryBookParagraphGson> storyBookParagraphs;
 }

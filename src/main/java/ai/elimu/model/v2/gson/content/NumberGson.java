@@ -1,27 +1,16 @@
 package ai.elimu.model.v2.gson.content;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class NumberGson extends ContentGson {
-    
-    private Integer value;
-    
-    private String symbol;
 
-    public Integer getValue() {
-        return value;
-    }
+  private Integer value;
 
-    public void setValue(Integer value) {
-        this.value = value;
-    }
-
-    public String getSymbol() {
-        return symbol;
-    }
-
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
-    }
+  private String symbol;
 }

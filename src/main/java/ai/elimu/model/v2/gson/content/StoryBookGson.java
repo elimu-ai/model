@@ -2,59 +2,23 @@ package ai.elimu.model.v2.gson.content;
 
 import ai.elimu.model.v2.enums.ReadingLevel;
 import java.util.List;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class StoryBookGson extends ContentGson {
-    
-    private String title;
-    
-    private String description;
-    
-    private ImageGson coverImage;
-    
-    private ReadingLevel readingLevel;
-    
-    private List<StoryBookChapterGson> storyBookChapters;
 
-    public String getTitle() {
-        return title;
-    }
+  private String title;
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-    
-    public String getDescription() {
-        return description;
-    }
+  private String description;
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-    
-    public ImageGson getCoverImage() {
-        return coverImage;
-    }
+  private ImageGson coverImage;
 
-    public void setCoverImage(ImageGson coverImage) {
-        this.coverImage = coverImage;
-    }
+  private ReadingLevel readingLevel;
 
-    public ReadingLevel getReadingLevel() {
-        return readingLevel;
-    }
-
-    public void setReadingLevel(ReadingLevel readingLevel) {
-        this.readingLevel = readingLevel;
-    }
-
-    public List<StoryBookChapterGson> getStoryBookChapters() {
-        return storyBookChapters;
-    }
-
-    public void setStoryBookChapters(List<StoryBookChapterGson> storyBookChapters) {
-        this.storyBookChapters = storyBookChapters;
-    }
+  private List<StoryBookChapterGson> storyBookChapters;
 }

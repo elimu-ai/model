@@ -1,47 +1,20 @@
 package ai.elimu.model.v2.gson.analytics;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class NumberAssessmentEventGson extends AssessmentEventGson {
-    
-    private Long numberId;
-    
-    private Integer numberValue;
-    
-    private Float masteryScore;
 
-    private Long timeSpentMs;
+  private Long numberId;
 
-    public Long getNumberId() {
-        return numberId;
-    }
+  private Integer numberValue;
 
-    public void setNumberId(Long numberId) {
-        this.numberId = numberId;
-    }
+  private Float masteryScore;
 
-    public Integer getNumberValue() {
-        return numberValue;
-    }
-
-    public void setNumberValue(Integer numberValue) {
-        this.numberValue = numberValue;
-    }
-
-    public Float getMasteryScore() {
-        return masteryScore;
-    }
-
-    public void setMasteryScore(Float masteryScore) {
-        this.masteryScore = masteryScore;
-    }
-
-    public Long getTimeSpentMs() {
-        return timeSpentMs;
-    }
-
-    public void setTimeSpentMs(Long timeSpentMs) {
-        this.timeSpentMs = timeSpentMs;
-    }
+  private Long timeSpentMs;
 }

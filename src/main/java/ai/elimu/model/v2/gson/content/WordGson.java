@@ -2,42 +2,20 @@ package ai.elimu.model.v2.gson.content;
 
 import ai.elimu.model.v2.enums.content.WordType;
 import java.util.List;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class WordGson extends ContentGson {
-    
-    @Deprecated // TODO: replace with LetterSounds
-    private String text;
-    
-    private List<LetterSoundGson> letterSounds;
-    
-    private WordType wordType;
 
-    @Deprecated
-    public String getText() {
-        return text;
-    }
+  @Deprecated // TODO: replace with LetterSounds
+  private String text;
 
-    @Deprecated
-    public void setText(String text) {
-        this.text = text;
-    }
+  private List<LetterSoundGson> letterSounds;
 
-    public WordType getWordType() {
-        return wordType;
-    }
-
-    public void setWordType(WordType wordType) {
-        this.wordType = wordType;
-    }
-
-    public List<LetterSoundGson> getLetterSounds() {
-        return letterSounds;
-    }
-
-    public void setLetterSounds(List<LetterSoundGson> letterSounds) {
-        this.letterSounds = letterSounds;
-    }
+  private WordType wordType;
 }

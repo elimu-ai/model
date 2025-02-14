@@ -2,59 +2,23 @@ package ai.elimu.model.v2.gson.content;
 
 import ai.elimu.model.v2.enums.content.ImageFormat;
 import java.util.Set;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class ImageGson extends ContentGson {
-    
-    private String title;
-    
-    private ImageFormat imageFormat;
-    
-    private String bytesUrl;
-    
-    private Integer bytesSize;
-    
-    private Set<WordGson> words;
 
-    public String getTitle() {
-        return title;
-    }
+  private String title;
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+  private ImageFormat imageFormat;
 
-    public ImageFormat getImageFormat() {
-        return imageFormat;
-    }
+  private String bytesUrl;
 
-    public void setImageFormat(ImageFormat imageFormat) {
-        this.imageFormat = imageFormat;
-    }
+  private Integer bytesSize;
 
-    public String getBytesUrl() {
-        return bytesUrl;
-    }
-
-    public void setBytesUrl(String bytesUrl) {
-        this.bytesUrl = bytesUrl;
-    }
-
-    public Integer getBytesSize() {
-        return bytesSize;
-    }
-
-    public void setBytesSize(Integer bytesSize) {
-        this.bytesSize = bytesSize;
-    }
-
-    public Set<WordGson> getWords() {
-        return words;
-    }
-
-    public void setWords(Set<WordGson> words) {
-        this.words = words;
-    }
+  private Set<WordGson> words;
 }
