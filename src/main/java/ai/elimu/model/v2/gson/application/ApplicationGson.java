@@ -6,69 +6,25 @@ import ai.elimu.model.v2.enums.content.NumeracySkill;
 import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.List;
 import java.util.Set;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class ApplicationGson extends BaseEntityGson {
-    
-    private String packageName;
-    
-    private Boolean infrastructural;
-    
-    private Set<LiteracySkill> literacySkills;
-    
-    private Set<NumeracySkill> numeracySkills;
-    
-    private ApplicationStatus applicationStatus;
-    
-    private List<ApplicationVersionGson> applicationVersions;
 
-    public String getPackageName() {
-        return packageName;
-    }
+  private String packageName;
 
-    public void setPackageName(String packageName) {
-        this.packageName = packageName;
-    }
+  private Boolean infrastructural;
 
-    public Boolean isInfrastructural() {
-        return infrastructural;
-    }
+  private Set<LiteracySkill> literacySkills;
 
-    public void setInfrastructural(Boolean isInfrastructural) {
-        this.infrastructural = isInfrastructural;
-    }
+  private Set<NumeracySkill> numeracySkills;
 
-    public Set<LiteracySkill> getLiteracySkills() {
-        return literacySkills;
-    }
+  private ApplicationStatus applicationStatus;
 
-    public void setLiteracySkills(Set<LiteracySkill> literacySkills) {
-        this.literacySkills = literacySkills;
-    }
-
-    public Set<NumeracySkill> getNumeracySkills() {
-        return numeracySkills;
-    }
-
-    public void setNumeracySkills(Set<NumeracySkill> numeracySkills) {
-        this.numeracySkills = numeracySkills;
-    }
-
-    public ApplicationStatus getApplicationStatus() {
-        return applicationStatus;
-    }
-
-    public void setApplicationStatus(ApplicationStatus applicationStatus) {
-        this.applicationStatus = applicationStatus;
-    }
-
-    public List<ApplicationVersionGson> getApplicationVersions() {
-        return applicationVersions;
-    }
-
-    public void setApplicationVersions(List<ApplicationVersionGson> applicationVersions) {
-        this.applicationVersions = applicationVersions;
-    }
+  private List<ApplicationVersionGson> applicationVersions;
 }

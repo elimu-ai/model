@@ -1,49 +1,21 @@
 package ai.elimu.model.v2.gson.content;
 
 import java.util.Set;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class EmojiGson extends ContentGson {
-    
-    private String glyph;
-    
-    private Double unicodeVersion;
-    
-    private Double unicodeEmojiVersion;
-    
-    private Set<WordGson> words;
 
-    public String getGlyph() {
-        return glyph;
-    }
+  private String glyph;
 
-    public void setGlyph(String glyph) {
-        this.glyph = glyph;
-    }
+  private Double unicodeVersion;
 
-    public Double getUnicodeVersion() {
-        return unicodeVersion;
-    }
+  private Double unicodeEmojiVersion;
 
-    public void setUnicodeVersion(Double unicodeVersion) {
-        this.unicodeVersion = unicodeVersion;
-    }
-
-    public Double getUnicodeEmojiVersion() {
-        return unicodeEmojiVersion;
-    }
-
-    public void setUnicodeEmojiVersion(Double unicodeEmojiVersion) {
-        this.unicodeEmojiVersion = unicodeEmojiVersion;
-    }
-
-    public Set<WordGson> getWords() {
-        return words;
-    }
-
-    public void setWords(Set<WordGson> words) {
-        this.words = words;
-    }
+  private Set<WordGson> words;
 }

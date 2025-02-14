@@ -1,8 +1,14 @@
 package ai.elimu.model.v2.enums;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 /**
  * This list represents the currently supported languages.
  */
+@Getter
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public enum Language {
     
     ENG("eng", "English", "English"),
@@ -18,22 +24,4 @@ public enum Language {
     private final String englishName;
     
     private final String nativeName;
-    
-    private Language(String isoCode, String englishName, String nativeName) {
-        this.isoCode = isoCode;
-        this.englishName = englishName;
-        this.nativeName = nativeName;
-    }
-    
-    public String getIsoCode() {
-        return isoCode;
-    }
-
-    public String getEnglishName() {
-        return englishName;
-    }
-
-    public String getNativeName() {
-        return nativeName;
-    }
 }

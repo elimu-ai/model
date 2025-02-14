@@ -1,27 +1,16 @@
 package ai.elimu.model.v2.gson.content;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class LetterGson extends ContentGson {
-    
-    private String text;
-    
-    private Boolean diacritic;
 
-    public Boolean getDiacritic() {
-        return diacritic;
-    }
+  private String text;
 
-    public String getText() {
-        return text;
-    }
-
-    public void setDiacritic(Boolean diacritic) {
-        this.diacritic = diacritic;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
+  private Boolean diacritic;
 }

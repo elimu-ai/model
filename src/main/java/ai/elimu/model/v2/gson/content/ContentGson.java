@@ -1,29 +1,17 @@
 package ai.elimu.model.v2.gson.content;
 
 import ai.elimu.model.v2.gson.BaseEntityGson;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/model
  */
+@Data
+@EqualsAndHashCode(callSuper = true)
 public abstract class ContentGson extends BaseEntityGson {
-    
-    private Integer revisionNumber;
-    
-    private Integer usageCount;
 
-    public Integer getRevisionNumber() {
-        return revisionNumber;
-    }
+  private Integer revisionNumber;
 
-    public void setRevisionNumber(Integer revisionNumber) {
-        this.revisionNumber = revisionNumber;
-    }
-
-    public Integer getUsageCount() {
-        return usageCount;
-    }
-
-    public void setUsageCount(Integer usageCount) {
-        this.usageCount = usageCount;
-    }
+  private Integer usageCount;
 }
