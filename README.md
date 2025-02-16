@@ -24,6 +24,10 @@ See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml)
 
 ![Run workflow](https://github.com/elimu-ai/wiki/assets/1451036/5bbfe03f-724c-4582-bc3c-411b763316db)
 
+### Write release notes 🗒️
+
+Go to https://github.com/elimu-ai/model/tags and press "Create release."
+
 ## Usage
 
 [![](https://jitpack.io/v/elimu-ai/model.svg)](https://jitpack.io/#elimu-ai/model)
