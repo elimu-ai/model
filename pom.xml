@@ -51,7 +51,6 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.12.1</version>
         <configuration>
-          <!-- Better approach for Java 9+ -->
           <release>${java.version}</release>
           <verbose>true</verbose>
           <showDeprecation>true</showDeprecation>
