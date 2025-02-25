@@ -52,6 +52,9 @@ dependencies {
 }
 ```
 
+> [!TIP]
+> To find all Android app repos that depend on this library, go to https://github.com/search?q=org%3Aelimu-ai+com.github.elimu-ai%3Amodel%3A&type=code
+
 ### Maven
 
 `./pom.xml`:
