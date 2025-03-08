@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public abstract class AssessmentEventGson extends BaseEntityGson {
 
-  private Calendar time;
+  private Calendar timestamp;
 
   private String androidId;
 
