@@ -20,5 +20,7 @@ public class VideoGson extends ContentGson {
 
   private Integer bytesSize;
 
+  private String thumbnailUrl;
+
   private Set<WordGson> words;
 }
