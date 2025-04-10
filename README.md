@@ -24,6 +24,23 @@ See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml)
 
 ![Run workflow](https://github.com/elimu-ai/wiki/assets/1451036/5bbfe03f-724c-4582-bc3c-411b763316db)
 
+> [!IMPORTANT]
+> After you publish a new release, remember to also bump the version in the Webapp repo and all Android app repos that depend on the `utils` library:
+> * https://github.com/elimu-ai/webapp/blob/main/pom.xml
+> * https://github.com/elimu-ai/appstore/blob/main/gradle/libs.versions.toml
+> * https://github.com/elimu-ai/content-provider/blob/main/gradle/libs.versions.toml
+> * analytics
+>   * https://github.com/elimu-ai/analytics/blob/main/app/build.gradle
+>   * https://github.com/elimu-ai/analytics/blob/main/utils/build.gradle
+> * https://github.com/elimu-ai/launcher/blob/main/gradle/libs.versions.toml
+> * https://github.com/elimu-ai/common-utils/blob/main/gradle/libs.versions.toml
+> * https://github.com/elimu-ai/kukariri/blob/main/gradle/libs.versions.toml
+> * https://github.com/elimu-ai/image-picker/blob/main/app/build.gradle
+> * https://github.com/elimu-ai/sound-cards/blob/main/app/build.gradle
+> * https://github.com/elimu-ai/vitabu/blob/main/gradle/libs.versions.toml
+> * https://github.com/elimu-ai/filamu/blob/main/gradle/libs.versions.toml
+> * https://github.com/elimu-ai/chat/blob/main/app/build.gradle
+
 ### Write release notes 🗒️
 
 Go to https://github.com/elimu-ai/model/tags and press "Create release."
@@ -51,9 +68,6 @@ dependencies {
     implementation 'com.github.elimu-ai:model:<version>'
 }
 ```
-
-> [!TIP]
-> To find all Android app repos that depend on this library, go to https://github.com/search?q=org%3Aelimu-ai+com.github.elimu-ai%3Amodel%3A&type=code
 
 ### Maven
 
