@@ -20,7 +20,7 @@ public class ImageGson extends ContentGson {
 
   private String bytesUrl;
 
-  private Integer bytesSize;
+  private Integer fileSize;
 
   private Set<WordGson> words;
 }
