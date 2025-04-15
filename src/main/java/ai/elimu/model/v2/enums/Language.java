@@ -16,7 +16,8 @@ public enum Language {
     ENG("eng", "English", "English", new Locale("eng")),
     HIN("hin", "Hindi", "हिन्दी", new Locale("hin")),
     TGL("tgl", "Tagalog", "Tagalog", new Locale("tgl")),
-    THA("tha", "Thai", "ไทย", new Locale("tha"));
+    THA("tha", "Thai", "ไทย", new Locale("tha")),
+    VIE("vie", "Vietnamese", "Tiếng Việt", new Locale("vie"));
     
     /**
      * ISO 639-2 language code. See https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
