@@ -16,6 +16,8 @@ public class VideoGson extends ContentGson {
 
   private VideoFormat videoFormat;
 
+  private String checksumMd5;
+
   private String bytesUrl;
 
   private Integer bytesSize;
