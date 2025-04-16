@@ -18,7 +18,7 @@ public class ImageGson extends ContentGson {
 
   private String checksumMd5;
 
-  private String bytesUrl;
+  private String fileUrl;
 
   private Integer fileSize;
 
