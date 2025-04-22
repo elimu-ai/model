@@ -22,6 +22,7 @@ public class VideoGson extends ContentGson {
 
   private Integer fileSize;
 
+  @Deprecated
   private String thumbnailUrl;
 
   private ImageGson posterImage;
