@@ -24,5 +24,7 @@ public class VideoGson extends ContentGson {
 
   private String thumbnailUrl;
 
+  private ImageGson posterImage;
+
   private Set<WordGson> words;
 }
