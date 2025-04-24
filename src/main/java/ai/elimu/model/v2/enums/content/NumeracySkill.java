@@ -1,9 +1,8 @@
 package ai.elimu.model.v2.enums.content;
 
 /**
- * Based on the Global Learning XPRIZE guidelines, section 3.3.3. And on the 
- * "Early Grade Mathematics Assessment (EGMA): A Conceptual Framework Based on 
- * Mathematics Skills Development in Children" by USAID (EdData II).
+ * Based on the Early Grade Mathematics Assessment (EGMA) Toolkit: 
+ * https://github.com/elimu-ai/wiki/blob/main/numeracy-skills/EGMA.pdf
  */
 public enum NumeracySkill {
     
