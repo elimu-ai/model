@@ -1,9 +1,8 @@
 package ai.elimu.model.v2.enums.content;
 
 /**
- * Based on the Global Learning XPRIZE guidelines, section 3.3.2. And on "The 
- * Early Grade Reading Assessment: Applications and Interventions to Improve 
- * Basic Literacy".
+ * Based on the Early Grade Reading Assessment (EGRA) Toolkit: 
+ * https://github.com/elimu-ai/wiki/blob/main/numeracy-skills/EGMA.pdf
  */
 public enum LiteracySkill {
     
