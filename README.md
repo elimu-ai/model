@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/elimu-ai/model.svg)](https://jitpack.io/#ai.elimu/model)
+
 # model (library) 📦
 
 Code library shared amongst the [Webapp](https://github.com/elimu-ai/webapp) and Android applications.
@@ -17,12 +19,12 @@ mvn compile
 
 ## Release 📦
 
-See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml)
 
-> [!NOTE]
-> To perform a release, go to https://github.com/elimu-ai/model/actions/workflows/maven-release.yml, and press "Run workflow."
+To perform a release, follow these steps:
 
-![Run workflow](https://github.com/elimu-ai/wiki/assets/1451036/5bbfe03f-724c-4582-bc3c-411b763316db)
+1. Merge your PR into the `main` branch
+1. Wait for the ["Maven Release"](https://github.com/elimu-ai/model/actions/workflows/maven-release.yml) workflow to complete
+1. Ensure that the new release version appears at https://jitpack.io/#ai.elimu/model with "Status: ok"
 
 > [!IMPORTANT]
 > After you publish a new release, remember to also bump the version in the Webapp repo and all Android app repos that depend on the `utils` library:
@@ -43,13 +45,11 @@ See [.github/workflows/maven-release.yml](.github/workflows/maven-release.yml)
 
 ### Write release notes 🗒️
 
-Go to https://github.com/elimu-ai/model/tags and press "Create release."
+If the PR that you merged contains _breaking changes_, go to https://github.com/elimu-ai/model/tags and press "Create release." Then write instructions on how to handle the breaking changes.
 
 ## Usage
 
-[![](https://jitpack.io/v/elimu-ai/model.svg)](https://jitpack.io/#elimu-ai/model)
-
-After each release, the resulting `.jar` file gets uploaded to https://jitpack.io/#elimu-ai/model
+After each release, the resulting `.jar` file gets uploaded to https://jitpack.io/#ai.elimu/model
 
 ### Gradle
 
@@ -57,7 +57,8 @@ After each release, the resulting `.jar` file gets uploaded to https://jitpack.i
 
 ```gradle
 repositories {
-    maven { url "https://jitpack.io" }
+    mavenCentral()
++    maven { url "https://jitpack.io" }
 }
 ```
 
@@ -65,7 +66,7 @@ repositories {
 
 ```gradle
 dependencies {
-    implementation 'com.github.elimu-ai:model:<version>'
+    implementation 'ai.elimu:model:<version>'
 }
 ```
 
@@ -82,7 +83,7 @@ dependencies {
 
 ```xml
 <dependency>
-    <groupId>com.github.elimu-ai</groupId>
+    <groupId>ai.elimu</groupId>
     <artifactId>model</artifactId>
     <version>Tag</version>
 </dependency>
@@ -94,7 +95,7 @@ dependencies {
   <img src="https://github.com/elimu-ai/webapp/blob/main/src/main/webapp/static/img/logo-text-256x78.png" />
 </p>
 <p align="center">
-  elimu.ai - Free open-source learning software for out-of-school children ✨🚀
+  elimu.ai - Free open-source learning software for out-of-school children 🚀✨
 </p>
 <p align="center">
   <a href="https://elimu.ai">Website 🌐</a>
