@@ -43,7 +43,7 @@ After each release, the resulting `.jar` file gets uploaded to https://jitpack.i
 
 `./build.gradle`:
 
-```gradle
+```diff
 repositories {
     mavenCentral()
 +    maven { url "https://jitpack.io" }
