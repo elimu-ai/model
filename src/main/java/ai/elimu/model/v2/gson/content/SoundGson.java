@@ -16,4 +16,6 @@ public class SoundGson extends ContentGson {
   private Boolean diacritic;
 
   private SoundType soundType;
+
+  private String valueSampa;
 }
