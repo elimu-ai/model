@@ -2,6 +2,8 @@ package ai.elimu.model.v2.gson.content;
 
 import ai.elimu.model.v2.enums.content.WordType;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,10 +14,18 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class WordGson extends ContentGson {
 
-  @Deprecated // TODO: replace with LetterSounds
-  private String text;
-
   private List<LetterSoundGson> letterSounds;
 
   private WordType wordType;
+
+  public String getText() {
+    if (letterSounds == null || letterSounds.isEmpty()) {
+      return "";
+    }
+
+    return letterSounds.stream()
+            .flatMap(ls -> ls.getLetters().stream())
+            .map(LetterGson::getText)
+            .collect(Collectors.joining());
+  }
 }
