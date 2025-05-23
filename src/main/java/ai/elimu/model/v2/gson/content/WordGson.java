@@ -19,10 +19,6 @@ public class WordGson extends ContentGson {
   private WordType wordType;
 
   public String getText() {
-    if (letterSounds == null || letterSounds.isEmpty()) {
-      return "";
-    }
-
     return letterSounds.stream()
             .flatMap(ls -> ls.getLetters().stream())
             .map(LetterGson::getText)
