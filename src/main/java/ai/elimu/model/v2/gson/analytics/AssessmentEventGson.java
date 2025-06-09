@@ -45,7 +45,7 @@ public abstract class AssessmentEventGson extends BaseEntityGson {
    * 
    * Example:
    * <pre>
-   * {'word_ids_presented': [1,2,3], 'word_id_selected': 2}
+   * {'word_ids_presented': [1,2,3], 'word_id_selected': [2]}
    * </pre>
    */
   private String additionalData;
