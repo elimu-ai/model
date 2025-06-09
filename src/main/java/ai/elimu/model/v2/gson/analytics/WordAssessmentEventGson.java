@@ -11,10 +11,6 @@ import lombok.EqualsAndHashCode;
 public class WordAssessmentEventGson extends AssessmentEventGson {
 
   private String wordText;
-  
+
   private Long wordId;
-
-  private Float masteryScore;
-
-  private Long timeSpentMs;
 }
