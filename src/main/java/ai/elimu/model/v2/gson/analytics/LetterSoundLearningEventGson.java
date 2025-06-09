@@ -10,9 +10,9 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class LetterSoundLearningEventGson extends LearningEventGson {
 
+  private String[] letterSoundLetters;
+
+  private String[] letterSoundSounds;
+
   private Long letterSoundId;
-
-  private String[] letterSoundLetterTexts;
-
-  private String[] letterSoundSoundValuesIpa;
 }

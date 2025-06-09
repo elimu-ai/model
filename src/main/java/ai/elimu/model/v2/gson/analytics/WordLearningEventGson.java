@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class WordLearningEventGson extends LearningEventGson {
 
-  private Long wordId;
-
   private String wordText;
+  
+  private Long wordId;
 }
