@@ -10,9 +10,9 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class WordAssessmentEventGson extends AssessmentEventGson {
 
-  private Long wordId;
-
   private String wordText;
+  
+  private Long wordId;
 
   private Float masteryScore;
 

@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class VideoLearningEventGson extends LearningEventGson {
 
-  private Long videoId;
-
   private String videoTitle;
+  
+  private Long videoId;
 }
