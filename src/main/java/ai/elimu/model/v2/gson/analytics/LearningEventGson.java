@@ -19,5 +19,15 @@ public abstract class LearningEventGson extends BaseEntityGson {
 
   private String packageName;
 
+  /**
+   * Any additional data should be stored in the format of a JSON object.
+   * 
+   * Example:
+   * <pre>
+   * {'spelling_consistency': 'HIGHLY_PHONEMIC'}
+   * </pre>
+   */
+  private String additionalData;
+
   private LearningEventType learningEventType;
 }
