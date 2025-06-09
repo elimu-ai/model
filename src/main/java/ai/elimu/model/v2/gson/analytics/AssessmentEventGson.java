@@ -50,5 +50,6 @@ public abstract class AssessmentEventGson extends BaseEntityGson {
    */
   private String additionalData;
 
+  @Deprecated
   private AssessmentEventType assessmentEventType;
 }

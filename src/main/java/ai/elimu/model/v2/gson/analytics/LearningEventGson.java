@@ -29,5 +29,6 @@ public abstract class LearningEventGson extends BaseEntityGson {
    */
   private String additionalData;
 
+  @Deprecated
   private LearningEventType learningEventType;
 }
