@@ -1,7 +1,9 @@
 package ai.elimu.model.v2.enums.analytics.research;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
+@Getter
 @AllArgsConstructor
 public enum ResearchExperiment {
     
