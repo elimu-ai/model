@@ -18,7 +18,7 @@ public class NumberLearningEventGson extends LearningEventGson {
   /**
    * The number represented as a symbol specific to the language. E.g. <code>"१०"</code>.
    */
-  private String symbol;
+  private String numberSymbol;
 
   /**
    * This field might not be included, e.g. if the assessment task was done in a 
