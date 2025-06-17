@@ -7,7 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum ResearchExperiment {
     
-    EMOJIS_IN_STORYBOOKS("Displaying emojis next to words makes it easier to learn the meaning of words."),
+    WORD_EMOJIS("Displaying emojis next to words makes it easier to learn the meaning of words."),
     LETTER_COLORS("Using different colors for consonants and vowels makes reading easier.");
 
     /**
