@@ -7,8 +7,8 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum ResearchExperiment {
     
-    WORD_EMOJIS("Displaying emojis next to words makes it easier to learn the meaning of words."),
-    LETTER_COLORS("Using different colors for consonants and vowels makes reading easier.");
+    EXP_0_WORD_EMOJIS("Displaying emojis next to words makes it easier to learn the meaning of words."),
+    EXP_1_LETTER_COLORS("Using different colors for consonants and vowels makes reading easier.");
 
     /**
      * The experiment theory; Why will the idea improve learning outcome?
