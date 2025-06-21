@@ -27,7 +27,7 @@ public abstract class LearningEventGson extends BaseEntityGson {
    * {'spelling_consistency': 'HIGHLY_PHONEMIC'}
    * </pre>
    */
-  private String additionalData;
+  private JSONObject additionalData;
 
   @Deprecated
   private LearningEventType learningEventType;
