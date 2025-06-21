@@ -5,6 +5,7 @@ import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.Calendar;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.json.JSONObject;
 
 /**
  * Based on https://github.com/elimu-ai/webapp/blob/main/src/main/java/ai/elimu/entity/analytics/AssessmentEvent.java
