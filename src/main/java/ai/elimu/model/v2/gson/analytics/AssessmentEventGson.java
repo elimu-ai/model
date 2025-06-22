@@ -5,6 +5,7 @@ import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.Calendar;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.json.JSONObject;
 
 /**
  * Based on https://github.com/elimu-ai/webapp/blob/main/src/main/java/ai/elimu/entity/analytics/AssessmentEvent.java
@@ -48,7 +49,7 @@ public abstract class AssessmentEventGson extends BaseEntityGson {
    * {'word_ids_presented': [1,2,3], 'word_id_selected': [2]}
    * </pre>
    */
-  private String additionalData;
+  private JSONObject additionalData;
 
   @Deprecated
   private AssessmentEventType assessmentEventType;

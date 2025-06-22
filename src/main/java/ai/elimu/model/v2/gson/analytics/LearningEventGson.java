@@ -5,6 +5,7 @@ import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.Calendar;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.json.JSONObject;
 
 /**
  * For documentation, see https://github.com/elimu-ai/webapp/tree/main/src/main/java/ai/elimu/entity
@@ -27,7 +28,7 @@ public abstract class LearningEventGson extends BaseEntityGson {
    * {'spelling_consistency': 'HIGHLY_PHONEMIC'}
    * </pre>
    */
-  private String additionalData;
+  private JSONObject additionalData;
 
   @Deprecated
   private LearningEventType learningEventType;
