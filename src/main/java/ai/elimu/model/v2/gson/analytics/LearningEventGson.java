@@ -1,6 +1,5 @@
 package ai.elimu.model.v2.gson.analytics;
 
-import ai.elimu.model.v2.enums.analytics.LearningEventType;
 import ai.elimu.model.v2.gson.BaseEntityGson;
 import java.util.Calendar;
 import lombok.Data;
@@ -28,7 +27,4 @@ public abstract class LearningEventGson extends BaseEntityGson {
    * </pre>
    */
   private String additionalData;
-
-  @Deprecated
-  private LearningEventType learningEventType;
 }
