@@ -1,5 +1,7 @@
 package ai.elimu.model.v2.gson.analytics;
 
+import java.util.List;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
