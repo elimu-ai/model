@@ -16,9 +16,9 @@ public class NumberAssessmentEventGson extends AssessmentEventGson {
   private Integer numberValue;
 
   /**
-   * The number represented as a symbol specific to the language. E.g. <code>"१०"</code>.
+   * The number represented as a symbol specific to the language. E.g. "१०" for <code>10</code> in Hindi.
    */
-  private String symbol;
+  private String numberSymbol;
 
   /**
    * This field might not be included, e.g. if the assessment task was done in a 
