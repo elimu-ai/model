@@ -14,12 +14,10 @@ public class WordGsonTest {
     @Test
     public void testToString_khon() {
         LetterGson letterKhooKhwaai = new LetterGson();
-        // letterKhooKhwaai.setText("ค");
-        letterKhooKhwaai.setText("kh");
+        letterKhooKhwaai.setText("ค");
 
         LetterGson letterNooNuu = new LetterGson();
-        // letterNooNuu.setText("น");
-        letterNooNuu.setText("n");
+        letterNooNuu.setText("น");
 
         LetterSoundGson letterSoundKho = new LetterSoundGson();
         letterSoundKho.setLetters(Arrays.asList(letterKhooKhwaai));
@@ -30,8 +28,7 @@ public class WordGsonTest {
         WordGson wordKhon = new WordGson();
         wordKhon.setLetterSounds(Arrays.asList(letterSoundKho, letterSoundN));
 
-        // assertEquals("คน", wordKhon.toString());
-        assertEquals("khn", wordKhon.toString());
+        assertEquals("คน", wordKhon.toString());
     }
 
     /**
@@ -40,12 +37,10 @@ public class WordGsonTest {
     @Test
     public void testToString_pai() {
         LetterGson letterPooPlaa = new LetterGson();
-        // letterPooPlaa.setText("ป");
-        letterPooPlaa.setText("p");
+        letterPooPlaa.setText("ป");
 
         LetterGson letterSaraAi = new LetterGson();
-        // letterSaraAi.setText("ไ◌");
-        letterSaraAi.setText("ai◌");
+        letterSaraAi.setText("ไ◌");
 
         LetterSoundGson letterSoundP = new LetterSoundGson();
         letterSoundP.setLetters(Arrays.asList(letterPooPlaa));
@@ -56,8 +51,7 @@ public class WordGsonTest {
         WordGson wordPai = new WordGson();
         wordPai.setLetterSounds(Arrays.asList(letterSoundP, letterSoundAi));
 
-        // assertEquals("ไป", wordPai.toString());
-        assertEquals("aip", wordPai.toString());
+        assertEquals("ไป", wordPai.toString());
     }
 
     /**
@@ -66,16 +60,13 @@ public class WordGsonTest {
     @Test
     public void testToString_chan() {
         LetterGson letterChooChing = new LetterGson();
-        // letterChooChing.setText("ฉ");
-        letterChooChing.setText("ch");
+        letterChooChing.setText("ฉ");
 
         LetterGson letterSaraA = new LetterGson();
-        // letterSaraA.setText("◌ั");
-        letterSaraA.setText("◌a");
+        letterSaraA.setText("◌ั");
 
         LetterGson letterNooNuu = new LetterGson();
-        // letterNooNuu.setText("น");
-        letterNooNuu.setText("n");
+        letterNooNuu.setText("น");
 
         LetterSoundGson letterSoundCh = new LetterSoundGson();
         letterSoundCh.setLetters(Arrays.asList(letterChooChing));
@@ -89,8 +80,7 @@ public class WordGsonTest {
         WordGson wordChan = new WordGson();
         wordChan.setLetterSounds(Arrays.asList(letterSoundCh, letterSoundA, letterSoundN));
 
-        // assertEquals("ฉัน", wordChan.toString());
-        assertEquals("chan", wordChan.toString());
+        assertEquals("ฉัน", wordChan.toString());
     }
 
     /**
@@ -98,16 +88,14 @@ public class WordGsonTest {
      */
     @Test
     public void testToString_khaw() {
-        LetterGson letterKhooKhwaai = new LetterGson();
-        // letterKhooKhwaai.setText("ค");
-        letterKhooKhwaai.setText("kh");
+        LetterGson letterKhooKhai = new LetterGson();
+        letterKhooKhai.setText("ข");
 
         LetterGson letterAw = new LetterGson();
-        // letterAw.setText("เ◌า");
-        letterAw.setText("a◌w");
+        letterAw.setText("เ◌า");
 
         LetterSoundGson letterSoundKh = new LetterSoundGson();
-        letterSoundKh.setLetters(Arrays.asList(letterKhooKhwaai));
+        letterSoundKh.setLetters(Arrays.asList(letterKhooKhai));
 
         LetterSoundGson letterSoundAw = new LetterSoundGson();
         letterSoundAw.setLetters(Arrays.asList(letterAw));
@@ -115,7 +103,6 @@ public class WordGsonTest {
         WordGson wordKhaw = new WordGson();
         wordKhaw.setLetterSounds(Arrays.asList(letterSoundKh, letterSoundAw));
 
-        // assertEquals("เขา", wordKhaw.toString());
-        assertEquals("akhw", wordKhaw.toString());
+        assertEquals("เขา", wordKhaw.toString());
     }
 }
