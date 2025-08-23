@@ -92,4 +92,30 @@ public class WordGsonTest {
         // assertEquals("ฉัน", wordChan.toString());
         assertEquals("chan", wordChan.toString());
     }
+
+    /**
+     * ['ข', 'เ◌า'] --> "เขา"
+     */
+    @Test
+    public void testToString_khaw() {
+        LetterGson letterKhooKhwaai = new LetterGson();
+        // letterKhooKhwaai.setText("ค");
+        letterKhooKhwaai.setText("kh");
+
+        LetterGson letterAw = new LetterGson();
+        // letterAw.setText("เ◌า");
+        letterAw.setText("a◌w");
+
+        LetterSoundGson letterSoundKh = new LetterSoundGson();
+        letterSoundKh.setLetters(Arrays.asList(letterKhooKhwaai));
+
+        LetterSoundGson letterSoundAw = new LetterSoundGson();
+        letterSoundAw.setLetters(Arrays.asList(letterAw));
+
+        WordGson wordKhaw = new WordGson();
+        wordKhaw.setLetterSounds(Arrays.asList(letterSoundKh, letterSoundAw));
+
+        // assertEquals("เขา", wordKhaw.toString());
+        assertEquals("akhw", wordKhaw.toString());
+    }
 }

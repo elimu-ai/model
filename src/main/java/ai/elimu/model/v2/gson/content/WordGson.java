@@ -45,15 +45,43 @@ public class WordGson extends ContentGson {
       for (int i = 0; i < wordLetters.size(); i++) {
           String wordLetter = wordLetters.get(i);
           System.out.println("wordLetter: " + wordLetter);
-          if (wordLetter.endsWith("◌")) {
-              System.out.println("endsWith ◌");
-              // Remove the dotted circle (◌), and shift the letter one position to the left
-              wordLetters.set(i, wordLetter.substring(0, wordLetter.length() - 1));
-              Collections.swap(wordLetters, i-1, i);
-          } else if (wordLetter.startsWith("◌")) {
-              System.out.println("startsWith ◌");
-              // Remove the dotted circle (◌)
-              wordLetters.set(i, wordLetter.substring(1, wordLetter.length()));
+          if (wordLetter.contains("◌")) {
+              if (wordLetter.endsWith("◌")) {
+                  // E.g. 'ไ◌'
+                  System.out.println("endsWith ◌");
+                  
+                  // Remove the dotted circle (◌)
+                  // <'ป','ไ◌'> --> <'ป','ไ'>
+                  wordLetters.set(i, wordLetter.substring(0, wordLetter.length() - 1));
+
+                  // Shift the letter one position to the left
+                  // <'ป','ไ'> --> <'ไ','ป'>
+                  Collections.swap(wordLetters, i - 1, i);
+              } else if (wordLetter.startsWith("◌")) {
+                  // E.g 'จ◌ะ'
+                  System.out.println("startsWith ◌");
+                  
+                  // Remove the dotted circle (◌)
+                  // <'จ','◌ะ'> --> <'จ','ะ'>
+                  wordLetters.set(i, wordLetter.substring(1, wordLetter.length()));
+              } else {
+                // E.g. 'เ◌า'
+                System.out.println("◌ in the middle");
+
+                // Expect to find a consonant on position to the left
+                // <'ข','เ◌า'>
+                String consonant = wordLetters.get(i - 1);
+                System.out.println("consonant: " + consonant);
+
+                // Replace the dotted circle (◌) with the consonant
+                // <'ข','เ◌า'> --> <'ข','เขา'>
+                wordLetter = wordLetter.replaceFirst("◌", consonant);
+                wordLetters.set(i, wordLetter);
+
+                // Delete the consonant
+                // <'ข','เขา'> --> <'เขา'>
+                wordLetters.remove(i - 1);
+              }
           }
       }
       System.out.println("wordLetters (after): " + wordLetters);
