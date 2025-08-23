@@ -11,6 +11,6 @@ import lombok.EqualsAndHashCode;
 public class LetterGson extends ContentGson {
 
   private String text;
-
+  
   private Boolean diacritic;
 }
