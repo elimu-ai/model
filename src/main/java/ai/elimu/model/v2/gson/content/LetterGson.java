@@ -1,5 +1,6 @@
 package ai.elimu.model.v2.gson.content;
 
+import ai.elimu.model.v2.enums.content.LetterPosition;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,5 +13,7 @@ public class LetterGson extends ContentGson {
 
   private String text;
 
+  private LetterPosition position;
+  
   private Boolean diacritic;
 }
