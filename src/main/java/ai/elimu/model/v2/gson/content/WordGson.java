@@ -32,6 +32,8 @@ public class WordGson extends ContentGson {
    * Example: ['ป','ไ◌'] --> "ไป"
    */
   public String toString() {
+      System.out.println("WordGson#getId(): " + getId());
+
       // Convert from List<LetterSoundGson> to List<String>
       List<String> wordLetters = new ArrayList<>();
       for (LetterSoundGson letterSound : letterSounds) {
