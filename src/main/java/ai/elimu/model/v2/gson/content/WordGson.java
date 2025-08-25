@@ -32,8 +32,6 @@ public class WordGson extends ContentGson {
    * Example: ['ป','ไ◌'] --> "ไป"
    */
   public String toString() {
-      System.out.println("WordGson#getId(): " + getId());
-
       // Convert from List<LetterSoundGson> to List<String>
       List<String> wordLetters = new ArrayList<>();
       for (LetterSoundGson letterSound : letterSounds) {
@@ -46,7 +44,18 @@ public class WordGson extends ContentGson {
       for (int i = 0; i < wordLetters.size(); i++) {
           String wordLetter = wordLetters.get(i);
           if (wordLetter.contains("◌")) {
-              if (wordLetter.endsWith("◌")) {
+              if (wordLetter.endsWith("◌◌")) {
+                  // E.g. 'ใ◌◌'
+                  
+                  // Remove the two dotted circles (◌◌)
+                  // <'ค','ร','ใ◌◌'> --> <'ค','ร','ใ'>
+                  wordLetters.set(i, wordLetter.substring(0, wordLetter.length() - 2));
+
+                  // Shift the letter two positions to the left
+                  // <'ค','ร','ใ'> --> <'ใ','ค','ร'>
+                  Collections.swap(wordLetters, i, i - 1);
+                  Collections.swap(wordLetters, i - 1, i - 2);
+              } else if (wordLetter.endsWith("◌")) {
                   // E.g. 'ไ◌'
                   
                   // Remove the dotted circle (◌)
@@ -55,9 +64,9 @@ public class WordGson extends ContentGson {
 
                   // Shift the letter one position to the left
                   // <'ป','ไ'> --> <'ไ','ป'>
-                  Collections.swap(wordLetters, i - 1, i);
+                  Collections.swap(wordLetters, i, i - 1);
               } else if (wordLetter.startsWith("◌")) {
-                  // E.g 'จ◌ะ'
+                  // E.g '◌ะ'
                   
                   // Remove the dotted circle (◌)
                   // <'จ','◌ะ'> --> <'จ','ะ'>
@@ -65,7 +74,7 @@ public class WordGson extends ContentGson {
               } else {
                 // E.g. 'เ◌า'
 
-                // Expect to find a consonant on position to the left
+                // Expect to find a consonant one position to the left
                 // <'ข','เ◌า'>
                 String consonant = wordLetters.get(i - 1);
 
