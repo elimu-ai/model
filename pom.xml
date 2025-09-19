@@ -9,7 +9,7 @@
   <properties>
     <java.version>17</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <lombok.version>1.18.40</lombok.version>
+    <lombok.version>1.18.42</lombok.version>
   </properties>
 
   <issueManagement>
