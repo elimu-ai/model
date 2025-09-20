@@ -33,63 +33,63 @@ public class WordGson extends ContentGson {
    */
   public String toString() {
       // Convert from List<LetterSoundGson> to List<String>
-      List<String> wordLetters = new ArrayList<>();
+      List<String> letterSequences = new ArrayList<>();
       for (LetterSoundGson letterSound : letterSounds) {
           List<LetterGson> letterGsons = letterSound.getLetters();
           String letterSoundLetters = letterGsons.stream().map(LetterGson::getText).collect(Collectors.joining());
-          wordLetters.add(letterSoundLetters);
+          letterSequences.add(letterSoundLetters);
       }
 
-      // Re-order letters
-      for (int i = 0; i < wordLetters.size(); i++) {
-          String wordLetter = wordLetters.get(i);
-          if (wordLetter.contains("◌")) {
-              if (wordLetter.endsWith("◌◌")) {
+      // Re-order letter sequences
+      for (int i = 0; i < letterSequences.size(); i++) {
+          String letterSequence = letterSequences.get(i);
+          if (letterSequence.contains("◌")) {
+              if (letterSequence.endsWith("◌◌")) {
                   // E.g. 'ใ◌◌'
                   
                   // Remove the two dotted circles (◌◌)
                   // <'ค','ร','ใ◌◌'> --> <'ค','ร','ใ'>
-                  wordLetters.set(i, wordLetter.substring(0, wordLetter.length() - 2));
+                  letterSequences.set(i, letterSequence.substring(0, letterSequence.length() - 2));
 
-                  // Shift the letter two positions to the left
+                  // Shift the letter sequence two positions to the left
                   // <'ค','ร','ใ'> --> <'ใ','ค','ร'>
-                  Collections.swap(wordLetters, i, i - 1);
-                  Collections.swap(wordLetters, i - 1, i - 2);
-              } else if (wordLetter.endsWith("◌")) {
+                  Collections.swap(letterSequences, i, i - 1);
+                  Collections.swap(letterSequences, i - 1, i - 2);
+              } else if (letterSequence.endsWith("◌")) {
                   // E.g. 'ไ◌'
                   
                   // Remove the dotted circle (◌)
                   // <'ป','ไ◌'> --> <'ป','ไ'>
-                  wordLetters.set(i, wordLetter.substring(0, wordLetter.length() - 1));
+                  letterSequences.set(i, letterSequence.substring(0, letterSequence.length() - 1));
 
-                  // Shift the letter one position to the left
+                  // Shift the letter sequence one position to the left
                   // <'ป','ไ'> --> <'ไ','ป'>
-                  Collections.swap(wordLetters, i, i - 1);
-              } else if (wordLetter.startsWith("◌")) {
+                  Collections.swap(letterSequences, i, i - 1);
+              } else if (letterSequence.startsWith("◌")) {
                   // E.g '◌ะ'
                   
                   // Remove the dotted circle (◌)
                   // <'จ','◌ะ'> --> <'จ','ะ'>
-                  wordLetters.set(i, wordLetter.substring(1, wordLetter.length()));
+                  letterSequences.set(i, letterSequence.substring(1, letterSequence.length()));
               } else {
                 // E.g. 'เ◌า'
 
                 // Expect to find a consonant one position to the left
                 // <'ข','เ◌า'>
-                String consonant = wordLetters.get(i - 1);
+                String consonant = letterSequences.get(i - 1);
 
                 // Replace the dotted circle (◌) with the consonant
                 // <'ข','เ◌า'> --> <'ข','เขา'>
-                wordLetter = wordLetter.replaceFirst("◌", consonant);
-                wordLetters.set(i, wordLetter);
+                letterSequence = letterSequence.replaceFirst("◌", consonant);
+                letterSequences.set(i, letterSequence);
 
                 // Delete the consonant
                 // <'ข','เขา'> --> <'เขา'>
-                wordLetters.remove(i - 1);
+                letterSequences.remove(i - 1);
               }
           }
       }
 
-      return wordLetters.stream().collect(Collectors.joining());
+      return letterSequences.stream().collect(Collectors.joining());
   }
 }
