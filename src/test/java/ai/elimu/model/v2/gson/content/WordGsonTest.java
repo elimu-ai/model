@@ -134,4 +134,62 @@ public class WordGsonTest {
 
         assertEquals("ใคร", wordKhrai.toString());
     }
+
+    /**
+     * ['ต', '◌่', 'แ◌'] --> "แต่"
+     */
+    @Test
+    public void testToString_tɛ̀ɛ() {
+        LetterGson letterTooTaw = new LetterGson();
+        letterTooTaw.setText("ต");
+
+        LetterGson diacriticMaaiEk = new LetterGson();
+        diacriticMaaiEk.setText("◌่");
+
+        LetterGson letterSaraAe = new LetterGson();
+        letterSaraAe.setText("แ◌◌");
+
+        LetterSoundGson letterSoundT = new LetterSoundGson();
+        letterSoundT.setLetters(Arrays.asList(letterTooTaw));
+
+        LetterSoundGson letterSoundLowTone = new LetterSoundGson();
+        letterSoundLowTone.setLetters(Arrays.asList(diacriticMaaiEk));
+
+        LetterSoundGson letterSoundAe = new LetterSoundGson();
+        letterSoundAe.setLetters(Arrays.asList(letterSaraAe));
+
+        WordGson wordTɛ̀ɛ = new WordGson();
+        wordTɛ̀ɛ.setLetterSounds(Arrays.asList(letterSoundT, letterSoundLowTone, letterSoundAe));
+
+        assertEquals("แต่", wordTɛ̀ɛ.toString());
+    }
+
+    /**
+     * ['จ', '◌้', 'เ◌◌า'] --> "เจ้า"
+     */
+    @Test
+    public void testToString_câaw() {
+        LetterGson letterJooJaan = new LetterGson();
+        letterJooJaan.setText("จ");
+
+        LetterGson diacriticMaaiThoo = new LetterGson();
+        diacriticMaaiThoo.setText("◌้");
+
+        LetterGson letterSaraAw = new LetterGson();
+        letterSaraAw.setText("เ◌◌า");
+
+        LetterSoundGson letterSoundJoJaan = new LetterSoundGson();
+        letterSoundJoJaan.setLetters(Arrays.asList(letterJooJaan));
+
+        LetterSoundGson letterSoundFallingTone = new LetterSoundGson();
+        letterSoundFallingTone.setLetters(Arrays.asList(diacriticMaaiThoo));
+
+        LetterSoundGson letterSoundAw = new LetterSoundGson();
+        letterSoundAw.setLetters(Arrays.asList(letterSaraAw));
+
+        WordGson wordCâaw = new WordGson();
+        wordCâaw.setLetterSounds(Arrays.asList(letterSoundJoJaan, letterSoundFallingTone, letterSoundAw));
+
+        assertEquals("เจ้า", wordCâaw.toString());
+    }
 }
