@@ -43,19 +43,40 @@ public class WordGson extends ContentGson {
       // Re-order letter sequences
       for (int i = 0; i < letterSequences.size(); i++) {
           String letterSequence = letterSequences.get(i);
-          if (letterSequence.contains("◌")) {
+          if (letterSequence.contains("◌◌")) {
               if (letterSequence.endsWith("◌◌")) {
                   // E.g. 'ใ◌◌'
                   
                   // Remove the two dotted circles (◌◌)
                   // <'ค','ร','ใ◌◌'> --> <'ค','ร','ใ'>
-                  letterSequences.set(i, letterSequence.substring(0, letterSequence.length() - 2));
+                  letterSequence = letterSequence.substring(0, letterSequence.length() - 2);
+                  letterSequences.set(i, letterSequence);
 
                   // Shift the letter sequence two positions to the left
                   // <'ค','ร','ใ'> --> <'ใ','ค','ร'>
                   Collections.swap(letterSequences, i, i - 1);
                   Collections.swap(letterSequences, i - 1, i - 2);
-              } else if (letterSequence.endsWith("◌")) {
+              } else {
+                // E.g. 'เ◌◌า'
+
+                // Expect to find two letter sequences to the left
+                // <'จ', '◌้', 'เ◌◌า'>
+                String letterSequence1 = letterSequences.get(i - 2);
+                String letterSequence2 = letterSequences.get(i - 1);
+
+                // Replace the two dotted circles (◌◌) with the two letter sequences
+                // <'จ', '◌้', 'เ◌◌า'> --> <'จ', '◌้', 'เจ◌้า'>
+                letterSequence = letterSequence.replaceFirst("◌", letterSequence1);
+                letterSequence = letterSequence.replaceFirst("◌", letterSequence2);
+                letterSequences.set(i, letterSequence);
+
+                // Delete the two letter sequences
+                // <'จ', '◌้', 'เจ◌้า'> --> <'เจ◌้า'>
+                letterSequences.remove(0);
+                letterSequences.remove(0);
+              }
+          } else if (letterSequence.contains("◌")) {
+              if (letterSequence.endsWith("◌")) {
                   // E.g. 'ไ◌'
                   
                   // Remove the dotted circle (◌)
@@ -85,7 +106,7 @@ public class WordGson extends ContentGson {
 
                 // Delete the consonant
                 // <'ข','เขา'> --> <'เขา'>
-                letterSequences.remove(i - 1);
+                letterSequences.remove(0);
               }
           }
       }
