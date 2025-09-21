@@ -72,8 +72,8 @@ public class WordGson extends ContentGson {
 
                 // Delete the two letter sequences
                 // <'จ', '◌้', 'เจ◌้า'> --> <'เจ◌้า'>
-                letterSequences.remove(0);
-                letterSequences.remove(0);
+                letterSequences.remove(i - 2);
+                letterSequences.remove(i - 2);
               }
           } else if (letterSequence.contains("◌")) {
               if (letterSequence.endsWith("◌")) {
@@ -106,7 +106,7 @@ public class WordGson extends ContentGson {
 
                 // Delete the consonant
                 // <'ข','เขา'> --> <'เขา'>
-                letterSequences.remove(0);
+                letterSequences.remove(i - 1);
               }
           }
       }

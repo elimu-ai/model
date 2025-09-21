@@ -192,4 +192,45 @@ public class WordGsonTest {
 
         assertEquals("เจ้า", wordCâaw.toString());
     }
+
+    /**
+     * ['ร', 'โ◌', 'ง', 'ร', 'เ◌ีย', 'น'] --> "โรงเรียน"
+     */
+    @Test
+    public void testToString_rooŋrian() {
+        LetterGson letterRooRua = new LetterGson();
+        letterRooRua.setText("ร");
+
+        LetterGson letterSaraOo = new LetterGson();
+        letterSaraOo.setText("โ◌");
+
+        LetterGson letterNgooNuu = new LetterGson();
+        letterNgooNuu.setText("ง");
+
+        LetterGson letterSaraIa = new LetterGson();
+        letterSaraIa.setText("เ◌ีย");
+
+        LetterGson letterNooNuu = new LetterGson();
+        letterNooNuu.setText("น");
+
+        LetterSoundGson letterSoundRooRua = new LetterSoundGson();
+        letterSoundRooRua.setLetters(Arrays.asList(letterRooRua));
+        
+        LetterSoundGson letterSoundSaraOo = new LetterSoundGson();
+        letterSoundSaraOo.setLetters(Arrays.asList(letterSaraOo));
+
+        LetterSoundGson letterSoundNgooNuu = new LetterSoundGson();
+        letterSoundNgooNuu.setLetters(Arrays.asList(letterNgooNuu));
+
+        LetterSoundGson letterSoundSaraIa = new LetterSoundGson();
+        letterSoundSaraIa.setLetters(Arrays.asList(letterSaraIa));
+
+        LetterSoundGson letterSoundNooNuu = new LetterSoundGson();
+        letterSoundNooNuu.setLetters(Arrays.asList(letterNooNuu));
+
+        WordGson wordRooŋrian = new WordGson();
+        wordRooŋrian.setLetterSounds(Arrays.asList(letterSoundRooRua, letterSoundSaraOo, letterSoundNgooNuu, letterSoundRooRua, letterSoundSaraIa, letterSoundNooNuu));
+
+        assertEquals("โรงเรียน", wordRooŋrian.toString());
+    }
 }
