@@ -32,6 +32,10 @@ public class WordGson extends ContentGson {
    * Example: ['ป','ไ◌'] --> "ไป"
    */
   public String toString() {
+      if (letterSounds == null) {
+          return null;
+      }
+
       // Convert from List<LetterSoundGson> to List<String>
       List<String> letterSequences = new ArrayList<>();
       for (LetterSoundGson letterSound : letterSounds) {

@@ -3,10 +3,18 @@ package ai.elimu.model.v2.gson.content;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.util.Arrays;
 
 public class WordGsonTest {
+
+    @Test
+    public void testToString_null() {
+        WordGson word = new WordGson();
+
+        assertNull(word.toString());
+    }
     
     /**
      * ['ค','น'] --> "คน"
