@@ -17,9 +17,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class WordGson extends ContentGson {
 
-  @Deprecated // TODO: replace with toString()
-  private String text;
-
   private List<LetterSoundGson> letterSounds;
 
   private WordType wordType;
