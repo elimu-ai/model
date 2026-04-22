@@ -77,6 +77,10 @@ dependencies {
 </dependency>
 ```
 
+## Research Experiments 🧪
+
+To add a new research experiment, edit the [`ResearchExperiment`](https://github.com/elimu-ai/model/blob/main/src/main/java/ai/elimu/model/v2/enums/analytics/research/ResearchExperiment.java) file.
+
 ---
 
 <p align="center">
