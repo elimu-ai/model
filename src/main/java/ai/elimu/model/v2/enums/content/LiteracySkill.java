@@ -7,9 +7,9 @@ package ai.elimu.model.v2.enums.content;
 public enum LiteracySkill {
     
     ORAL_VOCABULARY,
+    LISTENING_COMPREHENSION,
     CONCEPTS_ABOUT_PRINT,
     PHONEMIC_AWARENESS, // Sound identification
-    LISTENING_COMPREHENSION,
     LETTER_IDENTIFICATION, // Grapheme knowledge
     SYLLABLE_NAMING,
     NONWORD_READING, // Invented word decoding
